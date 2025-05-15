@@ -60,7 +60,7 @@ layers:
   - layer1
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - PAUSE BREAK
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
   - $$mdi:apple-keyboard-shift$$
@@ -127,7 +127,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - PRINTSCREEN
   - CONTEXT MENU
-  - '&PAUSE_BREAK'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
