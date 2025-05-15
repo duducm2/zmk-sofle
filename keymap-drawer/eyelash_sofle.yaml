@@ -125,8 +125,8 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - '&PRINTSCREEN'
-  - '&K_CONTEXT_MENU'
+  - PRINTSCREEN
+  - CONTEXT MENU
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
