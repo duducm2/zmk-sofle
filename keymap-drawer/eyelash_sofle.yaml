@@ -127,8 +127,8 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - PRINTSCREEN
   - CONTEXT MENU
-  - F12
   - {t: '$$mdi:transfer$$', type: trans}
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
   - {t: '$$mdi:transfer$$', type: trans}
