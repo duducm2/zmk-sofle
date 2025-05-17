@@ -55,11 +55,11 @@
 
         layer_1 {
             bindings = <
-&kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &F12
+&kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
 &trans      &kp GRAVE        &trans       &trans        &trans        &trans           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &kp UP      &kp END   &kp MINUS         &kp EQUAL
 &trans      &kp TILDE        &trans          &trans           &trans           &trans           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp RIGHT_BRACKET  &kp BSLH
-&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &kp trans  &kp NON_US_BACKSLASH    &kp KP_DIVIDE           &FSLH
-&kp C_MUTE  &trans           &trans          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &kp PRINTSCREEN  &kp K_CONTEXT_MENU &trans      &SCROLLLOCK     &INSERT
+&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &trans  &kp NON_US_BACKSLASH    &kp KP_DIVIDE           &kp FSLH
+&kp C_MUTE  &trans           &trans          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &kp PRINTSCREEN  &kp K_CONTEXT_MENU &trans      &kp SCROLLLOCK     &kp INSERT
             >;
 
             display-name = "layer1";
@@ -69,9 +69,9 @@
         layer_2 {
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI      &rgb_ug RGB_EFR     &rgb_ug RGB_EFF      &rgb_ug RGB_ON
-&studio_unlock      &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &trans     &trans    &trans    &kp rgb_ug RGB_OFF
+&studio_unlock      &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &trans     &trans    &trans    &rgb_ug RGB_OFF
 &trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &trans     &trans
-&sys_reset     &bootloader    &trans          &trans   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &soft_off  &kp bootloader
+&sys_reset     &bootloader    &trans          &trans   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &soft_off  &bootloader
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &sys_reset
             >;
 
