@@ -6,16 +6,14 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
-    - name: gpeye
-      url-base: https://github.com/GPeye
-    - name: nickcoutsos
-      url-base: https://github.com/nickcoutsos
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
   projects:
     - name: eyelash_sofle
       url: https://github.com/a741725193/zmk-sofle
       revision: refactor
-    - name: luna-key-animations
-      remote: nickcoutsos
+    - name: zmk-nice-oled
+      remote: mctechnology17
       revision: main
     - name: zmk
       remote: zmkfirmware
