@@ -51,7 +51,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: ;, s: ':'}
+  - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - PLAY PAUSE
   - $$mdi:apple-keyboard-control$$
@@ -115,9 +115,9 @@ layers:
   - '~'
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - \
   - KP DIVIDE
-  - {t: /, s: '?'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
