@@ -160,9 +160,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+Sft+E
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+Alt+$$mdi:arrow-left-bold$$
-  - Gui+CAPS(UP ARROW)
-  - Gui+Alt+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - PREVIOUS
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
