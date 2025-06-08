@@ -173,7 +173,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+Alt+$$mdi:arrow-left-bold$$
   - Gui+Alt+$$mdi:arrow-down-bold$$
-  - Gui+Alt+$$mdi:arrow-right-bold$$
+  - '&five_rights'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-next$$
