@@ -70,7 +70,7 @@
             bindings = <
 &kp LA(F4)  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI      &rgb_ug RGB_EFR     &rgb_ug RGB_EFF      &rgb_ug RGB_ON
 &trans      &kp LA(LS(Z))    &kp LA(LS(A))  &kp LA(LS(S))        &kp LA(LS(W))        &kp LA(LS(Q))          &mmv MOVE_DOWN   &trans  &out OUT_BLE  &out OUT_USB      &bt BT_CLR_ALL    &bt BT_CLR    &rgb_ug RGB_OFF
-&trans     &trans  &trans    &trans        &trans        &trans          &kp C_PREVIOUS   &trans  &trans  &trans      &trans     &trans     &trans
+&trans     &kp LG(LS(E))  &trans    &kp LG(LA(LEFT_ARROW))        &kp LG(CAPS(UP_ARROW))        &kp LG(LA(RIGHT_ARROW))          &kp C_PREVIOUS   &trans  &trans  &trans      &trans     &trans     &trans
 &trans     &trans    &trans          &trans   &trans        &trans          &kp C_NEXT  &trans  &trans  &trans  &trans  &soft_off  &bootloader
 &trans     &sys_reset        &bootloader          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &studio_unlock      &trans     &sys_reset
             >;
