@@ -145,11 +145,11 @@ layers:
   - RGB EFF
   - RGB ON
   - {t: '$$mdi:transfer$$', type: trans}
-  - Alt+Sft+Z
-  - Alt+Sft+A
-  - Alt+Sft+S
-  - Alt+Sft+W
-  - Alt+Sft+Q
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT BLE
@@ -158,11 +158,11 @@ layers:
   - $$mdi:bluetooth-off$$
   - RGB OFF
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+Sft+E
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+Alt+$$mdi:arrow-left-bold$$
-  - Gui+CAPS(UP ARROW)
-  - Gui+Alt+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - PREVIOUS
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -173,9 +173,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+CAPS(LEFT ARROW)
-  - Gui+CAPS(DOWN ARROW)
-  - Gui+CAPS(RIGHT ARROW)
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
