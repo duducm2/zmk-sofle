@@ -173,7 +173,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&five_lefts'
   - '&five_downs'
-  - '&five_rights'
+  - '&key_repeat'
   - Ctl+Alt+V
   - Ctl+Alt+B
   - $$mdi:skip-next$$
