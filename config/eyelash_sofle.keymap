@@ -72,6 +72,17 @@
         };
     };
 
+    // Key Repeat behavior for macros
+    // If this doesn't work, you may need to add the following to your .conf file:
+    // CONFIG_ZMK_BEHAVIORS_KEY_REPEAT=y
+    behaviors {
+        key_repeat {
+            compatible = "zmk,behavior-key-repeat";
+            #binding-cells = <0>;
+            wait-ms = <300>;      // Wait 300ms before starting to repeat
+        };
+    };
+
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
@@ -113,7 +124,7 @@
 &kp LA(F4)  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI      &rgb_ug RGB_EFR     &rgb_ug RGB_EFF      &trans
 &trans      &kp LA(LS(Z))    &kp LA(LS(A))  &kp LA(LS(S))        &kp LA(LS(W))        &kp LA(LS(Q))          &mmv MOVE_DOWN   &trans  &out OUT_BLE  &out OUT_USB      &bt BT_CLR_ALL    &bt BT_CLR    &trans
 &trans     &kp LG(LS(E))  &five_ups    &trans        &kp LC(LS(V))        &ctrl_space_del          &kp C_PREVIOUS   &trans  &trans  &trans      &trans     &trans     &trans
-&trans     &five_lefts    &five_downs          &five_rights   &kp LC(LA(V))        &kp LC(LA(B))          &kp C_NEXT  &trans  &trans  &trans  &trans  &soft_off  &bootloader
+&trans     &five_lefts    &five_downs          &key_repeat   &kp LC(LA(V))        &kp LC(LA(B))          &kp C_NEXT  &trans  &trans  &trans  &trans  &soft_off  &bootloader
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &studio_unlock      &trans     &sys_reset
             >;
 
