@@ -79,7 +79,8 @@
         key_repeat {
             compatible = "zmk,behavior-key-repeat";
             #binding-cells = <0>;
-            wait-ms = <300>;      // Wait 300ms before starting to repeat
+            start-wait-ms = <300>;      // Wait 300ms before starting to repeat
+            repeat-period-ms = <100>;   // Repeat every 100ms
         };
     };
 
