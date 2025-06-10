@@ -44,7 +44,6 @@
             #binding-cells = <0>;
             wait-ms = <30>;      // Delay between key presses in ms
             tap-ms = <30>;       // How long each key is held down in ms
-            repeat;
             bindings = <&kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW>;
         };
 
@@ -53,7 +52,6 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            repeat;
             bindings = <&kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW>;
         };
 
@@ -62,7 +60,6 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            repeat;
             bindings = <&kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW>;
         };
 
@@ -71,7 +68,6 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            repeat;
             bindings = <&kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
         };
     };
