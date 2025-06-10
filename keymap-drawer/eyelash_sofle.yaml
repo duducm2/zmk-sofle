@@ -143,7 +143,7 @@ layers:
   - RGB SPI
   - RGB EFR
   - RGB EFF
-  - RGB ON
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Alt+Sft+Z
   - Alt+Sft+A
@@ -156,12 +156,12 @@ layers:
   - OUT USB
   - BT CLR ALL
   - $$mdi:bluetooth-off$$
-  - RGB OFF
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+Sft+E
   - '&five_ups'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Sft+V
   - {t: '$$mdi:transfer$$', type: trans}
   - PREVIOUS
   - {t: '$$mdi:transfer$$', type: trans}
@@ -174,8 +174,8 @@ layers:
   - '&five_lefts'
   - '&five_downs'
   - '&five_rights'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Alt+V
+  - Ctl+Alt+B
   - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -190,8 +190,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB ON
+  - RGB OFF
   - {t: '&studio_unlock', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
