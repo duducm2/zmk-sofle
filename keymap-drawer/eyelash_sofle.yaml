@@ -153,8 +153,8 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+PG UP
+  - Ctl+PG DN
   - Sft+HOME
   - Sft+END
   - {t: '$$mdi:transfer$$', type: trans}
