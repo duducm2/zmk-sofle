@@ -70,6 +70,36 @@
             tap-ms = <30>;
             bindings = <&kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
         };
+
+        ctrl_five_rights: ctrl_five_rights {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_release &kp LCTRL>;
+        };
+
+        ctrl_five_lefts: ctrl_five_lefts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_release &kp LCTRL>;
+        };
     };
 
     scroll_encoder: scroll_encoder {
