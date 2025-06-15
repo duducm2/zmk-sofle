@@ -162,7 +162,7 @@ layers:
   - '&five_ups'
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+V
-  - '&ctrl_space_del'
+  - {t: '$$mdi:transfer$$', type: trans}
   - PREVIOUS
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
