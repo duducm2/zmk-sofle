@@ -151,10 +151,10 @@ layers:
   - Alt+Sft+W
   - Alt+Sft+Q
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - Ctl+Sft+PG UP
-  - Ctl+Sft+PG DN
   - Ctl+PG UP
   - Ctl+PG DN
+  - Ctl+Sft+PG UP
+  - Ctl+Sft+PG DN
   - Sft+HOME
   - Sft+END
   - {t: '$$mdi:transfer$$', type: trans}
