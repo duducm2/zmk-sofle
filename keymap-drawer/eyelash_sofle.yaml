@@ -168,7 +168,7 @@ layers:
   - '&win_z_5'
   - '&win_z_6'
   - '&win_z_7'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&win_z_8'
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - '&five_lefts'
