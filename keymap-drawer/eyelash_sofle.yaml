@@ -164,10 +164,10 @@ layers:
   - Ctl+Sft+V
   - Gui+HOME
   - PREVIOUS
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&win_z_4'
+  - '&win_z_5'
+  - '&win_z_6'
+  - '&win_z_7'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
