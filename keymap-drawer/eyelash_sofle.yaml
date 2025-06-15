@@ -162,7 +162,7 @@ layers:
   - '&five_ups'
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+V
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+HOME
   - PREVIOUS
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
