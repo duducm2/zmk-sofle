@@ -96,11 +96,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings =
-                <&macro_press &kp LG>,
-                <&macro_tap &kp Z>,
-                <&macro_release &kp LG>,
-                <&macro_tap &kp N4>;
+            bindings = <&macro_press &kp LG>, <&macro_tap &kp Z>, <&macro_release &kp LG>, <&macro_tap &kp N4>;
         };
 
         win_z_5: win_z_5 {
@@ -108,11 +104,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings =
-                <&macro_press &kp LG>,
-                <&macro_tap &kp Z>,
-                <&macro_release &kp LG>,
-                <&macro_tap &kp N5>;
+            bindings = <&macro_press &kp LG>, <&macro_tap &kp Z>, <&macro_release &kp LG>, <&macro_tap &kp N5>;
         };
 
         win_z_6: win_z_6 {
@@ -120,11 +112,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings =
-                <&macro_press &kp LG>,
-                <&macro_tap &kp Z>,
-                <&macro_release &kp LG>,
-                <&macro_tap &kp N6>;
+            bindings = <&macro_press &kp LG>, <&macro_tap &kp Z>, <&macro_release &kp LG>, <&macro_tap &kp N6>;
         };
 
         win_z_7: win_z_7 {
@@ -132,11 +120,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings =
-                <&macro_press &kp LG>,
-                <&macro_tap &kp Z>,
-                <&macro_release &kp LG>,
-                <&macro_tap &kp N7>;
+            bindings = <&macro_press &kp LG>, <&macro_tap &kp Z>, <&macro_release &kp LG>, <&macro_tap &kp N7>;
         };
     };
 
