@@ -130,6 +130,14 @@
             tap-ms = <30>;
             bindings = <&kp LG(Z) &kp N8>;
         };
+
+        ctrl_a_del: ctrl_a_del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp LC(A) &kp DELETE>;
+        };
     };
 
     scroll_encoder: scroll_encoder {
@@ -177,7 +185,7 @@
 &trans     &trans        &trans          &trans        &trans        &bt BT_CLR_ALL          &mkp LCLK        &out OUT_BLE  &trans  &studio_unlock      &out OUT_USB     &sys_reset
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp LC(LS(EQUAL)) LC(MINUS)>;
         };
 
         layer_3 {
