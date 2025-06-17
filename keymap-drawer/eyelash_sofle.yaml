@@ -160,7 +160,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+Sft+E
   - '&five_ups'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ctrl_a_del'
   - Ctl+Sft+V
   - Gui+HOME
   - PREVIOUS
