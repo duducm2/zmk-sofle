@@ -183,7 +183,7 @@
             bindings = <
 &kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
 &trans      &trans        &trans       &five_ups        &ctrl_five_lefts        &ctrl_five_rights           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &trans      &kp END   &kp MINUS         &kp EQUAL
-&trans      &trans        &five_lefts          &five_downs           &five_rights           &trans           &mmv MOVE_LEFT   &kp PG_DN        &trans         &trans    &trans  &kp RIGHT_BRACKET  &kp BSLH
+&trans      &trans        &five_lefts          &five_downs           &five_rights           &trans           &mmv MOVE_LEFT   &kp PG_DN        &trans         &kp RIGHT_BRACKET    &kp BSLH  &kp LS(EQUAL)  &kp LS(MINUS)
 &trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &trans  &trans    &kp NON_US_BACKSLASH           &kp KP_DIVIDE
 &kp C_MUTE  &trans           &trans          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &trans  &trans &trans      &trans     &trans
             >;
