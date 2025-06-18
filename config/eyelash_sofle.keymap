@@ -183,8 +183,8 @@
         layer_1 {
             bindings = <
 &kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
-&trans      &trans        &trans       &five_ups        &ctrl_five_lefts        &ctrl_five_rights           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &trans      &kp END   &kp MINUS         &kp EQUAL
-&trans      &trans        &five_lefts          &five_downs           &five_rights           &trans           &mmv MOVE_LEFT   &kp PG_DN        &trans         &kp RIGHT_BRACKET    &kp BSLH  &kp LS(EQUAL)  &kp LS(MINUS)
+&trans      &trans        &trans       &five_ups        &ctrl_five_lefts        &ctrl_five_rights           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &trans      &kp RIGHT_BRACKET   &kp MINUS         &kp EQUAL
+&trans      &trans        &five_lefts          &five_downs           &five_rights           &trans           &mmv MOVE_LEFT   &kp PG_DN        &kp END         &trans    &kp BSLH  &kp LS(EQUAL)  &kp LS(MINUS)
 &trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &trans  &trans    &kp NON_US_BACKSLASH           &kp KP_DIVIDE
 &kp C_MUTE  &trans           &trans          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &trans  &trans &trans      &trans     &kp LC(LA(W))
             >;
@@ -193,14 +193,13 @@
             sensor-bindings = <&inc_dec_kp LC(LS(EQUAL)) LC(MINUS)>;
         };
 
-
         layer_2 {
             bindings = <
 &kp LA(F4)  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp LC(LS(HOME))  &kp LC(LS(END))  &ctrl_shift_home_del      &ctrl_shift_end_del     &kp LC(HOME)      &kp LC(END)
 &trans      &kp LA(LS(Z))    &kp LA(LS(A))  &kp LA(LS(S))        &kp LA(LS(W))        &kp LA(LS(Q))          &mmv MOVE_DOWN   &kp LC(PG_UP)  &kp LC(PG_DN)  &kp LC(LS(PG_UP))      &kp LC(LS(PG_DN))    &kp LS(HOME)    &kp LS(END)
 &trans     &kp LG(LS(E))  &trans    &ctrl_a_del        &kp LC(LS(V))        &kp LG(HOME)          &kp C_PREVIOUS   &win_z_4  &win_z_5  &win_z_6      &win_z_7     &win_z_8     &bt BT_CLR
-&OUT_BLE     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &kp C_NEXT  &trans  &trans  &trans  &trans  &soft_off  &bootloader
-&sys_reset     &studio_unlock        &trans          &trans        &trans        &bt BT_CLR_ALL          &mkp LCLK        &trans  &trans  &trans      &out OUT_USB     &trans
+&trans     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &kp C_NEXT  &trans  &trans  &trans  &trans  &soft_off  &bootloader
+&trans     &trans        &trans          &trans        &trans        &bt BT_CLR_ALL          &mkp LCLK        &trans  &out OUT_BLE  &studio_unlock      &out OUT_USB     &sys_reset
             >;
 
             sensor-bindings = <&scroll_encoder>;
