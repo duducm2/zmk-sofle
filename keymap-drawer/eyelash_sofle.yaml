@@ -89,7 +89,7 @@ layers:
   - PG UP
   - HOME
   - {t: '$$mdi:transfer$$', type: trans}
-  - END
+  - {t: ']', s: '}'}
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -100,8 +100,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ']', s: '}'}
   - {t: \, s: '|'}
   - {t: Sft+=, s: Sft++}
   - {t: Sft+-, s: Sft+_}
@@ -170,7 +170,7 @@ layers:
   - '&win_z_7'
   - '&win_z_8'
   - $$mdi:bluetooth-off$$
-  - '&OUT_BLE'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -183,18 +183,18 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&soft_off'
   - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - '&studio_unlock'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - OUT BLE
+  - {t: '&studio_unlock', type: held}
   - OUT USB
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   '3':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
