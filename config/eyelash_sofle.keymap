@@ -96,7 +96,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings = <&kp LG(Z) &kp N4 &kp ENTER>;
+            bindings = <&kp LG(Z) &kp N4>;
         };
 
         win_z_5: win_z_5 {
@@ -104,7 +104,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings = <&kp LG(Z) &kp N5 &kp ENTER>;
+            bindings = <&kp LG(Z) &kp N5>;
         };
 
         win_z_6: win_z_6 {
@@ -112,7 +112,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings = <&kp LG(Z) &kp N6 &kp ENTER>;
+            bindings = <&kp LG(Z) &kp N6>;
         };
 
         win_z_7: win_z_7 {
@@ -120,7 +120,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings = <&kp LG(Z) &kp N7 &kp ENTER>;
+            bindings = <&kp LG(Z) &kp N7>;
         };
 
         win_z_8: win_z_8 {
@@ -128,7 +128,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings = <&kp LG(Z) &kp N8 &kp ENTER>;
+            bindings = <&kp LG(Z) &kp N8>;
         };
 
         ctrl_a_del: ctrl_a_del {
@@ -182,8 +182,8 @@
         layer_1 {
             bindings = <
 &kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
-&trans      &trans        &trans       &five_ups        &ctrl_five_lefts        &ctrl_five_rights           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &trans      &kp END   &kp MINUS         &kp EQUAL
-&trans      &trans        &five_lefts          &five_downs           &five_rights           &trans           &mmv MOVE_LEFT   &kp PG_DN        &trans         &kp RIGHT_BRACKET    &kp BSLH  &kp LS(EQUAL)  &kp LS(MINUS)
+&trans      &trans        &trans       &five_ups        &ctrl_five_lefts        &ctrl_five_rights           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &trans      &kp RIGHT_BRACKET   &kp MINUS         &kp EQUAL
+&trans      &trans        &five_lefts          &five_downs           &five_rights           &trans           &mmv MOVE_LEFT   &kp PG_DN        &kp END         &trans    &kp BSLH  &kp LS(EQUAL)  &kp LS(MINUS)
 &trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &trans  &trans    &kp NON_US_BACKSLASH           &kp KP_DIVIDE
 &kp C_MUTE  &trans           &trans          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &trans  &trans &trans      &trans     &kp LC(LA(W))
             >;
