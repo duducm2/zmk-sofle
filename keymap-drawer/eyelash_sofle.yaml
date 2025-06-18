@@ -170,7 +170,7 @@ layers:
   - '&win_z_7'
   - '&win_z_8'
   - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&OUT_BLE'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -183,18 +183,18 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&soft_off'
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - '&studio_unlock'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - $$mdi:mouse-left-click-outline$$
-  - OUT BLE
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '&studio_unlock', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - OUT USB
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:transfer$$', type: trans}
   '3':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
