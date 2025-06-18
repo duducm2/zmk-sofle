@@ -82,27 +82,27 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&five_ups'
+  - '&ctrl_five_lefts'
+  - '&ctrl_five_rights'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
   - HOME
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - END
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&five_lefts'
+  - '&five_downs'
+  - '&five_rights'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -140,8 +140,8 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Ctl+Sft+HOME
   - Ctl+Sft+END
-  - '&ctrl_five_lefts'
-  - '&ctrl_five_rights'
+  - '&ctrl_shift_home_del'
+  - '&ctrl_shift_end_del'
   - Ctl+HOME
   - Ctl+END
   - {t: '$$mdi:transfer$$', type: trans}
@@ -159,7 +159,7 @@ layers:
   - Sft+END
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+Sft+E
-  - '&five_ups'
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&ctrl_a_del'
   - Ctl+Sft+V
   - Gui+HOME
@@ -171,14 +171,14 @@ layers:
   - '&win_z_8'
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&five_lefts'
-  - '&five_downs'
-  - '&five_rights'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Alt+V
   - Ctl+Alt+B
   - $$mdi:skip-next$$
-  - '&ctrl_shift_home_del'
-  - '&ctrl_shift_end_del'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&soft_off'
