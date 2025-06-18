@@ -91,12 +91,12 @@
                 <&macro_release &kp LCTRL>;
         };
 
-        win_z_4: win_z_4 {
+win_z_4: win_z_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings = <&kp LG(Z) &kp N4>;
+            bindings = <&kp LG(Z) &kp N4 &kp ENTER>;
         };
 
         win_z_5: win_z_5 {
@@ -104,7 +104,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings = <&kp LG(Z) &kp N5>;
+            bindings = <&kp LG(Z) &kp N5 &kp ENTER>;
         };
 
         win_z_6: win_z_6 {
@@ -112,7 +112,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings = <&kp LG(Z) &kp N6>;
+            bindings = <&kp LG(Z) &kp N6 &kp ENTER>;
         };
 
         win_z_7: win_z_7 {
@@ -120,7 +120,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings = <&kp LG(Z) &kp N7>;
+            bindings = <&kp LG(Z) &kp N7 &kp ENTER>;
         };
 
         win_z_8: win_z_8 {
@@ -128,7 +128,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings = <&kp LG(Z) &kp N8>;
+            bindings = <&kp LG(Z) &kp N8 &kp ENTER>;
         };
 
 
