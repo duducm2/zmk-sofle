@@ -177,8 +177,8 @@ layers:
   - Ctl+Alt+V
   - Ctl+Alt+B
   - $$mdi:skip-next$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&shift_home_del'
+  - '&shift_end_del'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&soft_off'
