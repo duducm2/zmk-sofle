@@ -151,12 +151,12 @@ layers:
   - '&ctrl_five_rights'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - Ctl+PG UP
-  - Ctl+PG DN
-  - Ctl+Sft+PG UP
-  - Ctl+Sft+PG DN
   - Sft+HOME
   - Sft+END
+  - '&shift_home_del'
+  - '&shift_end_del'
+  - Ctl+PG UP
+  - Ctl+PG DN
   - {t: '$$mdi:transfer$$', type: trans}
   - '&five_lefts'
   - '&five_downs'
@@ -164,12 +164,12 @@ layers:
   - Ctl+Sft+V
   - {t: '$$mdi:transfer$$', type: trans}
   - PREVIOUS
-  - '&win_z_4'
-  - '&win_z_5'
-  - '&win_z_6'
-  - '&win_z_7'
-  - '&win_z_8'
-  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Sft+PG UP
+  - Ctl+Sft+PG DN
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -177,12 +177,12 @@ layers:
   - Ctl+Alt+V
   - Ctl+Alt+B
   - $$mdi:skip-next$$
-  - '&shift_home_del'
-  - '&shift_end_del'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&soft_off'
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -192,9 +192,9 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {type: held}
   - OUT BLE
-  - '&studio_unlock'
+  - $$mdi:bluetooth-off$$
   - OUT USB
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - '&ctrl_a_del'
   '3':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
