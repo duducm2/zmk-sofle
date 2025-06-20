@@ -129,7 +129,7 @@ layers:
   - {t: Sft+', s: Sft+"}
   - {t: 'Sft+[', s: 'Sft+{'}
   - \
-  - Alt+Sft+W
+  - Alt+Sft+S
   '2':
   - Alt+F4
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
