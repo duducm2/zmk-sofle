@@ -82,9 +82,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&five_ups'
-  - '&ctrl_five_lefts'
-  - '&ctrl_five_rights'
+  - '&win_z_4'
+  - '&win_z_5'
+  - '&win_z_6'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
   - HOME
@@ -92,12 +92,12 @@ layers:
   - {t: ']', s: '}'}
   - {t: '-', s: _}
   - {t: '=', s: +}
+  - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&five_lefts'
-  - '&five_downs'
-  - '&five_rights'
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&win_z_7'
+  - '&win_z_8'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
   - END
@@ -105,12 +105,12 @@ layers:
   - {t: \, s: '|'}
   - {t: Sft+=, s: Sft++}
   - {t: Sft+-, s: Sft+_}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - '&soft_off'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - 'Gui+L '
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '~'
   - {t: '`', s: '~'}
