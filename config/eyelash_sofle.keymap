@@ -189,7 +189,7 @@ win_z_4: win_z_4 {
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp LA(LS(Q))
 &kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp LG(LA(LS(N3)))    &kp LA(LS(W))
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp  LA( SEMI )    &kp ENTER
-&kp C_PLAY_PAUSE  &kp LCTRL  &LEFT_GUI  &kp LEFT_ALT  &kp SPACE   &mo 1    &kp ENTER        &mo 2  &kp LG( LA( LEFT_SHIFT ) )  &kp PRINTSCREEN      &kp K_CONTEXT_MENU  &kp DELETE
+&kp C_PLAY_PAUSE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE   &mo 1    &kp ENTER        &mo 2  &kp LG( LA( LEFT_SHIFT ) )  &kp PRINTSCREEN      &kp K_CONTEXT_MENU  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -202,7 +202,7 @@ win_z_4: win_z_4 {
 &trans      &trans        &trans       &win_z_4        &win_z_5        &win_z_6           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &kp LA(LS(S))      &kp FSLH   &kp SEMI         &kp LC(LA(W))
 &bootloader      &trans        &trans          &trans           &win_z_7           &win_z_8           &mmv MOVE_LEFT   &kp PG_DN        &kp END         &trans    &kp MINUS  &kp EQUAL  &kp APOS
 &sys_reset      &soft_off  &trans  &trans  &trans  &kp LG( L )    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
-&trans  &trans           &trans          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LEFT_GUI
+&trans  &trans           &trans          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &trans
             >;
 
             display-name = "layer1";
