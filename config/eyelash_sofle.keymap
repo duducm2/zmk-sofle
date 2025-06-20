@@ -190,7 +190,7 @@ win_z_4: win_z_4 {
 &kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp LG(LA(LS(N7)))    &kp LA(LS(W))
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp LG( LA( LS( N0 ) ) )    &kp ENTER
 &kp C_PLAY_PAUSE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE   &mo 1    &kp ENTER        &mo 2  &kp LG( LA( LEFT_SHIFT ) )  &kp PRINTSCREEN      &kp K_CONTEXT_MENU  &kp DELETE
-            >;c
+            >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "LAYER0";
@@ -202,7 +202,7 @@ win_z_4: win_z_4 {
 &trans      &trans        &trans       &win_z_4        &win_z_5        &win_z_6           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
 &trans      &trans        &trans          &trans           &win_z_7           &win_z_8           &mmv MOVE_LEFT   &kp PG_DN        &kp END         &kp BSLH    &kp MINUS  &kp EQUAL  &kp APOS
 &kp LSHFT      &trans  &bootloader  &soft_off  &trans  &kp LG( L )    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
-&trans  &kp LCTRL           &sys_reset          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
+&kp LCTRL  &trans           &sys_reset          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
             >;
 
             display-name = "layer1";
