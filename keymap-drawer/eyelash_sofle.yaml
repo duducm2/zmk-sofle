@@ -55,7 +55,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - PLAY PAUSE
   - $$mdi:apple-keyboard-control$$
-  - '&LEFT_GUI'
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - layer1
@@ -129,7 +129,7 @@ layers:
   - {t: Sft+', s: Sft+"}
   - {t: 'Sft+[', s: 'Sft+{'}
   - \
-  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:transfer$$', type: trans}
   '2':
   - Alt+F4
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
