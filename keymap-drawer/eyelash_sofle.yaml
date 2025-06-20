@@ -38,7 +38,7 @@ layers:
   - J
   - K
   - L
-  - {t: Gui+Alt+Sft+3, s: Gui+Alt+Sft+#}
+  - {t: Gui+Alt+Sft+7, s: Gui+Alt+Sft+&}
   - Alt+Sft+W
   - $$mdi:apple-keyboard-shift$$
   - Z
