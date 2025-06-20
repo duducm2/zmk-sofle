@@ -51,7 +51,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - 'Alt+SEMI '
+  - 'Gui+LA( LS( 0 ) ) '
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - PLAY PAUSE
   - $$mdi:apple-keyboard-control$$
