@@ -92,7 +92,7 @@ layers:
   - {t: /, s: '?'}
   - {t: ;, s: ':'}
   - Ctl+Alt+W
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -105,9 +105,9 @@ layers:
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '''', s: '"'}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - '&soft_off'
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - 'Gui+L '
@@ -119,8 +119,8 @@ layers:
   - {t: Sft+-, s: Sft+_}
   - {t: '[', s: '{'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&soft_off'
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
