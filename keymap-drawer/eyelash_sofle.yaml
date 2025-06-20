@@ -108,7 +108,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&soft_off'
   - {t: '$$mdi:transfer$$', type: trans}
   - 'Gui+L '
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -119,7 +119,7 @@ layers:
   - {t: Sft+-, s: Sft+_}
   - {t: '[', s: '{'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&soft_off'
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
