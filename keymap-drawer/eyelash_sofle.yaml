@@ -88,7 +88,7 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PG UP
   - HOME
-  - Alt+Sft+S
+  - {t: ']', s: '}'}
   - {t: /, s: '?'}
   - {t: ;, s: ':'}
   - Ctl+Alt+W
@@ -101,7 +101,7 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
   - END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, s: '|'}
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '''', s: '"'}
@@ -129,7 +129,7 @@ layers:
   - {t: Sft+', s: Sft+"}
   - {t: 'Sft+[', s: 'Sft+{'}
   - \
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+Sft+W
   '2':
   - Alt+F4
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
