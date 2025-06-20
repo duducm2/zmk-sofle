@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: '[', s: '{'}
+  - Alt+Sft+W
   - $$mdi:apple-keyboard-caps$$
   - A
   - S
@@ -38,8 +38,8 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - {t: Gui+Alt+Sft+3, s: Gui+Alt+Sft+#}
+  - Alt+Sft+S
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -51,7 +51,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - 'Alt+SEMI '
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - PLAY PAUSE
   - $$mdi:apple-keyboard-control$$
@@ -60,9 +60,9 @@ layers:
   - $$mdi:keyboard-space$$
   - layer1
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - '2'
   - 'Gui+LA( LEFT SHIFT ) '
   - PRINTSCREEN
-  - '2'
   - CONTEXT MENU
   - $$mdi:backspace-reverse-outline$$
   layer1:
@@ -190,9 +190,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - OUT BLE
-  - {t: '&studio_unlock', type: held}
+  - '&studio_unlock'
   - OUT USB
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   '3':
