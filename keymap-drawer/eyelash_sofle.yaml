@@ -135,8 +135,8 @@ layers:
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - Gui+HOME
+  - Gui+Sft+E
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Ctl+Sft+HOME
   - Ctl+Sft+END
@@ -145,11 +145,11 @@ layers:
   - Ctl+HOME
   - Ctl+END
   - {t: '$$mdi:transfer$$', type: trans}
-  - Alt+Sft+Z
-  - Alt+Sft+A
-  - Alt+Sft+S
-  - Alt+Sft+W
-  - Alt+Sft+Q
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&five_ups'
+  - '&ctrl_five_lefts'
+  - '&ctrl_five_rights'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Ctl+PG UP
   - Ctl+PG DN
@@ -158,11 +158,11 @@ layers:
   - Sft+HOME
   - Sft+END
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+Sft+E
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&ctrl_a_del'
+  - '&five_lefts'
+  - '&five_downs'
+  - '&five_rights'
   - Ctl+Sft+V
-  - Gui+HOME
+  - {t: '$$mdi:transfer$$', type: trans}
   - PREVIOUS
   - '&win_z_4'
   - '&win_z_5'
@@ -183,7 +183,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&soft_off'
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
