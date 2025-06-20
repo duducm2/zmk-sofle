@@ -118,8 +118,8 @@ layers:
   - {t: Sft+=, s: Sft++}
   - {t: Sft+-, s: Sft+_}
   - {t: '[', s: '{'}
-  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
