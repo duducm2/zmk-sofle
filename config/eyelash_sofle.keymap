@@ -68,7 +68,6 @@
             wait-ms = <30>;
             tap-ms = <30>;
             bindings =
-                <&macro_release &kp LCTRL>;
                 <&macro_press &kp LCTRL>,
                 <&macro_tap &kp RIGHT_ARROW>,
                 <&macro_tap &kp RIGHT_ARROW>,
@@ -84,7 +83,6 @@
             wait-ms = <30>;
             tap-ms = <30>;
             bindings =
-                <&macro_release &kp LCTRL>;
                 <&macro_press &kp LCTRL>,
                 <&macro_tap &kp LEFT_ARROW>,
                 <&macro_tap &kp LEFT_ARROW>,
@@ -185,15 +183,17 @@ win_z_4: win_z_4 {
         morph_left: morph_left {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&five_lefts>, <&ctrl_five_lefts>;
+            bindings = <&five_lefts>, <&five_lefts>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         morph_right: morph_right {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&five_rights>, <&ctrl_five_rights>;
+            bindings = <&five_rights>, <&five_rights>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
     };
 
