@@ -68,6 +68,7 @@
             wait-ms = <30>;
             tap-ms = <30>;
             bindings =
+                <&macro_release &kp LCTRL>;
                 <&macro_press &kp LCTRL>,
                 <&macro_tap &kp RIGHT_ARROW>,
                 <&macro_tap &kp RIGHT_ARROW>,
@@ -83,6 +84,7 @@
             wait-ms = <30>;
             tap-ms = <30>;
             bindings =
+                <&macro_release &kp LCTRL>;
                 <&macro_press &kp LCTRL>,
                 <&macro_tap &kp LEFT_ARROW>,
                 <&macro_tap &kp LEFT_ARROW>,
