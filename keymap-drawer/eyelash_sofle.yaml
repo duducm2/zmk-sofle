@@ -146,9 +146,9 @@ layers:
   - Ctl+END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&five_ups'
-  - '&ctrl_five_lefts'
-  - '&ctrl_five_rights'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '&five_downs', s: '$$mdi:skip-previous$$'}
   - Sft+HOME
@@ -158,9 +158,9 @@ layers:
   - Ctl+PG UP
   - Ctl+PG DN
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&five_lefts'
-  - '&five_downs'
-  - '&five_rights'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+V
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '&five_lefts', s: '&five_lefts'}
