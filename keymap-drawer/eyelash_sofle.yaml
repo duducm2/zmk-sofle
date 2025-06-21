@@ -163,7 +163,7 @@ layers:
   - '&five_rights'
   - Ctl+Sft+V
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '&five_lefts', s: '&ctrl_five_lefts'}
+  - {t: '&five_lefts', s: '&five_lefts'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -176,7 +176,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Alt+V
   - Ctl+Alt+B
-  - {t: '&five_rights', s: '&ctrl_five_rights'}
+  - {t: '&five_rights', s: '&five_rights'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
