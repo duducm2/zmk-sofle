@@ -195,6 +195,20 @@ win_z_4: win_z_4 {
             mods = <(MOD_LCTL | MOD_RCTL)>;
             keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
+
+        morph_up: morph_up {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&five_ups>, <&kp C_NEXT>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        morph_down: morph_down {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&five_downs>, <&kp C_PREV>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
     };
 
     scroll_encoder: scroll_encoder {
@@ -235,8 +249,8 @@ win_z_4: win_z_4 {
 
         layer_2 {
             bindings = <
-&kp LA(F4)  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &kp LG(HOME)  &kp LG(LS(E))    &kp F13     &kp LC(LS(HOME))  &kp LC(LS(END))  &ctrl_shift_home_del      &ctrl_shift_end_del     &kp LC(HOME)      &kp LC(END)
-&trans      &trans    &five_ups  &ctrl_five_lefts        &ctrl_five_rights        &trans          &kp F14   &kp LS(HOME)  &kp LS(END)  &shift_home_del      &shift_end_del    &kp LC(PG_UP)    &kp LC(PG_DN)
+&kp LA(F4)  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &kp LG(HOME)  &kp LG(LS(E))    &morph_up     &kp LC(LS(HOME))  &kp LC(LS(END))  &ctrl_shift_home_del      &ctrl_shift_end_del     &kp LC(HOME)      &kp LC(END)
+&trans      &trans    &five_ups  &ctrl_five_lefts        &ctrl_five_rights        &trans          &morph_down   &kp LS(HOME)  &kp LS(END)  &shift_home_del      &shift_end_del    &kp LC(PG_UP)    &kp LC(PG_DN)
 &trans     &five_lefts  &five_downs    &five_rights        &kp LC(LS(V))        &trans          &morph_left   &trans  &trans  &trans      &trans     &kp LC(LS(PG_UP))     &kp LC(LS(PG_DN))
 &trans     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &trans  &trans  &trans  &trans  &trans  &trans
 &kp C_MUTE     &kp LCTRL        &trans          &trans        &trans        &bt BT_CLR_ALL          &mkp LCLK        &trans  &out OUT_BLE  &bt BT_CLR      &out OUT_USB     &ctrl_a_del
