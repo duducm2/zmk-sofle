@@ -137,7 +137,7 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - Gui+HOME
   - Gui+Sft+E
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - F13
   - Ctl+Sft+HOME
   - Ctl+Sft+END
   - '&ctrl_shift_home_del'
@@ -150,7 +150,7 @@ layers:
   - '&ctrl_five_lefts'
   - '&ctrl_five_rights'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - F14
   - Sft+HOME
   - Sft+END
   - '&shift_home_del'
@@ -163,7 +163,7 @@ layers:
   - '&five_rights'
   - Ctl+Sft+V
   - {t: '$$mdi:transfer$$', type: trans}
-  - PREVIOUS
+  - F15
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -176,7 +176,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Alt+V
   - Ctl+Alt+B
-  - $$mdi:skip-next$$
+  - F16
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
