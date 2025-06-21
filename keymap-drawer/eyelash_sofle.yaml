@@ -137,7 +137,7 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - Gui+HOME
   - Gui+Sft+E
-  - F13
+  - {t: '&five_ups', s: '$$mdi:skip-next$$'}
   - Ctl+Sft+HOME
   - Ctl+Sft+END
   - '&ctrl_shift_home_del'
@@ -150,7 +150,7 @@ layers:
   - '&ctrl_five_lefts'
   - '&ctrl_five_rights'
   - {t: '$$mdi:transfer$$', type: trans}
-  - F14
+  - {t: '&five_downs', s: '$$mdi:skip-previous$$'}
   - Sft+HOME
   - Sft+END
   - '&shift_home_del'
