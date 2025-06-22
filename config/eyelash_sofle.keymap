@@ -209,25 +209,6 @@ win_z_4: win_z_4 {
             bindings = <&five_downs>, <&kp C_PREV>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
-
-        vol_encoder: vol_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOLUME_UP>, <&kp C_VOL_DN>;
-        };
-
-        spotify_encoder: spotify_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp F14>, <&kp F13>;
-        };
-
-        encoder_morph: encoder_morph {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&vol_encoder>, <&spotify_encoder>;
-            mods = <(MOD_LCTL | MOD_RCTL)>;
-        };
     };
 
     scroll_encoder: scroll_encoder {
@@ -246,7 +227,7 @@ win_z_4: win_z_4 {
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp LA(LS(Q))
 &kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp LG(LA(LS(N7)))    &kp LA(LS(W))
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp LG( LA( LS( X ) ) )    &kp ENTER
-&kp C_PLAY_PAUSE  &lt 3 LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE   &mo 1    &kp ENTER        &mo 2  &kp LG( LA( LEFT_SHIFT ) )  &kp PRINTSCREEN      &kp K_CONTEXT_MENU  &kp DELETE
+&kp C_PLAY_PAUSE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE   &mo 1    &kp ENTER        &mo 2  &kp LG( LA( LEFT_SHIFT ) )  &kp PRINTSCREEN      &kp K_CONTEXT_MENU  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -284,10 +265,8 @@ win_z_4: win_z_4 {
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp F14 F13>;
         };
     };
 };
