@@ -164,9 +164,9 @@ layers:
   - Ctl+Sft+V
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '&five_lefts', s: '&five_lefts'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&select_all_copy'
+  - '&select_all_cut'
+  - '&select_all_del'
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+PG UP
   - Ctl+Sft+PG DN
@@ -194,7 +194,7 @@ layers:
   - OUT BLE
   - $$mdi:bluetooth-off$$
   - OUT USB
-  - '&ctrl_a_del'
+  - {t: '$$mdi:transfer$$', type: trans}
   '3':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
