@@ -30,6 +30,9 @@
 
 / {
     macros {
+    };
+
+    behaviors {
         five_rights: five_rights {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -92,7 +95,7 @@
                 <&macro_release &kp LCTRL>;
         };
 
-win_z_4: win_z_4 {
+        win_z_4: win_z_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <300>;
@@ -165,28 +168,32 @@ win_z_4: win_z_4 {
         };
 
         select_all_copy: select_all_copy {
-            label = "SACPY"
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "SACPY";
             wait-ms = <20>;
             tap-ms = <20>;
             bindings = <&kp LC(A) &kp LC(C)>;
         };
 
         select_all_cut: select_all_cut {
-            label = "SAX"
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "SAX";
             wait-ms = <20>;
             tap-ms = <20>;
             bindings = <&kp LC(A) &kp LC(X)>;
         };
 
         select_all_del: select_all_del {
-            label = "SADEL"
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "SADEL";
             wait-ms = <20>;
             tap-ms = <20>;
             bindings = <&kp LC(A) &kp DELETE>;
         };
-    };
 
-    behaviors {
         /* Mod-morph versions of the 5× arrow macros.
          * No Ctrl held  → 5× LEFT/RIGHT
          * Ctrl held     → Ctrl+5× LEFT/RIGHT
