@@ -110,7 +110,7 @@ layers:
   - $$mdi:progress-download$$
   - '&soft_off'
   - {t: '$$mdi:transfer$$', type: trans}
-  - 'Gui+L '
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '~'
   - {t: '`', s: '~'}
@@ -149,7 +149,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Gui+., s: Gui+>}
   - {t: '&five_downs', s: '$$mdi:skip-previous$$'}
   - Sft+HOME
   - Sft+END
