@@ -145,8 +145,8 @@ layers:
   - Ctl+HOME
   - Ctl+END
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&prev_win'
+  - '&second_prev_win'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gui+., s: Gui+>}
