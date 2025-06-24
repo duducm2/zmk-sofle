@@ -194,46 +194,6 @@
             bindings = <&kp LC(A) &kp DELETE>;
         };
 
-        prev_win: prev_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            label = "PREV_WIN";
-            bindings = <&kp LA(TAB)>;
-        };
-
-        second_prev_win: second_prev_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            label = "SEC_PREV_WIN";
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp TAB>,
-                <&macro_tap &kp TAB>,
-                <&macro_release &kp LALT>;
-        };
-
-        prev_win: prev_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            label = "PREV_WIN";
-            bindings = <&kp LA(TAB)>;
-        };
-
-        second_prev_win: second_prev_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            label = "SEC_PREV_WIN";
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp TAB>,
-                <&macro_tap &kp TAB>,
-                <&macro_release &kp LALT>;
-        };
-
         /* Mod-morph versions of the 5× arrow macros.
          * No Ctrl held  → 5× LEFT/RIGHT
          * Ctrl held     → Ctrl+5× LEFT/RIGHT
@@ -267,6 +227,26 @@
             #binding-cells = <0>;
             bindings = <&five_downs>, <&kp C_PREV>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        prev_win: prev_win {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                label = "PREV_WIN";
+                bindings = <&kp LA(TAB)>;
+            };
+    
+        second_prev_win: second_prev_win {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                label = "SEC_PREV_WIN";
+                wait-ms = <30>;
+                tap-ms = <30>;
+                bindings =
+                    <&macro_press &kp LALT>,
+                    <&macro_tap &kp TAB>,
+                    <&macro_tap &kp TAB>,
+                    <&macro_release &kp LALT>;
         };
     };
 
