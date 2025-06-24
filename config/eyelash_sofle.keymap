@@ -296,7 +296,7 @@
         layer_1 {
             bindings = <
 &kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
-&trans      &trans        &trans       &win_z_4        &win_z_5        &win_z_6           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
+&trans      &prev_win        &second_prev_win       &win_z_4        &win_z_5        &win_z_6           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
 &trans      &trans        &trans          &trans           &win_z_7           &win_z_8           &mmv MOVE_LEFT   &kp PG_DN        &kp END         &kp BSLH    &kp MINUS  &kp EQUAL  &kp APOS
 &kp LSHFT      &trans  &bootloader  &soft_off  &trans  &trans    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
 &kp C_MUTE  &kp LCTRL           &sys_reset          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
@@ -309,7 +309,7 @@
         layer_2 {
             bindings = <
 &kp LA(F4)  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &kp LG(HOME)  &kp LG(LS(E))    &morph_up     &kp LC(LS(HOME))  &kp LC(LS(END))  &ctrl_shift_home_del      &ctrl_shift_end_del     &kp LC(HOME)      &kp LC(END)
-&trans      &prev_win    &second_prev_win  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LS(HOME)  &kp LS(END)  &shift_home_del      &shift_end_del    &kp LC(PG_UP)    &kp LC(PG_DN)
+&trans      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LS(HOME)  &kp LS(END)  &shift_home_del      &shift_end_del    &kp LC(PG_UP)    &kp LC(PG_DN)
 &trans     &trans  &trans    &trans        &kp LC(LS(V))        &trans          &morph_left   &select_all_copy  &select_all_cut  &trans      &trans     &kp LC(LS(PG_UP))     &kp LC(LS(PG_DN))
 &trans     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &trans  &trans  &trans  &trans  &trans  &trans
 &kp C_MUTE     &kp LCTRL        &trans          &trans        &trans        &bt BT_CLR_ALL          &mkp LCLK        &trans  &out OUT_BLE  &bt BT_CLR      &out OUT_USB     &select_all_del
