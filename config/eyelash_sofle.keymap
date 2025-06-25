@@ -248,6 +248,47 @@
                     <&macro_tap &kp TAB>,
                     <&macro_release &kp LALT>;
         };
+
+        /* --- F13 + letter macros for window move hotkeys --- */
+        f13_a: f13_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "F13_A";
+            bindings =
+                <&macro_press &kp F13>,
+                <&macro_tap &kp A>,
+                <&macro_release &kp F13>;
+        };
+
+        f13_s: f13_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "F13_S";
+            bindings =
+                <&macro_press &kp F13>,
+                <&macro_tap &kp S>,
+                <&macro_release &kp F13>;
+        };
+
+        f13_d: f13_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "F13_D";
+            bindings =
+                <&macro_press &kp F13>,
+                <&macro_tap &kp D>,
+                <&macro_release &kp F13>;
+        };
+
+        f13_f: f13_f {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "F13_F";
+            bindings =
+                <&macro_press &kp F13>,
+                <&macro_tap &kp F>,
+                <&macro_release &kp F13>;
+        };
     };
 
     scroll_encoder: scroll_encoder {
@@ -278,8 +319,8 @@
 &kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
 &trans      &prev_win        &second_prev_win       &win_z_4        &win_z_5        &win_z_6           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
 &trans      &trans        &trans          &trans           &win_z_7           &win_z_8           &mmv MOVE_LEFT   &kp PG_DN        &kp END         &kp BSLH    &kp MINUS  &kp EQUAL  &kp APOS
-&kp LSHFT      &trans  &bootloader  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
-&kp C_MUTE  &kp LCTRL           &sys_reset          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
+&kp LSHFT      &f13_a  &f13_s  &f13_d  &f13_f  &trans    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
+&kp C_MUTE  &kp LCTRL           &trans          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
             >;
 
             display-name = "layer1";
@@ -292,7 +333,7 @@
 &trans      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LS(HOME)  &kp LS(END)  &shift_home_del      &shift_end_del    &kp LC(PG_UP)    &kp LC(PG_DN)
 &trans     &trans  &trans    &trans        &kp LC(LS(V))        &trans          &morph_left   &select_all_copy  &select_all_cut  &trans      &trans     &kp LC(LS(PG_UP))     &kp LC(LS(PG_DN))
 &trans     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &trans  &trans  &trans  &trans  &trans  &trans
-&kp C_MUTE     &kp LCTRL        &trans          &trans        &trans        &bt BT_CLR_ALL          &mkp LCLK        &trans  &out OUT_BLE  &bt BT_CLR      &out OUT_USB     &select_all_del
+&kp C_MUTE     &kp LCTRL        &trans          &trans        &trans        &bt BT_CLR_ALL          &mkp LCLK        &trans  &out OUT_BLE  &trans      &out OUT_USB     &select_all_del
             >;
 
             sensor-bindings = <&scroll_encoder>;
