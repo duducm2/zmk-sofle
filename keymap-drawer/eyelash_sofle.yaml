@@ -106,10 +106,10 @@ layers:
   - {t: '=', s: +}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&f13_a'
+  - '&f13_s'
+  - '&f13_d'
+  - '&f13_f'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '~'
@@ -120,7 +120,7 @@ layers:
   - {t: '[', s: '{'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -192,7 +192,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {type: held}
   - OUT BLE
-  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - '&select_all_del'
   '3':
