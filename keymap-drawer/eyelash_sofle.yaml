@@ -191,9 +191,9 @@ layers:
   - BT CLR ALL
   - $$mdi:mouse-left-click-outline$$
   - {type: held}
-  - OUT BLE
   - {t: '$$mdi:transfer$$', type: trans}
-  - OUT USB
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&select_all_del'
   '3':
   - {t: '$$mdi:transfer$$', type: trans}
