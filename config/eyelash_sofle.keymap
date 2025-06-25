@@ -249,50 +249,48 @@
                     <&macro_release &kp LALT>;
         };
 
-        hyper_press: hyper_press {
+        meh_press: meh_press {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LCTRL
                         &macro_press &kp LALT
-                        &macro_press &kp LSHIFT
-                        &macro_press &kp LGUI>;
+                        &macro_press &kp LSHIFT>;
         };
 
-        hyper_release: hyper_release {
+        meh_release: meh_release {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_release &kp LCTRL
                         &macro_release &kp LALT
-                        &macro_release &kp LSHIFT
-                        &macro_release &kp LGUI>;
+                        &macro_release &kp LSHIFT>;
         };
 
-        hyper_a: hyper_a {
+        meh_a: meh_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            label = "HYPER_A";
-            bindings = <&hyper_press &macro_tap &kp A &hyper_release>;
+            label = "MEH_A";
+            bindings = <&meh_press &macro_tap &kp A &meh_release>;
         };
 
-        hyper_s: hyper_s {
+        meh_s: meh_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            label = "HYPER_S";
-            bindings = <&hyper_press &macro_tap &kp S &hyper_release>;
+            label = "MEH_S";
+            bindings = <&meh_press &macro_tap &kp S &meh_release>;
         };
 
-        hyper_d: hyper_d {
+        meh_d: meh_d {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            label = "HYPER_D";
-            bindings = <&hyper_press &macro_tap &kp D &hyper_release>;
+            label = "MEH_D";
+            bindings = <&meh_press &macro_tap &kp D &meh_release>;
         };
 
-        hyper_f: hyper_f {
+        meh_f: meh_f {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            label = "HYPER_F";
-            bindings = <&hyper_press &macro_tap &kp F &hyper_release>;
+            label = "MEH_F";
+            bindings = <&meh_press &macro_tap &kp F &meh_release>;
         };
     };
 
@@ -324,7 +322,7 @@
 &kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
 &trans      &prev_win        &second_prev_win       &win_z_4        &win_z_5        &win_z_6           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
 &trans      &trans        &trans          &trans           &win_z_7           &win_z_8           &mmv MOVE_LEFT   &kp PG_DN        &kp END         &kp BSLH    &kp MINUS  &kp EQUAL  &kp APOS
-&kp LSHFT      &hyper_a  &hyper_s  &hyper_d  &hyper_f  &trans    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
+&kp LSHFT      &meh_a  &meh_s  &meh_d  &meh_f  &trans    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
 &kp C_MUTE  &kp LCTRL           &trans          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
             >;
 
