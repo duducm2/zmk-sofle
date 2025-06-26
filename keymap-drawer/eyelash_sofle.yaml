@@ -80,8 +80,8 @@ layers:
   - F10
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&prev_win'
-  - '&second_prev_win'
+  - '&meh_b'
+  - '&meh_c'
   - '&win_z_4'
   - '&win_z_5'
   - '&win_z_6'
