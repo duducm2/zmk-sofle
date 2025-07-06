@@ -92,10 +92,10 @@ layers:
   - {t: /, s: '?'}
   - {t: ;, s: ':'}
   - Ctl+Alt+W
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&meh_q'
+  - '&meh_w'
+  - '&meh_e'
+  - '&meh_r'
   - '&win_z_7'
   - '&win_z_8'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
