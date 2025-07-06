@@ -79,9 +79,9 @@ layers:
   - F9
   - F10
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
   - '&prev_win'
   - '&second_prev_win'
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&win_z_4'
   - '&win_z_5'
   - '&win_z_6'
