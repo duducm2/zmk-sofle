@@ -325,7 +325,7 @@
         td_n7_l: tap_dance_n7_l {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&kp LG(LA(LS(N7)))>, <&kp LG(LA(LS(L)))>;
         };
 
