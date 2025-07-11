@@ -444,7 +444,7 @@
         // Hold-tap macro versions
         ht_cshome_del: hold_tap_cshome_del {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&ctrl_shift_home_del>, <&shift_home_del>;
@@ -452,7 +452,7 @@
 
         ht_csend_del: hold_tap_csend_del {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&ctrl_shift_end_del>, <&shift_end_del>;
@@ -497,7 +497,7 @@
 
         layer_2 {
             bindings = <
-&kp LA(F4)  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &kp LG(HOME)  &kp LG(LS(E))    &morph_up     &mt_cshome LC(LS(HOME)) LS(HOME)  &mt_csend LC(LS(END)) LS(END)  &ht_cshome_del  &ht_csend_del     &kp HOME      &kp END
+&kp LA(F4)  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &kp LG(HOME)  &kp LG(LS(E))    &morph_up     &mt_cshome LC(LS(HOME)) LS(HOME)  &mt_csend LC(LS(END)) LS(END)  &ht_cshome_del 0 0  &ht_csend_del 0 0     &kp HOME      &kp END
 &trans      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &trans  &trans  &trans      &trans    &kp LC(PG_UP)    &kp LC(PG_DN)
 &trans     &trans  &trans    &trans        &kp LC(LS(V))        &trans          &morph_left   &select_all_copy  &select_all_cut  &trans      &trans     &trans     &trans
 &trans     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &trans  &trans  &trans  &trans  &trans  &trans
