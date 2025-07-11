@@ -138,12 +138,12 @@ layers:
   - Gui+HOME
   - Gui+Sft+E
   - {t: '&five_ups', s: '$$mdi:skip-next$$'}
-  - Ctl+Sft+HOME
-  - Ctl+Sft+END
-  - '&ctrl_shift_home_del'
-  - '&ctrl_shift_end_del'
-  - Ctl+HOME
-  - Ctl+END
+  - Sft+HOME
+  - Sft+END
+  - '&shift_home_del'
+  - '&shift_end_del'
+  - HOME
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -151,10 +151,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gui+., s: Gui+>}
   - {t: '&five_downs', s: '$$mdi:skip-previous$$'}
-  - Sft+HOME
-  - Sft+END
-  - '&shift_home_del'
-  - '&shift_end_del'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+PG UP
   - Ctl+PG DN
   - {t: '$$mdi:transfer$$', type: trans}
@@ -168,8 +168,8 @@ layers:
   - '&select_all_cut'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Sft+PG UP
-  - Ctl+Sft+PG DN
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
