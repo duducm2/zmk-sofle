@@ -138,10 +138,10 @@ layers:
   - Gui+HOME
   - Gui+Sft+E
   - {t: '&five_ups', s: '$$mdi:skip-next$$'}
-  - Sft+HOME
-  - Sft+END
-  - '&shift_home_del'
-  - '&shift_end_del'
+  - {t: Sft+HOME, h: Ctl+Sft+HOME}
+  - {t: Sft+END, h: Ctl+Sft+END}
+  - '&ht_cshome_del'
+  - '&ht_csend_del'
   - HOME
   - END
   - {t: '$$mdi:transfer$$', type: trans}
