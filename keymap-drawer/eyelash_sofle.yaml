@@ -63,7 +63,7 @@ layers:
   - '2'
   - 'Gui+LA( LEFT SHIFT ) '
   - PRINTSCREEN
-  - CONTEXT MENU
+  - {t: '&td_ctx_sa_cut', h: Gui+HOME}
   - $$mdi:backspace-reverse-outline$$
   layer1:
   - F11
