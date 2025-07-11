@@ -337,6 +337,23 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&td_n7_l>;
         };
+
+        // Tap-dance: 1× ESC, 2× Win+Alt+Shift+6
+        td_esc_was6: tap_dance_esc_was6 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;   // More relaxed double-tap window
+            bindings = <&kp ESC>, <&kp LG(LA(LS(N6)))>;
+        };
+
+        // Hold-tap: hold = Alt+F4, tap = tap-dance above
+        ht_altf4_td_esc: hold_tap_altf4_td_esc {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;          // 1st param → hold, 2nd param → tap (dummy 0)
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;       // Normal hold threshold
+            bindings = <&kp>, <&td_esc_was6>;
+        };
     };
 
     scroll_encoder: scroll_encoder {
@@ -351,7 +368,7 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
+&ht_altf4_td_esc LA(F4) 0     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp LA(LS(Q))
 &kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &ht_n0_td LG(LA(LS(N0))) 0    &kp LA(LS(W))
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp LG( LA( LS( X ) ) )    &kp ENTER
