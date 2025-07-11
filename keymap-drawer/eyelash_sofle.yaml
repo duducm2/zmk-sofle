@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '&td_n7_l', h: Gui+Alt+Sft+0}
-  - Alt+Sft+W
+  - {t: '&td_as_qs', h: Alt+Sft+W}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
