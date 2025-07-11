@@ -155,8 +155,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+PG UP
-  - Ctl+PG DN
+  - {t: Ctl+PG UP, h: Ctl+Sft+PG UP}
+  - {t: Ctl+PG DN, h: Ctl+Sft+PG DN}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
