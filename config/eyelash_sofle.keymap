@@ -462,9 +462,9 @@
 
         layer_2 {
             bindings = <
-&kp LA(F4)  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &kp LG(HOME)  &kp LG(LS(E))    &morph_up     &kp LC(LS(HOME))  &kp LC(LS(END))  &ctrl_shift_home_del      &ctrl_shift_end_del     &kp LC(HOME)      &kp LC(END)
-&trans      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LS(HOME)  &kp LS(END)  &shift_home_del      &shift_end_del    &kp LC(PG_UP)    &kp LC(PG_DN)
-&trans     &trans  &trans    &trans        &kp LC(LS(V))        &trans          &morph_left   &select_all_copy  &select_all_cut  &trans      &trans     &kp LC(LS(PG_UP))     &kp LC(LS(PG_DN))
+&kp LA(F4)  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &kp LG(HOME)  &kp LG(LS(E))    &morph_up     &kp LS(HOME)  &kp LS(END)  &shift_home_del      &shift_end_del     &kp HOME      &kp END
+&trans      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &trans  &trans  &trans      &trans    &kp LC(PG_UP)    &kp LC(PG_DN)
+&trans     &trans  &trans    &trans        &kp LC(LS(V))        &trans          &morph_left   &select_all_copy  &select_all_cut  &trans      &trans     &trans     &trans
 &trans     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &trans  &trans  &trans  &trans  &trans  &trans
 &kp C_MUTE     &kp LCTRL        &trans          &trans        &trans        &bt BT_CLR_ALL          &mkp LCLK        &trans  &trans  &trans      &trans     &select_all_del
             >;
