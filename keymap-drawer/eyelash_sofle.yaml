@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - Alt+Sft+Q
+  - {t: '&td_as_qs', h: Alt+Sft+W}
   - $$mdi:apple-keyboard-caps$$
   - A
   - S
@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '&td_n7_l', h: Gui+Alt+Sft+0}
-  - {t: '&td_as_qs', h: Alt+Sft+W}
+  - '&td_prev_sw'
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
