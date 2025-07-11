@@ -507,7 +507,7 @@
         layer_2 {
             bindings = <
 &kp LA(F4)  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &kp LG(HOME)  &kp LG(LS(E))    &morph_up     &mt_cshome LC(LS(HOME)) LS(HOME)  &mt_csend LC(LS(END)) LS(END)  &ht_cshome_del 0 0  &ht_csend_del 0 0     &mt_ctrl LC(HOME) HOME      &mt_ctrl LC(END) END
-&trans      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &trans  &trans  &trans      &trans    &mt_ctrl LC(LS(PG_UP)) LC(PG_UP)    &mt_ctrl LC(LS(PG_DN)) LC(PG_DN)
+&trans      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LA(PRINTSCREEN)  &trans  &trans      &trans    &mt_ctrl LC(LS(PG_UP)) LC(PG_UP)    &mt_ctrl LC(LS(PG_DN)) LC(PG_DN)
 &trans     &trans  &trans    &trans        &kp LC(LS(V))        &trans          &morph_left   &select_all_copy  &select_all_cut  &trans      &trans     &trans     &trans
 &trans     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &trans  &trans  &trans  &trans  &trans  &trans
 &kp C_MUTE     &kp LCTRL        &trans          &trans        &trans        &bt BT_CLR_ALL          &mkp LCLK        &trans  &trans  &trans      &trans     &select_all_del
