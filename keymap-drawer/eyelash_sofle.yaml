@@ -140,10 +140,10 @@ layers:
   - {t: '&five_ups', s: '$$mdi:skip-next$$'}
   - {t: Sft+HOME, h: Ctl+Sft+HOME}
   - {t: Sft+END, h: Ctl+Sft+END}
-  - {t: '&shift_home_del', h: '&ctrl_shift_home_del'}
-  - {t: '&shift_end_del', h: '&ctrl_shift_end_del'}
-  - HOME
-  - END
+  - '&ht_cshome_del'
+  - '&ht_csend_del'
+  - {t: HOME, h: Ctl+HOME}
+  - {t: END, h: Ctl+END}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
