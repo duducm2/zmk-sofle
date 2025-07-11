@@ -151,7 +151,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gui+., s: Gui+>}
   - {t: '&five_downs', s: '$$mdi:skip-previous$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
