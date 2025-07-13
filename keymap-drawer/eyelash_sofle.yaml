@@ -131,7 +131,7 @@ layers:
   - \
   - Alt+Sft+S
   '2':
-  - Alt+F4
+  - {t: Alt+F4, h: Gui+Alt+Sft+6}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
