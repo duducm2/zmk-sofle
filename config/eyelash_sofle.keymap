@@ -338,23 +338,6 @@
             bindings = <&kp>, <&td_n7_l>;
         };
 
-        // Tap-dance: 1× ESC, 2× Win+Alt+Shift+6
-        td_esc_was6: tap_dance_esc_was6 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;   // More relaxed double-tap window
-            bindings = <&kp ESC>, <&kp LG(LA(LS(N6)))>;
-        };
-
-        // Hold-tap: hold = Alt+F4, tap = tap-dance above
-        ht_altf4_td_esc: hold_tap_altf4_td_esc {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;          // 1st param → hold, 2nd param → tap (dummy 0)
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;       // Normal hold threshold
-            bindings = <&kp>, <&td_esc_was6>;
-        };
-
         // Tap-dance: 1× Alt+Shift+Q, 2× Alt+Shift+S
         td_as_qs: tap_dance_as_qs {
             compatible = "zmk,behavior-tap-dance";
