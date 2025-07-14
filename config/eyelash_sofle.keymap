@@ -458,6 +458,21 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;   // keys supplied inline in keymap
         };
+
+        force_esc: force_esc_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms  = <0>;
+            /* Release the common modifiers that could get stuck, then send Esc */
+            bindings = <
+                &macro_release &kp LGUI
+                &macro_release &kp LALT
+                &macro_release &kp LSHIFT
+                &macro_release &kp LCTRL
+                &kp ESC
+            >;
+        };
     };
 
     scroll_encoder: scroll_encoder {
@@ -472,7 +487,7 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
+&force_esc     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &ht_as_w_td LA(LS(S)) 0
 &kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &ht_n0_td LG(LA(LS(N0))) 0    &ht_wz4_prev_td 0 0
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp LG( LA( LS( X ) ) )    &kp ENTER
@@ -502,7 +517,7 @@
 &trans      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LA(PRINTSCREEN)  &trans  &trans      &trans    &mt_ctrl LC(LS(PG_UP)) LC(PG_UP)    &mt_ctrl LC(LS(PG_DN)) LC(PG_DN)
 &trans     &trans  &trans    &trans        &kp LC(LS(V))        &trans          &morph_left   &select_all_copy  &select_all_cut  &trans      &trans     &trans     &trans
 &trans     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &ht_was6_altf4 LG(LA(LS(N6))) LA(F4)  &trans  &trans  &trans  &trans  &trans
-&kp C_MUTE     &kp LCTRL        &trans          &trans        &bt BT_CLR_ALL        &BT_CLR          &mkp LCLK        &trans  &trans  &trans      &trans     &select_all_del
+&kp C_MUTE     &kp LCTRL        &trans          &trans        &bt BT_CLR_ALL        &bt BT_CLR          &mkp LCLK        &trans  &trans  &trans      &trans     &select_all_del
             >;
 
             sensor-bindings = <&scroll_encoder>;
