@@ -338,7 +338,7 @@
             bindings = <&kp>, <&td_n7_l>;
         };
 
-        // Tap-dance: 1× Alt+Shift+Q, 2× Alt+Shift+S
+        /// Tap-dance: 1× Alt+Shift+Q, 2× Alt+Shift+S
         td_as_qs: tap_dance_as_qs {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
