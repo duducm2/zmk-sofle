@@ -131,7 +131,7 @@ layers:
   - \
   - Alt+Sft+S
   '2':
-  - {t: Alt+F4, h: Gui+Alt+Sft+6}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -177,7 +177,7 @@ layers:
   - Ctl+Alt+V
   - Ctl+Alt+B
   - {t: '&five_rights', s: '&five_rights'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Alt+F4, h: Gui+Alt+Sft+6}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
