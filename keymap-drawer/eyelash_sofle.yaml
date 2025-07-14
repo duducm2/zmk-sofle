@@ -187,8 +187,8 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
+  - '&BT_CLR'
   - $$mdi:mouse-left-click-outline$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
