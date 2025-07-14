@@ -502,7 +502,7 @@
 &trans      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LA(PRINTSCREEN)  &trans  &trans      &trans    &mt_ctrl LC(LS(PG_UP)) LC(PG_UP)    &mt_ctrl LC(LS(PG_DN)) LC(PG_DN)
 &trans     &trans  &trans    &trans        &kp LC(LS(V))        &trans          &morph_left   &select_all_copy  &select_all_cut  &trans      &trans     &trans     &trans
 &trans     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &ht_was6_altf4 LG(LA(LS(N6))) LA(F4)  &trans  &trans  &trans  &trans  &trans
-&kp C_MUTE     &kp LCTRL        &trans          &trans        &trans        &bt BT_CLR_ALL          &mkp LCLK        &trans  &trans  &trans      &trans     &select_all_del
+&kp C_MUTE     &kp LCTRL        &trans          &trans        &bt BT_CLR_ALL        &BT_CLR          &mkp LCLK        &trans  &trans  &trans      &trans     &select_all_del
             >;
 
             sensor-bindings = <&scroll_encoder>;
