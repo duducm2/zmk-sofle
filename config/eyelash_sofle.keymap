@@ -100,7 +100,7 @@
             #binding-cells = <0>;
             wait-ms = <300>;
             tap-ms = <30>;
-            bindings = <&kp ESC &kp LG(Z) &kp N4 &kp ENTER>;
+            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 300 &kp N4 &kp ENTER>;
         };
 
         win_z_5: win_z_5 {
