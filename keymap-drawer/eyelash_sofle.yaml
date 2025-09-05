@@ -181,8 +181,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&LG(LA(LS(N4)))'
-  - '&LG(LA(LS(N5)))'
+  - {t: Gui+Alt+Sft+4, s: Gui+Alt+Sft+$}
+  - {t: Gui+Alt+Sft+5, s: Gui+Alt+Sft+%}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
