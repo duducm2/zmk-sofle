@@ -389,12 +389,12 @@
             bindings = <&kp>, <&td_ctx_sa_cut>;
         };
 
-        // Tap-dance: 1× PrintScreen, 2× Select-All-Copy
+        // Tap-dance: 1× Win+Alt+Shift+J, 2× Select-All-Copy
         td_ps_sa_copy: tap_dance_ps_sa_copy {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp PRINTSCREEN>, <&select_all_copy>;
+            bindings = <&kp LG(LA(LS(J)))>, <&select_all_copy>;
         };
 
         // Hold-tap: hold = LG(HOME), tap = td_ps_sa_copy
