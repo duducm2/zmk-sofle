@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
   - 'Gui+LA( LEFT SHIFT ) '
-  - {t: '&td_ps_sa_copy', h: Gui+HOME}
+  - {t: '&td_ps_sa_copy', h: '&lg_home_alt_tab_ctrl_home'}
   - {t: '&td_ctx_sa_cut', h: Gui+Sft+E}
   - $$mdi:backspace-reverse-outline$$
   layer1:
