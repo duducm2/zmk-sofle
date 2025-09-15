@@ -477,12 +477,12 @@
                 <&macro_release &kp LALT>;
         };
 
-        // Tap-dance: 1× Windows key, 2× Windows key
-        td_win_win: tap_dance_win_win {
+        // Tap-dance: 1× Windows key, 2× Windows + H
+        td_win_win_h: tap_dance_win_win_h {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp LEFT_GUI>, <&kp LEFT_GUI>;
+            bindings = <&kp LEFT_GUI>, <&kp LG(H)>;
         };
 
         // Hold-tap: hold = layer 2, tap = Windows tap-dance
@@ -491,7 +491,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&mo>, <&td_win_win>;
+            bindings = <&mo>, <&td_win_win_h>;
         };
 
     };
