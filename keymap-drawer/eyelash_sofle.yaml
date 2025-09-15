@@ -60,7 +60,7 @@ layers:
   - $$mdi:keyboard-space$$
   - layer1
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '2'
+  - {t: '&td_win_win', h: '2'}
   - 'Gui+LA( LEFT SHIFT ) '
   - {t: '&td_ps_sa_copy', h: '&lg_home_alt_tab_ctrl_home'}
   - {t: '&td_ctx_sa_cut', h: Gui+Sft+E}
