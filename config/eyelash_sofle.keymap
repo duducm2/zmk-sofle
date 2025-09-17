@@ -477,12 +477,12 @@
                 <&macro_release &kp LALT>;
         };
 
-        // Tap-dance: 1× trans (no action), 2× Windows + H
+        // Tap-dance: 1× Windows + H, 2× Windows + H (same action for both)
         td_win_win_h: tap_dance_win_win_h {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&trans>, <&kp LG(H)>;
+            bindings = <&kp LG(H)>, <&kp LG(H)>;
         };
 
         // Hold-tap: hold = layer 2, tap = Windows tap-dance
