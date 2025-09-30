@@ -135,6 +135,22 @@
             bindings = <&kp ESC &kp LG(Z) &macro_wait_time 600 &kp N8 &kp ENTER>;
         };
 
+        win_alt_shift_comma: win_alt_shift_comma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp LG(LA(LS(COMMA)))>;
+        };
+
+        win_alt_shift_n: win_alt_shift_n {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp LG(LA(LS(N)))>;
+        };
+
         ctrl_shift_home_del: ctrl_shift_home_del {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -363,6 +379,14 @@
             bindings = <&prev_win>, <&second_prev_win>;
         };
 
+        // Tap-dance: 1× win_alt_shift_comma, 2× win_alt_shift_n
+        td_was_comma_n: tap_dance_was_comma_n {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&win_alt_shift_comma>, <&win_alt_shift_n>;
+        };
+
         // Hold-tap: hold = win_z_4, tap = prev/second_prev tap-dance
         ht_wz4_prev_td: hold_tap_wz4_prev {
             compatible = "zmk,behavior-hold-tap";
@@ -370,6 +394,15 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&win_z_4>, <&td_prev_sw>;
+        };
+
+        // Hold-tap: hold = win_z_4, tap = was_comma/n tap-dance
+        ht_wz4_was_td: hold_tap_wz4_was {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&win_z_4>, <&td_was_comma_n>;
         };
 
         // Tap-dance: 1× context-menu, 2× select-all-cut
@@ -510,7 +543,7 @@
             bindings = <
 &kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &ht_as_w_td LA(LS(S)) 0
-&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &ht_n0_td LG(LA(LS(N0))) 0    &ht_wz4_prev_td 0 0
+&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &ht_n0_td LG(LA(LS(N0))) 0    &ht_wz4_was_td 0 0
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp LG( LA( LS( X ) ) )    &kp ENTER
 &kp C_PLAY_PAUSE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE   &mo 1    &kp ENTER        &ht_mo2_win_td 2 0  &kp LG( LA( LEFT_SHIFT ) )  &ht_lgshfte_ps_td 0 0      &ht_lghome_ctx_td LG(LS(E)) 0  &kp DELETE
             >;
