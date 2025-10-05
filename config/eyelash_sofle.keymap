@@ -527,12 +527,12 @@
             bindings = <&mo>, <&td_win_win_h>;
         };
 
-        // Tap-dance: 1× maximize window (Win+Up), 2× minimize window (Win+Down)
+        // Tap-dance: 1× minimize window, 2× maximize window
         td_maximize_minimize: tap_dance_maximize_minimize {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp LG(LA(LS(M)))>, <&kp LG(LA(LS(N6)))>;
+            bindings = <&kp LG(LA(LS(N6)))>, <&kp LG(LA(LS(M)))>;
         };
 
         // Hold-tap: hold = close window (Alt+F4), tap = maximize/minimize tap-dance
