@@ -532,7 +532,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp LG(UP_ARROW)>, <&kp LG(DOWN_ARROW)>;
+            bindings = <&kp LG(LA(LS(M)))>, <&kp LG(LA(LS(N6)))>;
         };
 
         // Hold-tap: hold = close window (Alt+F4), tap = maximize/minimize tap-dance
