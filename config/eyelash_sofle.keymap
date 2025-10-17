@@ -550,8 +550,16 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT
-                        &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT>;
+            bindings = <&macro_tap &mmv MOVE_RIGHT>
+                       <&macro_tap &mmv MOVE_RIGHT>
+                       <&macro_tap &mmv MOVE_RIGHT>
+                       <&macro_tap &mmv MOVE_RIGHT>
+                       <&macro_tap &mmv MOVE_RIGHT>
+                       <&macro_tap &mmv MOVE_RIGHT>
+                       <&macro_tap &mmv MOVE_RIGHT>
+                       <&macro_tap &mmv MOVE_RIGHT>
+                       <&macro_tap &mmv MOVE_RIGHT>
+                       <&macro_tap &mmv MOVE_RIGHT>;
         };
 
         mv_ten_lefts: mv_ten_lefts {
@@ -559,8 +567,16 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT
-                        &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT>;
+            bindings = <&macro_tap &mmv MOVE_LEFT>
+                       <&macro_tap &mmv MOVE_LEFT>
+                       <&macro_tap &mmv MOVE_LEFT>
+                       <&macro_tap &mmv MOVE_LEFT>
+                       <&macro_tap &mmv MOVE_LEFT>
+                       <&macro_tap &mmv MOVE_LEFT>
+                       <&macro_tap &mmv MOVE_LEFT>
+                       <&macro_tap &mmv MOVE_LEFT>
+                       <&macro_tap &mmv MOVE_LEFT>
+                       <&macro_tap &mmv MOVE_LEFT>;
         };
 
         mv_ten_ups: mv_ten_ups {
@@ -568,8 +584,16 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP
-                        &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP>;
+            bindings = <&macro_tap &mmv MOVE_UP>
+                       <&macro_tap &mmv MOVE_UP>
+                       <&macro_tap &mmv MOVE_UP>
+                       <&macro_tap &mmv MOVE_UP>
+                       <&macro_tap &mmv MOVE_UP>
+                       <&macro_tap &mmv MOVE_UP>
+                       <&macro_tap &mmv MOVE_UP>
+                       <&macro_tap &mmv MOVE_UP>
+                       <&macro_tap &mmv MOVE_UP>
+                       <&macro_tap &mmv MOVE_UP>;
         };
 
         mv_ten_downs: mv_ten_downs {
@@ -577,8 +601,16 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN
-                        &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN>;
+            bindings = <&macro_tap &mmv MOVE_DOWN>
+                       <&macro_tap &mmv MOVE_DOWN>
+                       <&macro_tap &mmv MOVE_DOWN>
+                       <&macro_tap &mmv MOVE_DOWN>
+                       <&macro_tap &mmv MOVE_DOWN>
+                       <&macro_tap &mmv MOVE_DOWN>
+                       <&macro_tap &mmv MOVE_DOWN>
+                       <&macro_tap &mmv MOVE_DOWN>
+                       <&macro_tap &mmv MOVE_DOWN>
+                       <&macro_tap &mmv MOVE_DOWN>;
         };
 
         /* Mod-morph: normal slow mmv vs Ctrl-held 10-step jump */
@@ -587,6 +619,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_RIGHT>, <&mv_ten_rights>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         mmv_morph_left: mmv_morph_left {
@@ -594,6 +627,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_LEFT>, <&mv_ten_lefts>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         mmv_morph_up: mmv_morph_up {
@@ -601,6 +635,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_UP>, <&mv_ten_ups>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         mmv_morph_down: mmv_morph_down {
@@ -608,6 +643,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_DOWN>, <&mv_ten_downs>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
     };
