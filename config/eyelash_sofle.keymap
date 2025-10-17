@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 1200
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
 #include <input/processors.dtsi>
@@ -544,6 +544,72 @@
             bindings = <&kp>, <&td_maximize_minimize>;
         };
 
+        /* 10-step mouse movement burst macros for Ctrl-held jump */
+        mv_ten_rights: mv_ten_rights {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT
+                        &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT &mmv MOVE_RIGHT>;
+        };
+
+        mv_ten_lefts: mv_ten_lefts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT
+                        &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_LEFT>;
+        };
+
+        mv_ten_ups: mv_ten_ups {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP
+                        &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP &mmv MOVE_UP>;
+        };
+
+        mv_ten_downs: mv_ten_downs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN
+                        &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN &mmv MOVE_DOWN>;
+        };
+
+        /* Mod-morph: normal slow mmv vs Ctrl-held 10-step jump */
+        mmv_morph_right: mmv_morph_right {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT>, <&mv_ten_rights>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        mmv_morph_left: mmv_morph_left {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT>, <&mv_ten_lefts>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        mmv_morph_up: mmv_morph_up {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_UP>, <&mv_ten_ups>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        mmv_morph_down: mmv_morph_down {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_DOWN>, <&mv_ten_downs>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
     };
 
     scroll_encoder: scroll_encoder {
@@ -571,10 +637,10 @@
 
         layer_1 {
             bindings = <
-&kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
-&prev_win      &second_prev_win        &trans       &win_z_4        &win_z_5        &win_z_6           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
-&trans      &meh_q        &meh_w          &meh_e           &meh_r           &win_z_7           &mmv MOVE_LEFT   &kp PG_DN        &kp END         &kp BSLH    &kp MINUS  &kp EQUAL  &kp APOS
-&kp LSHFT      &meh_a  &meh_s  &meh_d  &meh_f  &win_z_8    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
+&kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv_morph_up    &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
+&prev_win      &second_prev_win        &trans       &win_z_4        &win_z_5        &win_z_6           &mmv_morph_down  &kp PG_UP        &kp HOME          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
+&trans      &meh_q        &meh_w          &meh_e           &meh_r           &win_z_7           &mmv_morph_left  &kp PG_DN        &kp END         &kp BSLH    &kp MINUS  &kp EQUAL  &kp APOS
+&kp LSHFT      &meh_a  &meh_s  &meh_d  &meh_f  &win_z_8    &mmv_morph_right &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
 &kp C_MUTE  &kp LCTRL           &trans          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
             >;
 
