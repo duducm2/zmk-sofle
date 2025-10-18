@@ -550,15 +550,15 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_tap &mmv MOVE_RIGHT>
-                       <&macro_tap &mmv MOVE_RIGHT>
-                       <&macro_tap &mmv MOVE_RIGHT>
-                       <&macro_tap &mmv MOVE_RIGHT>
-                       <&macro_tap &mmv MOVE_RIGHT>
-                       <&macro_tap &mmv MOVE_RIGHT>
-                       <&macro_tap &mmv MOVE_RIGHT>
-                       <&macro_tap &mmv MOVE_RIGHT>
-                       <&macro_tap &mmv MOVE_RIGHT>
+            bindings = <&macro_tap &mmv MOVE_RIGHT>,
+                       <&macro_tap &mmv MOVE_RIGHT>,
+                       <&macro_tap &mmv MOVE_RIGHT>,
+                       <&macro_tap &mmv MOVE_RIGHT>,
+                       <&macro_tap &mmv MOVE_RIGHT>,
+                       <&macro_tap &mmv MOVE_RIGHT>,
+                       <&macro_tap &mmv MOVE_RIGHT>,
+                       <&macro_tap &mmv MOVE_RIGHT>,
+                       <&macro_tap &mmv MOVE_RIGHT>,
                        <&macro_tap &mmv MOVE_RIGHT>;
         };
 
@@ -567,15 +567,15 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_tap &mmv MOVE_LEFT>
-                       <&macro_tap &mmv MOVE_LEFT>
-                       <&macro_tap &mmv MOVE_LEFT>
-                       <&macro_tap &mmv MOVE_LEFT>
-                       <&macro_tap &mmv MOVE_LEFT>
-                       <&macro_tap &mmv MOVE_LEFT>
-                       <&macro_tap &mmv MOVE_LEFT>
-                       <&macro_tap &mmv MOVE_LEFT>
-                       <&macro_tap &mmv MOVE_LEFT>
+            bindings = <&macro_tap &mmv MOVE_LEFT>,
+                       <&macro_tap &mmv MOVE_LEFT>,
+                       <&macro_tap &mmv MOVE_LEFT>,
+                       <&macro_tap &mmv MOVE_LEFT>,
+                       <&macro_tap &mmv MOVE_LEFT>,
+                       <&macro_tap &mmv MOVE_LEFT>,
+                       <&macro_tap &mmv MOVE_LEFT>,
+                       <&macro_tap &mmv MOVE_LEFT>,
+                       <&macro_tap &mmv MOVE_LEFT>,
                        <&macro_tap &mmv MOVE_LEFT>;
         };
 
@@ -584,15 +584,15 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_tap &mmv MOVE_UP>
-                       <&macro_tap &mmv MOVE_UP>
-                       <&macro_tap &mmv MOVE_UP>
-                       <&macro_tap &mmv MOVE_UP>
-                       <&macro_tap &mmv MOVE_UP>
-                       <&macro_tap &mmv MOVE_UP>
-                       <&macro_tap &mmv MOVE_UP>
-                       <&macro_tap &mmv MOVE_UP>
-                       <&macro_tap &mmv MOVE_UP>
+            bindings = <&macro_tap &mmv MOVE_UP>,
+                       <&macro_tap &mmv MOVE_UP>,
+                       <&macro_tap &mmv MOVE_UP>,
+                       <&macro_tap &mmv MOVE_UP>,
+                       <&macro_tap &mmv MOVE_UP>,
+                       <&macro_tap &mmv MOVE_UP>,
+                       <&macro_tap &mmv MOVE_UP>,
+                       <&macro_tap &mmv MOVE_UP>,
+                       <&macro_tap &mmv MOVE_UP>,
                        <&macro_tap &mmv MOVE_UP>;
         };
 
@@ -601,15 +601,15 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_tap &mmv MOVE_DOWN>
-                       <&macro_tap &mmv MOVE_DOWN>
-                       <&macro_tap &mmv MOVE_DOWN>
-                       <&macro_tap &mmv MOVE_DOWN>
-                       <&macro_tap &mmv MOVE_DOWN>
-                       <&macro_tap &mmv MOVE_DOWN>
-                       <&macro_tap &mmv MOVE_DOWN>
-                       <&macro_tap &mmv MOVE_DOWN>
-                       <&macro_tap &mmv MOVE_DOWN>
+            bindings = <&macro_tap &mmv MOVE_DOWN>,
+                       <&macro_tap &mmv MOVE_DOWN>,
+                       <&macro_tap &mmv MOVE_DOWN>,
+                       <&macro_tap &mmv MOVE_DOWN>,
+                       <&macro_tap &mmv MOVE_DOWN>,
+                       <&macro_tap &mmv MOVE_DOWN>,
+                       <&macro_tap &mmv MOVE_DOWN>,
+                       <&macro_tap &mmv MOVE_DOWN>,
+                       <&macro_tap &mmv MOVE_DOWN>,
                        <&macro_tap &mmv MOVE_DOWN>;
         };
 
