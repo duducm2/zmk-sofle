@@ -72,7 +72,7 @@ layers:
   - F3
   - F4
   - F5
-  - {t: '$$mdi:menu-up$$', s: '&mv_ten_ups'}
+  - {t: '$$mdi:menu-up$$', h: '&mv_ten_ups', s: '$$mdi:mouse$$'}
   - F6
   - F7
   - F8
@@ -85,7 +85,7 @@ layers:
   - '&win_z_4'
   - '&win_z_5'
   - '&win_z_6'
-  - {t: '$$mdi:menu-down$$', s: '&mv_ten_downs'}
+  - {t: '$$mdi:menu-down$$', h: '&mv_ten_downs', s: '$$mdi:mouse$$'}
   - PG UP
   - HOME
   - {t: ']', s: '}'}
@@ -98,7 +98,7 @@ layers:
   - '&meh_e'
   - '&meh_r'
   - '&win_z_7'
-  - {t: '$$mdi:menu-left$$', s: '&mv_ten_lefts'}
+  - {t: '$$mdi:menu-left$$', h: '&mv_ten_lefts', s: '$$mdi:mouse$$'}
   - PG DN
   - END
   - {t: \, s: '|'}
@@ -111,7 +111,7 @@ layers:
   - '&meh_d'
   - '&meh_f'
   - '&win_z_8'
-  - {t: '$$mdi:menu-right$$', s: '&mv_ten_rights'}
+  - {t: '$$mdi:menu-right$$', h: '&mv_ten_rights', s: '$$mdi:mouse$$'}
   - '~'
   - {t: '`', s: '~'}
   - KP DIVIDE
