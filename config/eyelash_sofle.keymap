@@ -281,6 +281,22 @@
                         &macro_release &kp LSHIFT>;
         };
 
+        caw_press: caw_press {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL
+                        &macro_press &kp LALT
+                        &macro_press &kp LGUI>;
+        };
+
+        caw_release: caw_release {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release &kp LCTRL
+                        &macro_release &kp LALT
+                        &macro_release &kp LGUI>;
+        };
+
         meh_a: meh_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -309,32 +325,32 @@
             bindings = <&meh_press &macro_tap &kp F &meh_release>;
         };
 
-        meh_q: meh_q {
+        caw_q: caw_q {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            label = "MEH_Q";
-            bindings = <&meh_press &macro_tap &kp Q &meh_release>;
+            label = "CAW_Q";
+            bindings = <&caw_press &macro_tap &kp Q &caw_release>;
         };
 
-        meh_w: meh_w {
+        caw_w: caw_w {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            label = "MEH_W";
-            bindings = <&meh_press &macro_tap &kp W &meh_release>;
+            label = "CAW_W";
+            bindings = <&caw_press &macro_tap &kp W &caw_release>;
         };
 
-        meh_e: meh_e {
+        caw_e: caw_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            label = "MEH_E";
-            bindings = <&meh_press &macro_tap &kp E &meh_release>;
+            label = "CAW_E";
+            bindings = <&caw_press &macro_tap &kp E &caw_release>;
         };
 
-        meh_r: meh_r {
+        caw_r: caw_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            label = "MEH_R";
-            bindings = <&meh_press &macro_tap &kp R &meh_release>;
+            label = "CAW_R";
+            bindings = <&caw_press &macro_tap &kp R &caw_release>;
         };
 
         // Tap-dance for 1 tap = N7, 2 taps = L
@@ -573,7 +589,7 @@
             bindings = <
 &kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
 &prev_win      &second_prev_win        &trans       &win_z_4        &win_z_5        &win_z_6           &mmv MOVE_DOWN   &kp PG_UP        &kp HOME          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
-&trans      &meh_q        &meh_w          &meh_e           &meh_r           &win_z_7           &mmv MOVE_LEFT   &kp PG_DN        &kp END         &kp BSLH    &kp MINUS  &kp EQUAL  &kp APOS
+&trans      &caw_q        &caw_w          &caw_e           &caw_r           &win_z_7           &mmv MOVE_LEFT   &kp PG_DN        &kp END         &kp BSLH    &kp MINUS  &kp EQUAL  &kp APOS
 &kp LSHFT      &meh_a  &meh_s  &meh_d  &meh_f  &win_z_8    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
 &kp C_MUTE  &kp LCTRL           &trans          &kp LEFT_ALT     &trans           &trans             &mkp LCLK        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
             >;
