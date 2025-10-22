@@ -93,10 +93,10 @@ layers:
   - {t: ;, s: ':'}
   - Ctl+Alt+W
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&meh_q'
-  - '&meh_w'
-  - '&meh_e'
-  - '&meh_r'
+  - '&caw_q'
+  - '&caw_w'
+  - '&caw_e'
+  - '&caw_r'
   - '&win_z_7'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
