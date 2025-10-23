@@ -270,10 +270,26 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LCTRL
                         &macro_press &kp LALT
+                        &macro_press &kp LSHIFT>;
+        };
+
+        caw_press: caw_press {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL
+                        &macro_press &kp LALT
                         &macro_press &kp LGUI>;
         };
 
         meh_release: meh_release {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release &kp LCTRL
+                        &macro_release &kp LALT
+                        &macro_release &kp LSHIFT>;
+        };
+
+        caw_release: caw_release {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_release &kp LCTRL
@@ -313,28 +329,28 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "CAW_Q";
-            bindings = <&meh_press &macro_tap &kp Q &meh_release>;
+            bindings = <&caw_press &macro_tap &kp Q &caw_release>;
         };
 
         caw_w: caw_w {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "CAW_W";
-            bindings = <&meh_press &macro_tap &kp W &meh_release>;
+            bindings = <&caw_press &macro_tap &kp W &caw_release>;
         };
 
         caw_e: caw_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "CAW_E";
-            bindings = <&meh_press &macro_tap &kp E &meh_release>;
+            bindings = <&caw_press &macro_tap &kp E &caw_release>;
         };
 
         caw_r: caw_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "CAW_R";
-            bindings = <&meh_press &macro_tap &kp R &meh_release>;
+            bindings = <&caw_press &macro_tap &kp R &caw_release>;
         };
 
         // Tap-dance for 1 tap = N7, 2 taps = L
