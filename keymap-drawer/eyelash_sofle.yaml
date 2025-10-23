@@ -106,10 +106,10 @@ layers:
   - {t: '=', s: +}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
-  - '&meh_a'
-  - '&meh_s'
-  - '&meh_d'
-  - '&meh_f'
+  - '&caw_a'
+  - '&caw_s'
+  - '&caw_d'
+  - '&caw_f'
   - '&win_z_8'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '~'
