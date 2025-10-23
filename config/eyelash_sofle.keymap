@@ -286,7 +286,7 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LCTRL
                         &macro_press &kp LALT
-                        &macro_press &kp LGUI>;
+                        &macro_press &kp F1>;
         };
 
         caw_release: caw_release {
@@ -294,7 +294,7 @@
             #binding-cells = <0>;
             bindings = <&macro_release &kp LCTRL
                         &macro_release &kp LALT
-                        &macro_release &kp LGUI>;
+                        &macro_release &kp F1>;
         };
 
         meh_a: meh_a {
