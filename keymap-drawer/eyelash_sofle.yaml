@@ -183,12 +183,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gui+Alt+Sft+4, s: Gui+Alt+Sft+$}
   - {t: Gui+Alt+Sft+5, s: Gui+Alt+Sft+%}
-  - $$mdi:volume-off$$
+  - $$mdi:bluetooth-off$$
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
