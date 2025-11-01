@@ -98,41 +98,41 @@
         win_z_4: win_z_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <300>;
-            tap-ms = <30>;
-            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 600 &kp N4 &kp ENTER>;
+            wait-ms = <500>;
+            tap-ms = <50>;
+            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 1000 &kp N4 &kp ENTER>;
         };
 
         win_z_5: win_z_5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <300>;
-            tap-ms = <30>;
-            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 600 &kp N5 &kp ENTER>;
+            wait-ms = <500>;
+            tap-ms = <50>;
+            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 1000 &kp N5 &kp ENTER>;
         };
 
         win_z_6: win_z_6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <300>;
-            tap-ms = <30>;
-            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 600 &kp N6 &kp ENTER>;
+            wait-ms = <500>;
+            tap-ms = <50>;
+            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 1000 &kp N6 &kp ENTER>;
         };
 
         win_z_7: win_z_7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <300>;
-            tap-ms = <30>;
-            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 600 &kp N7 &kp ENTER>;
+            wait-ms = <500>;
+            tap-ms = <50>;
+            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 1000 &kp N7 &kp ENTER>;
         };
 
         win_z_8: win_z_8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <300>;
-            tap-ms = <30>;
-            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 600 &kp N8 &kp ENTER>;
+            wait-ms = <500>;
+            tap-ms = <50>;
+            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 1000 &kp N8 &kp ENTER>;
         };
 
         win_alt_shift_comma: win_alt_shift_comma {
