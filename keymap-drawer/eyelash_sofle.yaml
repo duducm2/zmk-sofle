@@ -38,7 +38,7 @@ layers:
   - J
   - K
   - L
-  - {t: '&td_n7_l', h: Gui+Alt+Sft+0}
+  - {t: '&td_n7_l', h: Gui+Alt+Sft+7}
   - {t: '&td_ctrl_alt_bv', h: Gui+Alt+Sft+1}
   - $$mdi:apple-keyboard-shift$$
   - Z
