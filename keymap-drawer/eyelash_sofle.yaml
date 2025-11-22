@@ -163,7 +163,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+V
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '&trigger_loop_left', s: '&trigger_ctrl_loop_left'}
+  - '&morph_left'
   - '&select_all_copy'
   - '&select_all_cut'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -176,7 +176,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Alt+V
   - Ctl+Alt+B
-  - {t: '&trigger_loop_right', s: '&trigger_ctrl_loop_right'}
+  - '&morph_right'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
