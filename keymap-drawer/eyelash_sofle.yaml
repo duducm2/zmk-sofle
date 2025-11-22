@@ -137,7 +137,7 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - Gui+HOME
   - Gui+Sft+E
-  - {t: '&loop_ups', s: '$$mdi:skip-next$$'}
+  - {t: '&trigger_loop_up', s: '$$mdi:skip-next$$'}
   - {t: Sft+HOME, h: Ctl+Sft+HOME}
   - {t: Sft+END, h: Ctl+Sft+END}
   - {t: '&shift_home_del', h: '&ctrl_shift_home_del'}
@@ -150,7 +150,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gui+., s: Gui+>}
-  - {t: '&loop_downs', s: '$$mdi:skip-previous$$'}
+  - {t: '&trigger_loop_down', s: '$$mdi:skip-previous$$'}
   - Alt+PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -163,7 +163,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+V
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '&loop_lefts', s: '&ctrl_loop_lefts'}
+  - {t: '&trigger_loop_left', s: '&trigger_ctrl_loop_left'}
   - '&select_all_copy'
   - '&select_all_cut'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -176,7 +176,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Alt+V
   - Ctl+Alt+B
-  - {t: '&loop_rights', s: '&ctrl_loop_rights'}
+  - {t: '&trigger_loop_right', s: '&trigger_ctrl_loop_right'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
