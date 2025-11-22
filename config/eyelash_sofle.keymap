@@ -252,100 +252,24 @@
                         <&macro_release &kp RGUI &kp RALT &kp LGUI>;
         };
 
-        /* Ctrl+loop macros for when Ctrl is held - 100 arrow keys with Ctrl */
-        trigger_ctrl_loop_left: trigger_ctrl_loop_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&macro_press &kp RGUI &kp RALT &kp LGUI &kp LCTRL>,
-                        <&macro_tap &kp LEFT_ARROW>,
-                        <&macro_release &kp RGUI &kp RALT &kp LGUI &kp LCTRL>;
-        };
-
-        trigger_ctrl_loop_right: trigger_ctrl_loop_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&macro_press &kp RGUI &kp RALT &kp LGUI &kp LCTRL>,
-                        <&macro_tap &kp RIGHT_ARROW>,
-                        <&macro_release &kp RGUI &kp RALT &kp LGUI &kp LCTRL>;
-        };
-
         prev_win: prev_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <15>;
-            tap-ms = <15>;
-            bindings =
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
-                <&macro_release &kp LCTRL>;
+            label = "PREV_WIN";
+            bindings = <&kp LA(TAB)>;
         };
 
-        trigger_ctrl_loop_right: trigger_ctrl_loop_right {
+        /* Loop triggers - Control detection handled by AutoHotkey */
+        morph_left: morph_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <15>;
-            tap-ms = <15>;
-            bindings =
-                <&macro_press &kp LCTRL>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_release &kp LCTRL>;
-        };
-
-        /* Mod-morph: No Ctrl → trigger loop, Ctrl held → trigger Ctrl+loop */
-        morph_left: morph_left {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&trigger_loop_left>, <&trigger_ctrl_loop_left>;
-            mods = <(MOD_LCTL | MOD_RCTL)>;
-            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+            bindings = <&trigger_loop_left>;
         };
 
         morph_right: morph_right {
-            compatible = "zmk,behavior-mod-morph";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&trigger_loop_right>, <&trigger_ctrl_loop_right>;
-            mods = <(MOD_LCTL | MOD_RCTL)>;
-            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+            bindings = <&trigger_loop_right>;
         };
 
         morph_up: morph_up {
