@@ -273,37 +273,6 @@
                         <&macro_release &kp RGUI &kp RALT &kp LGUI &kp LCTRL>;
         };
 
-        /* Mod-morph: No Ctrl → trigger loop, Ctrl held → trigger Ctrl+loop */
-        morph_left: morph_left {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&trigger_loop_left>, <&trigger_ctrl_loop_left>;
-            mods = <(MOD_LCTL | MOD_RCTL)>;
-            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
-        };
-
-        morph_right: morph_right {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&trigger_loop_right>, <&trigger_ctrl_loop_right>;
-            mods = <(MOD_LCTL | MOD_RCTL)>;
-            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
-        };
-
-        morph_up: morph_up {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&trigger_loop_up>, <&kp C_NEXT>;
-            mods = <(MOD_LCTL | MOD_RCTL)>;
-        };
-
-        morph_down: morph_down {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&trigger_loop_down>, <&kp C_PREV>;
-            mods = <(MOD_LCTL | MOD_RCTL)>;
-        };
-
         prev_win: prev_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
