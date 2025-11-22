@@ -210,81 +210,47 @@
             bindings = <&kp LC(A) &kp DELETE>;
         };
 
-        /* Trigger macros for cursor loop - sends Win + Shift + Arrow */
-        /* Loop logic is handled by AutoHotkey, ZMK only sends the trigger combination */
-        trigger_loop_left: trigger_loop_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&macro_press &kp LGUI &kp LSHIFT>,
-                        <&macro_tap &kp LEFT_ARROW>,
-                        <&macro_release &kp LGUI &kp LSHIFT>;
-        };
+        /* Mod-morph versions of the 5× arrow macros.
+         * No Ctrl held  → 5× LEFT/RIGHT
+         * Ctrl held     → Ctrl+5× LEFT/RIGHT
+         */
 
-        trigger_loop_right: trigger_loop_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&macro_press &kp LGUI &kp LSHIFT>,
-                        <&macro_tap &kp RIGHT_ARROW>,
-                        <&macro_release &kp LGUI &kp LSHIFT>;
-        };
-
-        trigger_loop_up: trigger_loop_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&macro_press &kp LGUI &kp LSHIFT>,
-                        <&macro_tap &kp UP_ARROW>,
-                        <&macro_release &kp LGUI &kp LSHIFT>;
-        };
-
-        trigger_loop_down: trigger_loop_down {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&macro_press &kp LGUI &kp LSHIFT>,
-                        <&macro_tap &kp DOWN_ARROW>,
-                        <&macro_release &kp LGUI &kp LSHIFT>;
-        };
-
-        prev_win: prev_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            label = "PREV_WIN";
-            bindings = <&kp LA(TAB)>;
-        };
-
-        /* Loop triggers - Control detection handled by AutoHotkey */
         morph_left: morph_left {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&trigger_loop_left>;
+            bindings = <&five_lefts>, <&five_lefts>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         morph_right: morph_right {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&trigger_loop_right>;
+            bindings = <&five_rights>, <&five_rights>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         morph_up: morph_up {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&trigger_loop_up>, <&kp C_NEXT>;
+            bindings = <&five_ups>, <&kp C_NEXT>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         morph_down: morph_down {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&trigger_loop_down>, <&kp C_PREV>;
+            bindings = <&five_downs>, <&kp C_PREV>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
+
+        prev_win: prev_win {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                label = "PREV_WIN";
+                bindings = <&kp LA(TAB)>;
+            };
     
         second_prev_win: second_prev_win {
                 compatible = "zmk,behavior-macro";
