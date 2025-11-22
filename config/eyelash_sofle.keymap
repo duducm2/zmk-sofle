@@ -399,60 +399,11 @@
                 <&macro_release &kp LCTRL>;
         };
 
-        /* Sticky key behaviors for loop mode - activates on tap, releases on Shift */
-        sticky_loop_left: sticky_loop_left {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <1>;
-            release-after-ms = <1>;
-            quick-release;
-            bindings = <&loop_lefts>;
-        };
-
-        sticky_loop_right: sticky_loop_right {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <1>;
-            release-after-ms = <1>;
-            quick-release;
-            bindings = <&loop_rights>;
-        };
-
-        sticky_loop_up: sticky_loop_up {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <1>;
-            release-after-ms = <1>;
-            quick-release;
-            bindings = <&loop_ups>;
-        };
-
-        sticky_loop_down: sticky_loop_down {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <1>;
-            release-after-ms = <1>;
-            quick-release;
-            bindings = <&loop_downs>;
-        };
-
-        sticky_ctrl_loop_left: sticky_ctrl_loop_left {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <1>;
-            release-after-ms = <1>;
-            quick-release;
-            bindings = <&ctrl_loop_lefts>;
-        };
-
-        sticky_ctrl_loop_right: sticky_ctrl_loop_right {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <1>;
-            release-after-ms = <1>;
-            quick-release;
-            bindings = <&ctrl_loop_rights>;
-        };
-
         /* Mod-morph: No Ctrl → loop mode, Ctrl held → Ctrl+loop mode */
         morph_left: morph_left {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&sticky_loop_left>, <&sticky_ctrl_loop_left>;
+            bindings = <&loop_lefts>, <&ctrl_loop_lefts>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
             keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
@@ -460,7 +411,7 @@
         morph_right: morph_right {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&sticky_loop_right>, <&sticky_ctrl_loop_right>;
+            bindings = <&loop_rights>, <&ctrl_loop_rights>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
             keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
@@ -468,14 +419,14 @@
         morph_up: morph_up {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&sticky_loop_up>, <&kp C_NEXT>;
+            bindings = <&loop_ups>, <&kp C_NEXT>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         morph_down: morph_down {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&sticky_loop_down>, <&kp C_PREV>;
+            bindings = <&loop_downs>, <&kp C_PREV>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
