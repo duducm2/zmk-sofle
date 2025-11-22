@@ -211,14 +211,32 @@
         };
 
         /* Loop mode macros - send many arrow keys for continuous movement */
-        /* These macros send 20 arrow keys for faster, more responsive movement */
-        /* Note: ZMK macros cannot be interrupted mid-execution, but shorter sequences feel more responsive */
+        /* These macros send 100 arrow keys for extended continuous movement */
+        /* IMPORTANT: ZMK macros execute atomically and CANNOT be interrupted mid-execution */
+        /* Pressing the opposite arrow key will queue that key to execute AFTER the current macro finishes */
+        /* True interruption requires a custom ZMK behavior written in C */
         loop_lefts: loop_lefts {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <15>;
             tap-ms = <15>;
             bindings = <&kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
                         &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
                         &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
                         &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
@@ -232,6 +250,22 @@
             bindings = <&kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
                         &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
                         &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
                         &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW>;
         };
 
@@ -241,6 +275,22 @@
             wait-ms = <15>;
             tap-ms = <15>;
             bindings = <&kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
                         &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
                         &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
                         &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW>;
@@ -254,10 +304,26 @@
             bindings = <&kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
                         &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
                         &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
                         &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW>;
         };
 
-        /* Ctrl+loop macros for when Ctrl is held - 20 arrow keys with Ctrl */
+        /* Ctrl+loop macros for when Ctrl is held - 100 arrow keys with Ctrl */
         ctrl_loop_lefts: ctrl_loop_lefts {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -265,25 +331,25 @@
             tap-ms = <15>;
             bindings =
                 <&macro_press &kp LCTRL>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>, <&macro_tap &kp LEFT_ARROW>,
                 <&macro_release &kp LCTRL>;
         };
 
@@ -294,25 +360,25 @@
             tap-ms = <15>;
             bindings =
                 <&macro_press &kp LCTRL>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>, <&macro_tap &kp RIGHT_ARROW>,
                 <&macro_release &kp LCTRL>;
         };
 
