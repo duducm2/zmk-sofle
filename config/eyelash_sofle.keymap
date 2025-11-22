@@ -211,19 +211,14 @@
         };
 
         /* Loop mode macros - send many arrow keys for continuous movement */
-        /* These macros send 50 arrow keys to simulate continuous movement */
+        /* These macros send 20 arrow keys for faster, more responsive movement */
+        /* Note: ZMK macros cannot be interrupted mid-execution, but shorter sequences feel more responsive */
         loop_lefts: loop_lefts {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <15>;
+            tap-ms = <15>;
             bindings = <&kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
-                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
-                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
-                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
-                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
-                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
-                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
                         &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
                         &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
                         &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
@@ -232,15 +227,9 @@
         loop_rights: loop_rights {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <15>;
+            tap-ms = <15>;
             bindings = <&kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
-                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
-                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
-                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
-                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
-                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
-                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
                         &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
                         &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
                         &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW>;
@@ -249,15 +238,9 @@
         loop_ups: loop_ups {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <15>;
+            tap-ms = <15>;
             bindings = <&kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
-                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
-                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
-                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
-                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
-                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
-                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
                         &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
                         &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
                         &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW>;
@@ -266,58 +249,22 @@
         loop_downs: loop_downs {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <15>;
+            tap-ms = <15>;
             bindings = <&kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
-                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
-                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
-                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
-                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
-                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
-                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
                         &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
                         &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
                         &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW>;
         };
 
-        /* Ctrl+loop macros for when Ctrl is held - 50 arrow keys with Ctrl */
+        /* Ctrl+loop macros for when Ctrl is held - 20 arrow keys with Ctrl */
         ctrl_loop_lefts: ctrl_loop_lefts {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <15>;
+            tap-ms = <15>;
             bindings =
                 <&macro_press &kp LCTRL>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
-                <&macro_tap &kp LEFT_ARROW>,
                 <&macro_tap &kp LEFT_ARROW>,
                 <&macro_tap &kp LEFT_ARROW>,
                 <&macro_tap &kp LEFT_ARROW>,
@@ -343,40 +290,10 @@
         ctrl_loop_rights: ctrl_loop_rights {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <15>;
+            tap-ms = <15>;
             bindings =
                 <&macro_press &kp LCTRL>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
-                <&macro_tap &kp RIGHT_ARROW>,
                 <&macro_tap &kp RIGHT_ARROW>,
                 <&macro_tap &kp RIGHT_ARROW>,
                 <&macro_tap &kp RIGHT_ARROW>,
