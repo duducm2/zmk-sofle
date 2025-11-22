@@ -210,15 +210,249 @@
             bindings = <&kp LC(A) &kp DELETE>;
         };
 
-        /* Mod-morph versions of the 5× arrow macros.
-         * No Ctrl held  → 5× LEFT/RIGHT
-         * Ctrl held     → Ctrl+5× LEFT/RIGHT
-         */
+        /* Loop mode macros - send many arrow keys for continuous movement */
+        /* These macros send 50 arrow keys to simulate continuous movement */
+        loop_lefts: loop_lefts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings = <&kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW
+                        &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
+        };
 
+        loop_rights: loop_rights {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings = <&kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW
+                        &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW>;
+        };
+
+        loop_ups: loop_ups {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings = <&kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW
+                        &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW>;
+        };
+
+        loop_downs: loop_downs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings = <&kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW
+                        &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW>;
+        };
+
+        /* Ctrl+loop macros for when Ctrl is held - 50 arrow keys with Ctrl */
+        ctrl_loop_lefts: ctrl_loop_lefts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_release &kp LCTRL>;
+        };
+
+        ctrl_loop_rights: ctrl_loop_rights {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_release &kp LCTRL>;
+        };
+
+        /* Sticky key behaviors for loop mode - activates on tap, releases on Shift */
+        sticky_loop_left: sticky_loop_left {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            release-after-ms = <1>;
+            quick-release;
+            bindings = <&loop_lefts>;
+        };
+
+        sticky_loop_right: sticky_loop_right {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            release-after-ms = <1>;
+            quick-release;
+            bindings = <&loop_rights>;
+        };
+
+        sticky_loop_up: sticky_loop_up {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            release-after-ms = <1>;
+            quick-release;
+            bindings = <&loop_ups>;
+        };
+
+        sticky_loop_down: sticky_loop_down {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            release-after-ms = <1>;
+            quick-release;
+            bindings = <&loop_downs>;
+        };
+
+        sticky_ctrl_loop_left: sticky_ctrl_loop_left {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            release-after-ms = <1>;
+            quick-release;
+            bindings = <&ctrl_loop_lefts>;
+        };
+
+        sticky_ctrl_loop_right: sticky_ctrl_loop_right {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            release-after-ms = <1>;
+            quick-release;
+            bindings = <&ctrl_loop_rights>;
+        };
+
+        /* Mod-morph: No Ctrl → loop mode, Ctrl held → Ctrl+loop mode */
         morph_left: morph_left {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&five_lefts>, <&five_lefts>;
+            bindings = <&sticky_loop_left>, <&sticky_ctrl_loop_left>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
             keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
@@ -226,7 +460,7 @@
         morph_right: morph_right {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&five_rights>, <&five_rights>;
+            bindings = <&sticky_loop_right>, <&sticky_ctrl_loop_right>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
             keep-mods = <(MOD_LCTL | MOD_RCTL)>;
         };
@@ -234,14 +468,14 @@
         morph_up: morph_up {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&five_ups>, <&kp C_NEXT>;
+            bindings = <&sticky_loop_up>, <&kp C_NEXT>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
         morph_down: morph_down {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&five_downs>, <&kp C_PREV>;
+            bindings = <&sticky_loop_down>, <&kp C_PREV>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
