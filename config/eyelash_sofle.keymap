@@ -285,13 +285,6 @@
             bindings = <&trigger_loop_down>, <&kp C_PREV>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
-
-        prev_win: prev_win {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                label = "PREV_WIN";
-                bindings = <&kp LA(TAB)>;
-            };
     
         second_prev_win: second_prev_win {
                 compatible = "zmk,behavior-macro";
