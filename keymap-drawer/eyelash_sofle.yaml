@@ -60,7 +60,7 @@ layers:
   - $$mdi:keyboard-space$$
   - layer1
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&ht_mo2_win_td 2'
+  - {t: '&td_win_win_h', h: '2'}
   - 'Gui+LA( LEFT SHIFT ) '
   - {t: '&td_ps_sa_copy', h: '&lg_home_alt_tab_ctrl_home'}
   - {t: '&td_ctx_sa_cut', h: Gui+Sft+E}
@@ -190,7 +190,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
