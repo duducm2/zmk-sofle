@@ -59,7 +59,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - layer1
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '&td_win_win_h', h: '2'}
   - 'Gui+LA( LEFT SHIFT ) '
   - {t: '&td_ps_sa_copy', h: '&lg_home_alt_tab_ctrl_home'}
