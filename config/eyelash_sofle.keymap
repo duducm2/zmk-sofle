@@ -571,12 +571,12 @@
                 <&macro_release &kp LALT>;
         };
 
-        // Tap-dance: 1× Windows + Alt + Shift + U, 2× Windows + H
+        // Tap-dance: 1× Enter, 2× Windows + Alt + Shift + U
         td_win_win_h: tap_dance_win_win_h {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LG(LA(LS(U)))>, <&kp LG(H)>;
+            bindings = <&kp ENTER>, <&kp LG(LA(LS(U)))>;
         };
 
         // Hold-tap: hold = layer 2, tap = Windows tap-dance
