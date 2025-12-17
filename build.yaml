@@ -9,5 +9,7 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: eyelash_sofle_studio_left
-  - board: eyelash_sofle_left
-    shield: settings_reset
+  # Disabled for now: settings_reset build is failing due to missing pointing/input processor nodes
+  # If you need a dedicated settings reset firmware, we can re-enable this and adjust the keymap/devicetree
+  # - board: eyelash_sofle_left
+  #   shield: settings_reset
