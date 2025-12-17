@@ -11,5 +11,4 @@ jobs:
     # For stability, consider finding a specific commit hash from before Zephyr 4.1 upgrade
     # Check: https://github.com/zmkfirmware/zmk/commits/main
     # Find a commit from ~Dec 1-3, 2024 and replace 'main' with that commit hash
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@0820991
