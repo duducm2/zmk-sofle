@@ -7,5 +7,7 @@ on:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Pinned to stable version to match west.yml revision
+    # Update this to match the revision in config/west.yml
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@3.2
 

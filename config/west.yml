@@ -17,7 +17,10 @@ manifest:
       revision: main
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # Pinned to stable version before Zephyr 4.1 upgrade to avoid breaking changes
+      # If this commit doesn't work, check https://github.com/zmkfirmware/zmk/commits/main
+      # and find a commit from around when your builds were last working
+      revision: 3.2
       import: app/west.yml
   self:
     path: config
