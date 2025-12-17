@@ -3,4 +3,5 @@ board:
   vendor: eyelashperipherals
   socs:
     - name: nrf52840
-      variant: qiaa
+      variants:
+        - name: qiaa
