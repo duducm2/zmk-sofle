@@ -283,35 +283,35 @@
         };
 
         /* Mod-morph for mouse movement keys in layer 1.
-         * No Ctrl held  → mouse movement
-         * Ctrl held     → Windows+Alt+Shift+ArrowKey
+         * No Shift held  → mouse movement
+         * Shift held     → Windows+Alt+Shift+ArrowKey
          */
         morph_mmv_up: morph_mmv_up {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&mmv MOVE_UP>, <&was_up>;
-            mods = <(MOD_LCTL | MOD_RCTL)>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
         morph_mmv_down: morph_mmv_down {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&mmv MOVE_DOWN>, <&was_down>;
-            mods = <(MOD_LCTL | MOD_RCTL)>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
         morph_mmv_left: morph_mmv_left {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&mmv MOVE_LEFT>, <&was_left>;
-            mods = <(MOD_LCTL | MOD_RCTL)>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
         morph_mmv_right: morph_mmv_right {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&mmv MOVE_RIGHT>, <&was_right>;
-            mods = <(MOD_LCTL | MOD_RCTL)>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
         prev_win: prev_win {
