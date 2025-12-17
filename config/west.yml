@@ -17,9 +17,9 @@ manifest:
       revision: main
     - name: zmk
       remote: zmkfirmware
-      # Pinned to commit 0820991901a95ab7a0eb1f1cc608a631d514e26c to match workflow
-      # This commit is from before Zephyr 4.1 upgrade to avoid Kconfig errors
-      revision: 0820991901a95ab7a0eb1f1cc608a631d514e26c
+      # Using main branch to test pointing support (mmv behavior)
+      # If this works, we can pin to a specific stable commit later
+      revision: main
       import: app/west.yml
   self:
     path: config

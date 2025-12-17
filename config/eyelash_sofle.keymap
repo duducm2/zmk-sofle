@@ -8,14 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-// #include <dt-bindings/zmk/pointing.h>  // File not available in this ZMK version - using manual definitions below
-// Manual definitions for pointing constants (since pointing.h is not available)
-#define MOVE_UP 0
-#define MOVE_DOWN 1
-#define MOVE_LEFT 2
-#define MOVE_RIGHT 3
-#define SCRL_UP 0
-#define SCRL_DOWN 1
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/modifiers.h>
@@ -33,14 +26,11 @@
 //     delay-ms = <0>;                   // 0
 // };
 
-// Commented out - &mmv node override causes "undefined node label 'mmv'" error
-// The mmv behavior may not be available in this ZMK version even with CONFIG_ZMK_POINTING=y
-// Try using mmv directly in bindings without overriding its properties
-// &mmv {
-//     time-to-max-speed-ms = <500>;
-//     acceleration-exponent = <1>;
-//     trigger-period-ms = <16>;
-// };
+&mmv {
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent = <1>;
+    trigger-period-ms = <16>;
+};
 
 / {
     macros {
@@ -665,8 +655,8 @@
         layer_1 {
             bindings = <
 &kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &trans     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
-&prev_win      &second_prev_win        &trans       &win_z_4        &win_z_5        &win_z_6           &trans   &trans        &trans          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
-&trans      &caw_q        &caw_w          &caw_e           &caw_r           &win_z_7           &trans   &trans        &trans         &trans    &kp MINUS  &kp EQUAL  &kp APOS
+&prev_win      &second_prev_win        &trans       &win_z_4        &win_z_5        &win_z_6           &trans   &trans        &mmv MOVE_UP          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
+&trans      &caw_q        &caw_w          &caw_e           &caw_r           &win_z_7           &trans   &mmv MOVE_LEFT        &mmv MOVE_DOWN         &mmv MOVE_RIGHT    &kp MINUS  &kp EQUAL  &kp APOS
 &kp LSHFT      &caw_a  &caw_s  &caw_d  &caw_f  &win_z_8    &trans  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
 &kp C_MUTE  &kp LCTRL           &trans          &kp LEFT_ALT     &trans           &trans             &trans        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
             >;
