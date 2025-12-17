@@ -25,11 +25,13 @@
 // &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 // &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-&msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
-};
+// Commented out - &msc node depends on pointing behaviors not available in this ZMK version
+// Keeping this enabled causes: undefined node label 'msc' during devicetree processing
+// &msc {
+//     acceleration-exponent = <1>;      // 0
+//     time-to-max-speed-ms = <100>;       // 300
+//     delay-ms = <0>;                   // 0
+// };
 
 &mmv {
     time-to-max-speed-ms = <500>;
@@ -616,12 +618,13 @@
 
     };
 
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        tap-ms = <100>;
-    };
+    // Commented out - scroll encoder depends on &msc behavior which is not available
+    // scroll_encoder: scroll_encoder {
+    //     compatible = "zmk,behavior-sensor-rotate";
+    //     #sensor-binding-cells = <0>;
+    //     bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+    //     tap-ms = <100>;
+    // };
 
     keymap {
         compatible = "zmk,keymap";
@@ -661,7 +664,8 @@
 &bt BT_CLR     &kp LCTRL        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &select_all_del
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            // Commented out - scroll_encoder is not available (depends on &msc which is not in this ZMK version)
+            // sensor-bindings = <&scroll_encoder>;
         };
 
         layer_3 {
