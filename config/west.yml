@@ -17,9 +17,8 @@ manifest:
       revision: main
     - name: zmk
       remote: zmkfirmware
-      # Using main branch to test pointing support (mmv behavior)
-      # If this works, we can pin to a specific stable commit later
-      revision: main
+      # Testing commit from August 2024 - should have pointing support and be stable
+      revision: 0b5a103c187ad337b9f50d824667866c4d7252e1
       import: app/west.yml
   self:
     path: config
