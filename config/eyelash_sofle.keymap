@@ -592,15 +592,15 @@
             bindings = <&mo>, <&td_win_win_h>;
         };
 
-        // Tap-dance: 1× Enter, 2× Windows + Alt + Shift + U
+        // Tap-dance: 1× Left Mouse Click, 2× Windows + Alt + Shift + U
         td_enter_was_u: tap_dance_enter_was_u {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp ENTER>, <&kp LG(LA(LS(U)))>;
+            bindings = <&mkp LCLK>, <&kp LG(LA(LS(U)))>;
         };
 
-        // Hold-tap: hold = layer 2, tap = Enter/Windows+Alt+Shift+U tap-dance
+        // Hold-tap: hold = layer 2, tap = Left Mouse Click/Windows+Alt+Shift+U tap-dance
         ht_mo2_enter_was_u: hold_tap_mo2_enter_was_u {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -654,10 +654,10 @@
 
         layer_1 {
             bindings = <
-&kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &trans     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
-&prev_win      &second_prev_win        &trans       &win_z_4        &win_z_5        &win_z_6           &trans   &trans        &mmv MOVE_UP          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
-&trans      &caw_q        &caw_w          &caw_e           &caw_r           &win_z_7           &trans   &mmv MOVE_LEFT        &mmv MOVE_DOWN         &mmv MOVE_RIGHT    &kp MINUS  &kp EQUAL  &kp APOS
-&kp LSHFT      &caw_a  &caw_s  &caw_d  &caw_f  &win_z_8    &trans  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
+&kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
+&prev_win      &second_prev_win        &trans       &win_z_4        &win_z_5        &win_z_6           &mmv MOVE_DOWN   &trans        &mmv MOVE_UP          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
+&trans      &caw_q        &caw_w          &caw_e           &caw_r           &win_z_7           &mmv MOVE_LEFT   &mmv MOVE_LEFT        &mmv MOVE_DOWN         &mmv MOVE_RIGHT    &kp MINUS  &kp EQUAL  &kp APOS
+&kp LSHFT      &caw_a  &caw_s  &caw_d  &caw_f  &win_z_8    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
 &kp C_MUTE  &kp LCTRL           &trans          &kp LEFT_ALT     &trans           &trans             &trans        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
             >;
 

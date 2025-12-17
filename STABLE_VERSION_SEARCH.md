@@ -2,18 +2,42 @@
 
 ## Current Status
 
-- ❌ Using `main` branch (may have Zephyr 4.1/Kconfig issues)
-- ❌ Previous commit `0820991901a95ab7a0eb1f1cc608a631d514e26c` (no pointing support)
+- ✅ **FOUND:** Commit `0b5a103c187ad337b9f50d824667866c4d7252e1` (August 2024)
 - ✅ Keymap configured for pointing (mmv behavior)
 - ✅ CONFIG_ZMK_POINTING=y enabled
+- ✅ Build succeeds with pointing support
 
-## Target
+## Successful Version
+
+| Property         | Value                                                   |
+| ---------------- | ------------------------------------------------------- |
+| **Commit Hash**  | `0b5a103c187ad337b9f50d824667866c4d7252e1`              |
+| **Date**         | August 2024                                             |
+| **Status**       | ✅ Working - Build succeeds, pointing support confirmed |
+| **Files Pinned** | `config/west.yml` and `.github/workflows/build.yml`     |
+
+### Features Confirmed Working
+
+- ✅ `dt-bindings/zmk/pointing.h` header exists
+- ✅ `&mmv` (mouse movement) behavior available
+- ✅ `MOVE_UP`, `MOVE_DOWN`, `MOVE_LEFT`, `MOVE_RIGHT` constants defined
+- ✅ No Zephyr/Kconfig errors
+- ✅ Build completes successfully
+
+### Previous Failed Commits
+
+| Commit                                     | Issue                     |
+| ------------------------------------------ | ------------------------- |
+| `main` branch                              | Zephyr 4.1/Kconfig issues |
+| `0820991901a95ab7a0eb1f1cc608a631d514e26c` | No pointing support       |
+
+## Target (Achieved)
 
 Find a commit that:
 
-1. Has pointing device support (mmv, msc, mkp behaviors)
-2. Is stable (before Zephyr 4.1 issues in Dec 2024)
-3. Works with your board configuration
+1. ✅ Has pointing device support (mmv, msc, mkp behaviors)
+2. ✅ Is stable (before Zephyr 4.1 issues in Dec 2024)
+3. ✅ Works with your board configuration
 
 ## Testing Strategy
 
@@ -80,13 +104,13 @@ Use the PowerShell script to update files:
 - Zephyr/Kconfig errors
 - Build failures
 
-## Success Criteria
+## Success Criteria (Achieved)
 
-When you find the right commit:
+Commit `0b5a103c187ad337b9f50d824667866c4d7252e1` meets all criteria:
 
 1. ✅ Build succeeds
 2. ✅ Mouse movement works in layer 1
 3. ✅ All keyboard functionality works
 4. ✅ No errors in build logs
 
-Then pin this commit in both files for future builds.
+**This commit is now pinned in both files for future builds.**
