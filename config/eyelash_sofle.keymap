@@ -664,8 +664,8 @@
         layer_1 {
             bindings = <
 &kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &trans     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
-&prev_win      &second_prev_win        &trans       &win_z_4        &win_z_5        &win_z_6           &trans   &trans        &kp UP_ARROW          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
-&trans      &caw_q        &caw_w          &caw_e           &caw_r           &win_z_7           &trans   &kp LEFT_ARROW        &kp DOWN_ARROW         &kp RIGHT_ARROW    &kp MINUS  &kp EQUAL  &kp APOS
+&prev_win      &second_prev_win        &trans       &win_z_4        &win_z_5        &win_z_6           &trans   &trans        &kp MS_UP          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
+&trans      &caw_q        &caw_w          &caw_e           &caw_r           &win_z_7           &trans   &kp MS_LEFT        &kp MS_DOWN         &kp MS_RIGHT    &kp MINUS  &kp EQUAL  &kp APOS
 &kp LSHFT      &caw_a  &caw_s  &caw_d  &caw_f  &win_z_8    &trans  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
 &kp C_MUTE  &kp LCTRL           &trans          &kp LEFT_ALT     &trans           &trans             &trans        &kp LS(FSLH)  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
             >;
