@@ -17,10 +17,14 @@ manifest:
       revision: main
     - name: zmk
       remote: zmkfirmware
-      # Pinned to stable version before Zephyr 4.1 upgrade to avoid breaking changes
-      # If this commit doesn't work, check https://github.com/zmkfirmware/zmk/commits/main
-      # and find a commit from around when your builds were last working
-      revision: 3.2
+      # TODO: Pin to a specific commit hash from before Zephyr 4.1 upgrade for stability
+      # Steps to find the right commit:
+      # 1. Go to https://github.com/zmkfirmware/zmk/commits/main
+      # 2. Find a commit from around Dec 1-3, 2024 (when your builds were working)
+      # 3. Copy the commit SHA (first 7-12 characters, e.g., "a1b2c3d")
+      # 4. Replace "main" below with that commit hash
+      # Example: revision: a1b2c3d
+      revision: main
       import: app/west.yml
   self:
     path: config

@@ -7,7 +7,9 @@ on:
 
 jobs:
   build:
-    # Pinned to stable version to match west.yml revision
-    # Update this to match the revision in config/west.yml
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@3.2
+    # Using 'main' branch for workflow (GitHub Actions requires valid branch/tag/commit)
+    # For stability, consider finding a specific commit hash from before Zephyr 4.1 upgrade
+    # Check: https://github.com/zmkfirmware/zmk/commits/main
+    # Find a commit from ~Dec 1-3, 2024 and replace 'main' with that commit hash
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
 
