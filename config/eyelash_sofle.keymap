@@ -1,7 +1,8 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 180   // 85% slower (15% of original 1200)
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
-#include <zmk/input/processors.dtsi>
+// Removed: #include <zmk/input/processors.dtsi> - file not found in this ZMK version
+// Testing if zip_xy_scaler and zip_scroll_scaler are available without the include
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
