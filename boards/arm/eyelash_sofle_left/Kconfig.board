@@ -1,8 +1,0 @@
-#
-# Copyright (c) 2024 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-#
-
-config BOARD_EYELASH_SOFLE_LEFT
-    bool "eyelash_sofle left"
-    select SOC_NRF52840_QIAA
