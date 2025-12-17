@@ -657,15 +657,15 @@
             bindings = <&mo>, <&td_win_win_h>;
         };
 
-        // Tap-dance: 1× Left Mouse Click, 2× Windows + Alt + Shift + U
+        // Tap-dance: 1× Windows+Alt+Shift+U, 2× Windows+Alt+Shift+Y
         td_enter_was_u: tap_dance_enter_was_u {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&mkp LCLK>, <&kp LG(LA(LS(U)))>;
+            bindings = <&kp LG(LA(LS(U)))>, <&kp LG(LA(LS(Y)))>;
         };
 
-        // Hold-tap: hold = layer 2, tap = Left Mouse Click/Windows+Alt+Shift+U tap-dance
+        // Hold-tap: hold = layer 2, tap = Windows+Alt+Shift+U/Y tap-dance
         ht_mo2_enter_was_u: hold_tap_mo2_enter_was_u {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -733,7 +733,7 @@
             >;
 
             display-name = "TWO";
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
+6hh            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
 
         layer_3 {
