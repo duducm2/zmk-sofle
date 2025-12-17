@@ -1,0 +1,6 @@
+board:
+  name: eyelash_sofle
+  vendor: eyelashperipherals
+  socs:
+    - name: nrf52840
+      variant: qiaa
