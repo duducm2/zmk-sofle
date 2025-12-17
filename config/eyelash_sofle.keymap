@@ -693,13 +693,14 @@
 
     };
 
-    // Commented out - scroll encoder depends on &msc behavior which is not available
-    // scroll_encoder: scroll_encoder {
-    //     compatible = "zmk,behavior-sensor-rotate";
-    //     #sensor-binding-cells = <0>;
-    //     bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-    //     tap-ms = <100>;
-    // };
+    // Scroll encoder using inc_dec_kp since &msc is not available in this ZMK version
+    // Uses Page Up/Page Down keys for scrolling
+    scroll_encoder: scroll_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&inc_dec_kp PG_DN PG_UP>;
+        tap-ms = <100>;
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -714,7 +715,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "ZERO";
         }; 
 
         layer_1 {
@@ -726,7 +727,7 @@
 &kp C_MUTE  &kp LCTRL           &trans          &kp LEFT_ALT     &trans           &trans             &trans        &mkp LCLK  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
             >;
 
-            display-name = "layer1";
+            display-name = "ONE";
             sensor-bindings = <&inc_dec_kp LC(LS(EQUAL)) LC(MINUS)>;
         };
 
@@ -739,6 +740,7 @@
 &bt BT_CLR     &kp LCTRL        &trans          &trans        &trans        &trans          &trans        &trans  &trans  &trans      &trans     &select_all_del
             >;
 
+            display-name = "TWO";
             sensor-bindings = <&scroll_encoder>;
         };
 
