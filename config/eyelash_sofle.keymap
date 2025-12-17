@@ -8,7 +8,14 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
+// #include <dt-bindings/zmk/pointing.h>  // Commented out - file not found in this ZMK version
+// Manual definitions for pointing constants (if pointing.h is not available)
+#define MOVE_UP 0
+#define MOVE_DOWN 1
+#define MOVE_LEFT 2
+#define MOVE_RIGHT 3
+#define SCRL_UP 0
+#define SCRL_DOWN 1
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/modifiers.h>
