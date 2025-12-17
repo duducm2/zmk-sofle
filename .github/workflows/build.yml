@@ -14,4 +14,4 @@ jobs:
     # 2. Find a commit from Dec 1-8, 2024
     # 3. Click the commit and copy the FULL commit hash (40 characters, e.g., "a1b2c3d4e5f6...")
     # 4. Replace 'main' below with that full commit hash
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@0820991901a95ab7a0eb1f1cc608a631d514e26c
