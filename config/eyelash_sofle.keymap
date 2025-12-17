@@ -155,6 +155,39 @@
             bindings = <&kp LG(LA(LS(N)))>;
         };
 
+        // Windows+Alt+Shift+Arrow macros for Control-modified mouse movement
+        was_up: was_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp LG(LA(LS(UP_ARROW)))>;
+        };
+
+        was_down: was_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp LG(LA(LS(DOWN_ARROW)))>;
+        };
+
+        was_left: was_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp LG(LA(LS(LEFT_ARROW)))>;
+        };
+
+        was_right: was_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp LG(LA(LS(RIGHT_ARROW)))>;
+        };
+
         ctrl_shift_home_del: ctrl_shift_home_del {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -246,6 +279,38 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&five_downs>, <&kp C_PREV>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        /* Mod-morph for mouse movement keys in layer 1.
+         * No Ctrl held  → mouse movement
+         * Ctrl held     → Windows+Alt+Shift+ArrowKey
+         */
+        morph_mmv_up: morph_mmv_up {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_UP>, <&was_up>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        morph_mmv_down: morph_mmv_down {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_DOWN>, <&was_down>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        morph_mmv_left: morph_mmv_left {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT>, <&was_left>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        morph_mmv_right: morph_mmv_right {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT>, <&was_right>;
             mods = <(MOD_LCTL | MOD_RCTL)>;
         };
 
@@ -654,10 +719,10 @@
 
         layer_1 {
             bindings = <
-&kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
-&prev_win      &second_prev_win        &trans       &win_z_4        &win_z_5        &win_z_6           &mmv MOVE_DOWN   &kp LS(FSLH)        &mmv MOVE_UP          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
-&trans      &caw_q        &caw_w          &caw_e           &caw_r           &win_z_7           &mmv MOVE_LEFT   &mmv MOVE_LEFT        &mmv MOVE_DOWN         &mmv MOVE_RIGHT    &kp MINUS  &kp EQUAL  &kp APOS
-&kp LSHFT      &caw_a  &caw_s  &caw_d  &caw_f  &win_z_8    &mmv MOVE_RIGHT  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
+&kp F11   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &morph_mmv_up     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F12
+&prev_win      &second_prev_win        &trans       &win_z_4        &win_z_5        &win_z_6           &morph_mmv_down   &kp LS(FSLH)        &morph_mmv_up          &kp RIGHT_BRACKET      &kp FSLH   &kp SEMI         &kp LC(LA(W))
+&trans      &caw_q        &caw_w          &caw_e           &caw_r           &win_z_7           &morph_mmv_left   &morph_mmv_left        &morph_mmv_down         &morph_mmv_right    &kp MINUS  &kp EQUAL  &kp APOS
+&kp LSHFT      &caw_a  &caw_s  &caw_d  &caw_f  &win_z_8    &morph_mmv_right  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
 &kp C_MUTE  &kp LCTRL           &trans          &kp LEFT_ALT     &trans           &trans             &trans        &mkp LCLK  &kp LS(APOS) &kp LS(LEFT_BRACKET)      &kp NON_US_BACKSLASH     &kp LA(LS(S))
             >;
 
