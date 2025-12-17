@@ -1,7 +1,7 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 180   // 85% slower (15% of original 1200)
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
-#include <input/processors.dtsi>
+#include <zmk/input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
