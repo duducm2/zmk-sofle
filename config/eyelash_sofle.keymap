@@ -733,7 +733,7 @@
             >;
 
             display-name = "TWO";
-6hh            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
 
         layer_3 {
