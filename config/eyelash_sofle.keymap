@@ -739,8 +739,7 @@
 &bt BT_CLR     &kp LCTRL        &trans          &trans        &trans        &trans          &trans        &trans  &trans  &trans      &trans     &select_all_del
             >;
 
-            // Commented out - scroll_encoder is not available (depends on &msc which is not in this ZMK version)
-            // sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_3 {
