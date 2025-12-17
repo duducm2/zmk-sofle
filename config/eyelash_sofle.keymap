@@ -677,8 +677,8 @@
         layer_2 {
             bindings = <
 &ht_was6_altf4 LG(LA(LS(N6))) LA(F4)  &bt BT_SEL 0  &bt BT_SEL 3    &bt BT_SEL 2  &kp LG(HOME)  &kp LG(LS(E))    &morph_up     &mt_cshome LC(LS(HOME)) LS(HOME)  &mt_csend LC(LS(END)) LS(END)  &ht_cshome_del 0 0  &ht_csend_del 0 0     &mt_ctrl LC(HOME) HOME      &mt_ctrl LC(END) END
-&trans      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LA(PRINTSCREEN)  &trans  &trans      &trans    &mt_ctrl LC(LS(PG_UP)) LC(PG_UP)    &mt_ctrl LC(LS(PG_DN)) LC(PG_DN)
-&trans     &trans  &trans    &trans        &kp LC(LS(V))        &trans          &morph_left   &select_all_copy  &select_all_cut  &trans      &trans     &trans     &trans
+&trans      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LA(PRINTSCREEN)  &trans  &kp UP_ARROW      &trans    &mt_ctrl LC(LS(PG_UP)) LC(PG_UP)    &mt_ctrl LC(LS(PG_DN)) LC(PG_DN)
+&trans     &trans  &trans    &trans        &kp LC(LS(V))        &trans          &morph_left   &trans  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT_ARROW     &trans     &trans
 &trans     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &trans  &trans  &trans  &trans  &kp LG(LA(LS(N4)))  &kp LG(LA(LS(N5)))
 &bt BT_CLR     &kp LCTRL        &trans          &trans        &trans        &trans          &trans        &trans  &trans  &trans      &trans     &select_all_del
             >;
