@@ -710,7 +710,6 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = <
-                // Clipboard Reset Phase
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 50>,
                 <&macro_tap &kp LS(HOME)>,
@@ -719,7 +718,6 @@
                 <&macro_wait_time 50>,
                 <&macro_tap &kp BACKSPACE>,
                 <&macro_wait_time 100>,
-                // Command Phase
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
@@ -764,7 +762,6 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = <
-                // Clipboard Reset Phase
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 50>,
                 <&macro_tap &kp LS(HOME)>,
@@ -773,7 +770,6 @@
                 <&macro_wait_time 50>,
                 <&macro_tap &kp BACKSPACE>,
                 <&macro_wait_time 100>,
-                // Command Phase
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
@@ -818,7 +814,6 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = <
-                // Clipboard Reset Phase
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 50>,
                 <&macro_tap &kp LS(HOME)>,
@@ -827,7 +822,6 @@
                 <&macro_wait_time 50>,
                 <&macro_tap &kp BACKSPACE>,
                 <&macro_wait_time 100>,
-                // Command Phase
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
@@ -872,7 +866,6 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = <
-                // Clipboard Reset Phase
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 50>,
                 <&macro_tap &kp LS(HOME)>,
@@ -881,7 +874,6 @@
                 <&macro_wait_time 50>,
                 <&macro_tap &kp BACKSPACE>,
                 <&macro_wait_time 100>,
-                // Command Phase
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
@@ -926,7 +918,6 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = <
-                // Clipboard Reset Phase
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 50>,
                 <&macro_tap &kp LS(HOME)>,
@@ -935,7 +926,6 @@
                 <&macro_wait_time 50>,
                 <&macro_tap &kp BACKSPACE>,
                 <&macro_wait_time 100>,
-                // Command Phase
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
@@ -980,7 +970,6 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = <
-                // Clipboard Reset Phase
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 50>,
                 <&macro_tap &kp LS(HOME)>,
@@ -989,7 +978,6 @@
                 <&macro_wait_time 50>,
                 <&macro_tap &kp BACKSPACE>,
                 <&macro_wait_time 100>,
-                // Command Phase
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
