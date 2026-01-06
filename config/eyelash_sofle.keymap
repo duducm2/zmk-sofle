@@ -720,7 +720,27 @@
                 &kp BACKSPACE
                 &macro_wait_time 100
                 // Command Phase
-                &kp LS(N3) &kp LS(N3) &kp M &kp C &kp M &kp D &kp LS(MINUS) &kp N0 &kp N1 &kp LS(N3) &kp LS(N3)
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp M
+                &macro_wait_time 30
+                &kp C
+                &macro_wait_time 30
+                &kp M
+                &macro_wait_time 30
+                &kp D
+                &macro_wait_time 30
+                &kp LS(MINUS)
+                &macro_wait_time 30
+                &kp N0
+                &macro_wait_time 30
+                &kp N1
+                &macro_wait_time 30
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp LS(N3)
                 &macro_wait_time 50
                 &kp LS(HOME)
                 &macro_wait_time 50
@@ -746,7 +766,27 @@
                 &kp BACKSPACE
                 &macro_wait_time 100
                 // Command Phase
-                &kp LS(N3) &kp LS(N3) &kp M &kp C &kp M &kp D &kp LS(MINUS) &kp N0 &kp N2 &kp LS(N3) &kp LS(N3)
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp M
+                &macro_wait_time 30
+                &kp C
+                &macro_wait_time 30
+                &kp M
+                &macro_wait_time 30
+                &kp D
+                &macro_wait_time 30
+                &kp LS(MINUS)
+                &macro_wait_time 30
+                &kp N0
+                &macro_wait_time 30
+                &kp N2
+                &macro_wait_time 30
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp LS(N3)
                 &macro_wait_time 50
                 &kp LS(HOME)
                 &macro_wait_time 50
@@ -772,7 +812,27 @@
                 &kp BACKSPACE
                 &macro_wait_time 100
                 // Command Phase
-                &kp LS(N3) &kp LS(N3) &kp M &kp C &kp M &kp D &kp LS(MINUS) &kp N0 &kp N3 &kp LS(N3) &kp LS(N3)
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp M
+                &macro_wait_time 30
+                &kp C
+                &macro_wait_time 30
+                &kp M
+                &macro_wait_time 30
+                &kp D
+                &macro_wait_time 30
+                &kp LS(MINUS)
+                &macro_wait_time 30
+                &kp N0
+                &macro_wait_time 30
+                &kp N3
+                &macro_wait_time 30
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp LS(N3)
                 &macro_wait_time 50
                 &kp LS(HOME)
                 &macro_wait_time 50
@@ -798,7 +858,27 @@
                 &kp BACKSPACE
                 &macro_wait_time 100
                 // Command Phase
-                &kp LS(N3) &kp LS(N3) &kp M &kp C &kp M &kp D &kp LS(MINUS) &kp N0 &kp N4 &kp LS(N3) &kp LS(N3)
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp M
+                &macro_wait_time 30
+                &kp C
+                &macro_wait_time 30
+                &kp M
+                &macro_wait_time 30
+                &kp D
+                &macro_wait_time 30
+                &kp LS(MINUS)
+                &macro_wait_time 30
+                &kp N0
+                &macro_wait_time 30
+                &kp N4
+                &macro_wait_time 30
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp LS(N3)
                 &macro_wait_time 50
                 &kp LS(HOME)
                 &macro_wait_time 50
@@ -824,7 +904,27 @@
                 &kp BACKSPACE
                 &macro_wait_time 100
                 // Command Phase
-                &kp LS(N3) &kp LS(N3) &kp M &kp C &kp M &kp D &kp LS(MINUS) &kp N0 &kp N5 &kp LS(N3) &kp LS(N3)
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp M
+                &macro_wait_time 30
+                &kp C
+                &macro_wait_time 30
+                &kp M
+                &macro_wait_time 30
+                &kp D
+                &macro_wait_time 30
+                &kp LS(MINUS)
+                &macro_wait_time 30
+                &kp N0
+                &macro_wait_time 30
+                &kp N5
+                &macro_wait_time 30
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp LS(N3)
                 &macro_wait_time 50
                 &kp LS(HOME)
                 &macro_wait_time 50
@@ -850,7 +950,27 @@
                 &kp BACKSPACE
                 &macro_wait_time 100
                 // Command Phase
-                &kp LS(N3) &kp LS(N3) &kp M &kp C &kp M &kp D &kp LS(MINUS) &kp N0 &kp N6 &kp LS(N3) &kp LS(N3)
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp M
+                &macro_wait_time 30
+                &kp C
+                &macro_wait_time 30
+                &kp M
+                &macro_wait_time 30
+                &kp D
+                &macro_wait_time 30
+                &kp LS(MINUS)
+                &macro_wait_time 30
+                &kp N0
+                &macro_wait_time 30
+                &kp N6
+                &macro_wait_time 30
+                &kp LS(N3)
+                &macro_wait_time 30
+                &kp LS(N3)
                 &macro_wait_time 50
                 &kp LS(HOME)
                 &macro_wait_time 50
