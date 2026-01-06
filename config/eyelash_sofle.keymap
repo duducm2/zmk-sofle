@@ -720,9 +720,13 @@
                 &kp BACKSPACE
                 &macro_wait_time 100
                 // Command Phase
-                &kp LS(N3)
-                &macro_wait_time 30
-                &kp LS(N3)
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
+                &macro_wait_time 50
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
                 &macro_wait_time 30
                 &kp M
                 &macro_wait_time 30
@@ -738,9 +742,13 @@
                 &macro_wait_time 30
                 &kp N1
                 &macro_wait_time 30
-                &kp LS(N3)
-                &macro_wait_time 30
-                &kp LS(N3)
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
+                &macro_wait_time 50
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
                 &macro_wait_time 50
                 &kp LS(HOME)
                 &macro_wait_time 50
@@ -766,9 +774,13 @@
                 &kp BACKSPACE
                 &macro_wait_time 100
                 // Command Phase
-                &kp LS(N3)
-                &macro_wait_time 30
-                &kp LS(N3)
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
+                &macro_wait_time 50
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
                 &macro_wait_time 30
                 &kp M
                 &macro_wait_time 30
@@ -784,9 +796,13 @@
                 &macro_wait_time 30
                 &kp N2
                 &macro_wait_time 30
-                &kp LS(N3)
-                &macro_wait_time 30
-                &kp LS(N3)
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
+                &macro_wait_time 50
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
                 &macro_wait_time 50
                 &kp LS(HOME)
                 &macro_wait_time 50
@@ -812,9 +828,13 @@
                 &kp BACKSPACE
                 &macro_wait_time 100
                 // Command Phase
-                &kp LS(N3)
-                &macro_wait_time 30
-                &kp LS(N3)
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
+                &macro_wait_time 50
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
                 &macro_wait_time 30
                 &kp M
                 &macro_wait_time 30
@@ -830,9 +850,13 @@
                 &macro_wait_time 30
                 &kp N3
                 &macro_wait_time 30
-                &kp LS(N3)
-                &macro_wait_time 30
-                &kp LS(N3)
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
+                &macro_wait_time 50
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
                 &macro_wait_time 50
                 &kp LS(HOME)
                 &macro_wait_time 50
@@ -858,9 +882,13 @@
                 &kp BACKSPACE
                 &macro_wait_time 100
                 // Command Phase
-                &kp LS(N3)
-                &macro_wait_time 30
-                &kp LS(N3)
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
+                &macro_wait_time 50
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
                 &macro_wait_time 30
                 &kp M
                 &macro_wait_time 30
@@ -876,9 +904,13 @@
                 &macro_wait_time 30
                 &kp N4
                 &macro_wait_time 30
-                &kp LS(N3)
-                &macro_wait_time 30
-                &kp LS(N3)
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
+                &macro_wait_time 50
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
                 &macro_wait_time 50
                 &kp LS(HOME)
                 &macro_wait_time 50
@@ -904,9 +936,13 @@
                 &kp BACKSPACE
                 &macro_wait_time 100
                 // Command Phase
-                &kp LS(N3)
-                &macro_wait_time 30
-                &kp LS(N3)
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
+                &macro_wait_time 50
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
                 &macro_wait_time 30
                 &kp M
                 &macro_wait_time 30
@@ -922,9 +958,13 @@
                 &macro_wait_time 30
                 &kp N5
                 &macro_wait_time 30
-                &kp LS(N3)
-                &macro_wait_time 30
-                &kp LS(N3)
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
+                &macro_wait_time 50
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
                 &macro_wait_time 50
                 &kp LS(HOME)
                 &macro_wait_time 50
@@ -950,9 +990,13 @@
                 &kp BACKSPACE
                 &macro_wait_time 100
                 // Command Phase
-                &kp LS(N3)
-                &macro_wait_time 30
-                &kp LS(N3)
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
+                &macro_wait_time 50
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
                 &macro_wait_time 30
                 &kp M
                 &macro_wait_time 30
@@ -968,9 +1012,13 @@
                 &macro_wait_time 30
                 &kp N6
                 &macro_wait_time 30
-                &kp LS(N3)
-                &macro_wait_time 30
-                &kp LS(N3)
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
+                &macro_wait_time 50
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp N3>,
+                <&macro_release &kp LSHIFT>,
                 &macro_wait_time 50
                 &kp LS(HOME)
                 &macro_wait_time 50
