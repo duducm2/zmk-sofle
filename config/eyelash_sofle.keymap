@@ -703,21 +703,29 @@
         // Clipboard signal injection macros for MacroDroid
         // Each macro includes a clipboard reset phase (space) followed by the command phase
         // This ensures MacroDroid detects consecutive activations of the same shortcut
+        // Added delays between operations to ensure reliable execution
         mcmd_01: mcmd_01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings = <
                 // Clipboard Reset Phase
                 &kp SPACE
+                &macro_wait_time 50
                 &kp LS(HOME)
+                &macro_wait_time 50
                 &kp LC(C)
+                &macro_wait_time 50
                 &kp BACKSPACE
+                &macro_wait_time 100
                 // Command Phase
                 &kp LS(N3) &kp LS(N3) &kp M &kp C &kp M &kp D &kp LS(MINUS) &kp N0 &kp N1 &kp LS(N3) &kp LS(N3)
+                &macro_wait_time 50
                 &kp LS(HOME)
+                &macro_wait_time 50
                 &kp LC(C)
+                &macro_wait_time 50
                 &kp BACKSPACE
             >;
         };
@@ -725,18 +733,25 @@
         mcmd_02: mcmd_02 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings = <
                 // Clipboard Reset Phase
                 &kp SPACE
+                &macro_wait_time 50
                 &kp LS(HOME)
+                &macro_wait_time 50
                 &kp LC(C)
+                &macro_wait_time 50
                 &kp BACKSPACE
+                &macro_wait_time 100
                 // Command Phase
                 &kp LS(N3) &kp LS(N3) &kp M &kp C &kp M &kp D &kp LS(MINUS) &kp N0 &kp N2 &kp LS(N3) &kp LS(N3)
+                &macro_wait_time 50
                 &kp LS(HOME)
+                &macro_wait_time 50
                 &kp LC(C)
+                &macro_wait_time 50
                 &kp BACKSPACE
             >;
         };
@@ -744,18 +759,25 @@
         mcmd_03: mcmd_03 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings = <
                 // Clipboard Reset Phase
                 &kp SPACE
+                &macro_wait_time 50
                 &kp LS(HOME)
+                &macro_wait_time 50
                 &kp LC(C)
+                &macro_wait_time 50
                 &kp BACKSPACE
+                &macro_wait_time 100
                 // Command Phase
                 &kp LS(N3) &kp LS(N3) &kp M &kp C &kp M &kp D &kp LS(MINUS) &kp N0 &kp N3 &kp LS(N3) &kp LS(N3)
+                &macro_wait_time 50
                 &kp LS(HOME)
+                &macro_wait_time 50
                 &kp LC(C)
+                &macro_wait_time 50
                 &kp BACKSPACE
             >;
         };
@@ -763,18 +785,25 @@
         mcmd_04: mcmd_04 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings = <
                 // Clipboard Reset Phase
                 &kp SPACE
+                &macro_wait_time 50
                 &kp LS(HOME)
+                &macro_wait_time 50
                 &kp LC(C)
+                &macro_wait_time 50
                 &kp BACKSPACE
+                &macro_wait_time 100
                 // Command Phase
                 &kp LS(N3) &kp LS(N3) &kp M &kp C &kp M &kp D &kp LS(MINUS) &kp N0 &kp N4 &kp LS(N3) &kp LS(N3)
+                &macro_wait_time 50
                 &kp LS(HOME)
+                &macro_wait_time 50
                 &kp LC(C)
+                &macro_wait_time 50
                 &kp BACKSPACE
             >;
         };
@@ -782,18 +811,25 @@
         mcmd_05: mcmd_05 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings = <
                 // Clipboard Reset Phase
                 &kp SPACE
+                &macro_wait_time 50
                 &kp LS(HOME)
+                &macro_wait_time 50
                 &kp LC(C)
+                &macro_wait_time 50
                 &kp BACKSPACE
+                &macro_wait_time 100
                 // Command Phase
                 &kp LS(N3) &kp LS(N3) &kp M &kp C &kp M &kp D &kp LS(MINUS) &kp N0 &kp N5 &kp LS(N3) &kp LS(N3)
+                &macro_wait_time 50
                 &kp LS(HOME)
+                &macro_wait_time 50
                 &kp LC(C)
+                &macro_wait_time 50
                 &kp BACKSPACE
             >;
         };
@@ -801,18 +837,25 @@
         mcmd_06: mcmd_06 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <50>;
+            tap-ms = <50>;
             bindings = <
                 // Clipboard Reset Phase
                 &kp SPACE
+                &macro_wait_time 50
                 &kp LS(HOME)
+                &macro_wait_time 50
                 &kp LC(C)
+                &macro_wait_time 50
                 &kp BACKSPACE
+                &macro_wait_time 100
                 // Command Phase
                 &kp LS(N3) &kp LS(N3) &kp M &kp C &kp M &kp D &kp LS(MINUS) &kp N0 &kp N6 &kp LS(N3) &kp LS(N3)
+                &macro_wait_time 50
                 &kp LS(HOME)
+                &macro_wait_time 50
                 &kp LC(C)
+                &macro_wait_time 50
                 &kp BACKSPACE
             >;
         };
