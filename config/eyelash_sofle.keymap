@@ -711,50 +711,50 @@
             tap-ms = <50>;
             bindings = <
                 // Clipboard Reset Phase
-                &kp SPACE
-                &macro_wait_time 50
-                &kp LS(HOME)
-                &macro_wait_time 50
-                &kp LC(C)
-                &macro_wait_time 50
-                &kp BACKSPACE
-                &macro_wait_time 100
+                <&macro_tap &kp SPACE>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LS(HOME)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LC(C)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp BACKSPACE>,
+                <&macro_wait_time 100>,
                 // Command Phase
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
+                <&macro_wait_time 50>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 30
-                &kp M
-                &macro_wait_time 30
-                &kp C
-                &macro_wait_time 30
-                &kp M
-                &macro_wait_time 30
-                &kp D
-                &macro_wait_time 30
-                &kp LS(MINUS)
-                &macro_wait_time 30
-                &kp N0
-                &macro_wait_time 30
-                &kp N1
-                &macro_wait_time 30
+                <&macro_wait_time 30>,
+                <&macro_tap &kp M>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp C>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp M>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp D>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp LS(MINUS)>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp N0>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp N1>,
+                <&macro_wait_time 30>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
+                <&macro_wait_time 50>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
-                &kp LS(HOME)
-                &macro_wait_time 50
-                &kp LC(C)
-                &macro_wait_time 50
-                &kp BACKSPACE
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LS(HOME)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LC(C)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp BACKSPACE>
             >;
         };
 
@@ -765,50 +765,50 @@
             tap-ms = <50>;
             bindings = <
                 // Clipboard Reset Phase
-                &kp SPACE
-                &macro_wait_time 50
-                &kp LS(HOME)
-                &macro_wait_time 50
-                &kp LC(C)
-                &macro_wait_time 50
-                &kp BACKSPACE
-                &macro_wait_time 100
+                <&macro_tap &kp SPACE>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LS(HOME)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LC(C)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp BACKSPACE>,
+                <&macro_wait_time 100>,
                 // Command Phase
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
+                <&macro_wait_time 50>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 30
-                &kp M
-                &macro_wait_time 30
-                &kp C
-                &macro_wait_time 30
-                &kp M
-                &macro_wait_time 30
-                &kp D
-                &macro_wait_time 30
-                &kp LS(MINUS)
-                &macro_wait_time 30
-                &kp N0
-                &macro_wait_time 30
-                &kp N2
-                &macro_wait_time 30
+                <&macro_wait_time 30>,
+                <&macro_tap &kp M>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp C>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp M>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp D>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp LS(MINUS)>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp N0>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp N2>,
+                <&macro_wait_time 30>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
+                <&macro_wait_time 50>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
-                &kp LS(HOME)
-                &macro_wait_time 50
-                &kp LC(C)
-                &macro_wait_time 50
-                &kp BACKSPACE
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LS(HOME)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LC(C)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp BACKSPACE>
             >;
         };
 
@@ -819,50 +819,50 @@
             tap-ms = <50>;
             bindings = <
                 // Clipboard Reset Phase
-                &kp SPACE
-                &macro_wait_time 50
-                &kp LS(HOME)
-                &macro_wait_time 50
-                &kp LC(C)
-                &macro_wait_time 50
-                &kp BACKSPACE
-                &macro_wait_time 100
+                <&macro_tap &kp SPACE>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LS(HOME)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LC(C)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp BACKSPACE>,
+                <&macro_wait_time 100>,
                 // Command Phase
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
+                <&macro_wait_time 50>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 30
-                &kp M
-                &macro_wait_time 30
-                &kp C
-                &macro_wait_time 30
-                &kp M
-                &macro_wait_time 30
-                &kp D
-                &macro_wait_time 30
-                &kp LS(MINUS)
-                &macro_wait_time 30
-                &kp N0
-                &macro_wait_time 30
-                &kp N3
-                &macro_wait_time 30
+                <&macro_wait_time 30>,
+                <&macro_tap &kp M>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp C>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp M>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp D>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp LS(MINUS)>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp N0>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp N3>,
+                <&macro_wait_time 30>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
+                <&macro_wait_time 50>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
-                &kp LS(HOME)
-                &macro_wait_time 50
-                &kp LC(C)
-                &macro_wait_time 50
-                &kp BACKSPACE
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LS(HOME)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LC(C)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp BACKSPACE>
             >;
         };
 
@@ -873,50 +873,50 @@
             tap-ms = <50>;
             bindings = <
                 // Clipboard Reset Phase
-                &kp SPACE
-                &macro_wait_time 50
-                &kp LS(HOME)
-                &macro_wait_time 50
-                &kp LC(C)
-                &macro_wait_time 50
-                &kp BACKSPACE
-                &macro_wait_time 100
+                <&macro_tap &kp SPACE>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LS(HOME)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LC(C)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp BACKSPACE>,
+                <&macro_wait_time 100>,
                 // Command Phase
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
+                <&macro_wait_time 50>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 30
-                &kp M
-                &macro_wait_time 30
-                &kp C
-                &macro_wait_time 30
-                &kp M
-                &macro_wait_time 30
-                &kp D
-                &macro_wait_time 30
-                &kp LS(MINUS)
-                &macro_wait_time 30
-                &kp N0
-                &macro_wait_time 30
-                &kp N4
-                &macro_wait_time 30
+                <&macro_wait_time 30>,
+                <&macro_tap &kp M>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp C>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp M>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp D>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp LS(MINUS)>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp N0>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp N4>,
+                <&macro_wait_time 30>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
+                <&macro_wait_time 50>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
-                &kp LS(HOME)
-                &macro_wait_time 50
-                &kp LC(C)
-                &macro_wait_time 50
-                &kp BACKSPACE
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LS(HOME)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LC(C)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp BACKSPACE>
             >;
         };
 
@@ -927,50 +927,50 @@
             tap-ms = <50>;
             bindings = <
                 // Clipboard Reset Phase
-                &kp SPACE
-                &macro_wait_time 50
-                &kp LS(HOME)
-                &macro_wait_time 50
-                &kp LC(C)
-                &macro_wait_time 50
-                &kp BACKSPACE
-                &macro_wait_time 100
+                <&macro_tap &kp SPACE>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LS(HOME)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LC(C)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp BACKSPACE>,
+                <&macro_wait_time 100>,
                 // Command Phase
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
+                <&macro_wait_time 50>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 30
-                &kp M
-                &macro_wait_time 30
-                &kp C
-                &macro_wait_time 30
-                &kp M
-                &macro_wait_time 30
-                &kp D
-                &macro_wait_time 30
-                &kp LS(MINUS)
-                &macro_wait_time 30
-                &kp N0
-                &macro_wait_time 30
-                &kp N5
-                &macro_wait_time 30
+                <&macro_wait_time 30>,
+                <&macro_tap &kp M>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp C>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp M>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp D>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp LS(MINUS)>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp N0>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp N5>,
+                <&macro_wait_time 30>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
+                <&macro_wait_time 50>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
-                &kp LS(HOME)
-                &macro_wait_time 50
-                &kp LC(C)
-                &macro_wait_time 50
-                &kp BACKSPACE
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LS(HOME)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LC(C)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp BACKSPACE>
             >;
         };
 
@@ -981,50 +981,50 @@
             tap-ms = <50>;
             bindings = <
                 // Clipboard Reset Phase
-                &kp SPACE
-                &macro_wait_time 50
-                &kp LS(HOME)
-                &macro_wait_time 50
-                &kp LC(C)
-                &macro_wait_time 50
-                &kp BACKSPACE
-                &macro_wait_time 100
+                <&macro_tap &kp SPACE>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LS(HOME)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LC(C)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp BACKSPACE>,
+                <&macro_wait_time 100>,
                 // Command Phase
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
+                <&macro_wait_time 50>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 30
-                &kp M
-                &macro_wait_time 30
-                &kp C
-                &macro_wait_time 30
-                &kp M
-                &macro_wait_time 30
-                &kp D
-                &macro_wait_time 30
-                &kp LS(MINUS)
-                &macro_wait_time 30
-                &kp N0
-                &macro_wait_time 30
-                &kp N6
-                &macro_wait_time 30
+                <&macro_wait_time 30>,
+                <&macro_tap &kp M>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp C>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp M>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp D>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp LS(MINUS)>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp N0>,
+                <&macro_wait_time 30>,
+                <&macro_tap &kp N6>,
+                <&macro_wait_time 30>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
+                <&macro_wait_time 50>,
                 <&macro_press &kp LSHIFT>,
                 <&macro_tap &kp N3>,
                 <&macro_release &kp LSHIFT>,
-                &macro_wait_time 50
-                &kp LS(HOME)
-                &macro_wait_time 50
-                &kp LC(C)
-                &macro_wait_time 50
-                &kp BACKSPACE
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LS(HOME)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp LC(C)>,
+                <&macro_wait_time 50>,
+                <&macro_tap &kp BACKSPACE>
             >;
         };
 
