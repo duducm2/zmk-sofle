@@ -34,85 +34,9 @@
 
 / {
     macros {
-        // Macro to open MacroDroid drawer on Xiaomi Poco F7
-        // Screen Resolution: 1280x2772 pixels (Width x Height)
-        // Calculated offsets: 10% Height = 277px, 25% Width = 320px
-        // Movement speed: ~11.25 px/ms (based on MOVE_VAL=180, trigger=16ms)
-        macro_macrodroid_drawer: macro_macrodroid_drawer {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings =
-                // === STEP 1: Anchor to bottom-right corner ===
-                // Move right for 500ms to saturate X-axis (reach right edge)
-                <&macro_press &mmv_no_accel MOVE_RIGHT>,
-                <&macro_wait_time 500>,
-                <&macro_release &mmv_no_accel MOVE_RIGHT>,
-                // Move down for 500ms to saturate Y-axis (reach bottom edge)
-                <&macro_press &mmv_no_accel MOVE_DOWN>,
-                <&macro_wait_time 500>,
-                <&macro_release &mmv_no_accel MOVE_DOWN>,
-                <&macro_wait_time 50>,  // Stabilization delay
-
-                // === STEP 2: Move UP by 10% of screen height ===
-                // Target: ~277 pixels = 25ms * 11.25 px/ms = 281px (~10.1%)
-                <&macro_press &mmv_no_accel MOVE_UP>,
-                <&macro_wait_time 25>,  // *** 10% HEIGHT offset (adjust this value to tune) ***
-                <&macro_release &mmv_no_accel MOVE_UP>,
-                <&macro_wait_time 50>,  // Stabilization delay
-
-                // === STEP 3: Execute swipe (open drawer) ===
-                // 3a. Press and hold Left Mouse Button
-                <&macro_press &mkp LCLK>,
-                <&macro_wait_time 100>,  // Hold before swipe
-                
-                // 3b. Move UP by additional 10% of screen height (swipe gesture)
-                // Target: ~277 pixels = 25ms * 11.25 px/ms = 281px (~10.1%)
-                <&macro_press &mmv_no_accel MOVE_UP>,
-                <&macro_wait_time 25>,  // *** 10% HEIGHT swipe (adjust this value to tune) ***
-                <&macro_release &mmv_no_accel MOVE_UP>,
-                <&macro_wait_time 100>,  // Hold after swipe
-                
-                // 3c. Release Left Mouse Button
-                <&macro_release &mkp LCLK>,
-                <&macro_wait_time 200>,  // Wait for drawer animation
-
-                // === STEP 4: Reposition to top-right corner ===
-                // Move up for 500ms to saturate Y-axis (reach top edge)
-                <&macro_press &mmv_no_accel MOVE_UP>,
-                <&macro_wait_time 500>,
-                <&macro_release &mmv_no_accel MOVE_UP>,
-                // Move right for 500ms to ensure at right edge
-                <&macro_press &mmv_no_accel MOVE_RIGHT>,
-                <&macro_wait_time 500>,
-                <&macro_release &mmv_no_accel MOVE_RIGHT>,
-                <&macro_wait_time 50>,  // Stabilization delay
-
-                // === STEP 5: Move LEFT by 25% of screen width ===
-                // Target: ~320 pixels = 28ms * 11.25 px/ms = 315px (~24.6%)
-                <&macro_press &mmv_no_accel MOVE_LEFT>,
-                <&macro_wait_time 28>,  // *** 25% WIDTH offset (adjust this value to tune) ***
-                <&macro_release &mmv_no_accel MOVE_LEFT>,
-                <&macro_wait_time 50>,  // Stabilization delay
-
-                // === STEP 6: Move DOWN by 10% of screen height (skip header) ===
-                // Target: ~277 pixels = 25ms * 11.25 px/ms = 281px (~10.1%)
-                <&macro_press &mmv_no_accel MOVE_DOWN>,
-                <&macro_wait_time 25>,  // *** 10% HEIGHT header bypass (adjust this value to tune) ***
-                <&macro_release &mmv_no_accel MOVE_DOWN>;
-        };
     };
 
     behaviors {
-        // Constant-speed mouse movement for precise macros (no acceleration)
-        mmv_no_accel: mmv_no_accel {
-            compatible = "zmk,behavior-mouse-move";
-            #binding-cells = <1>;
-            time-to-max-speed-ms = <0>;  // Instant max speed (no acceleration)
-            acceleration-exponent = <0>;  // Linear movement
-            trigger-period-ms = <16>;     // 16ms refresh rate
-        };
         five_rights: five_rights {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -804,7 +728,7 @@
 &ht_was6_altf4 LG(LA(LS(N6))) LA(F4)  &bt BT_SEL 0  &bt BT_SEL 3    &bt BT_SEL 2  &kp LG(HOME)  &kp LG(LS(E))    &morph_up     &mt_cshome LC(LS(HOME)) LS(HOME)  &mt_csend LC(LS(END)) LS(END)  &ht_cshome_del 0 0  &ht_csend_del 0 0     &mt_ctrl LC(HOME) HOME      &mt_ctrl LC(END) END
 &trans      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LA(PRINTSCREEN)  &kp UP_ARROW  &kp PG_UP      &kp PG_DN      &mt_ctrl LC(LS(PG_UP)) LC(PG_UP)    &mt_ctrl LC(LS(PG_DN)) LC(PG_DN)
 &trans     &trans  &trans    &trans        &kp LC(LS(V))        &trans          &morph_left   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans     &trans     &trans
-&trans     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &macro_macrodroid_drawer  &trans  &trans  &trans  &kp LG(LA(LS(N4)))  &kp LG(LA(LS(N5)))
+&trans     &trans    &trans          &trans   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &trans  &trans  &trans  &trans  &kp LG(LA(LS(N4)))  &kp LG(LA(LS(N5)))
 &bt BT_CLR     &kp LCTRL        &trans          &trans        &trans        &trans          &trans        &trans  &trans  &trans      &trans     &select_all_del
             >;
 
