@@ -710,6 +710,10 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = 
+                <&macro_tap &kp LG(B)>,
+                <&macro_wait_time 300>,
+                <&macro_tap &kp LC(E)>,
+                <&macro_wait_time 300>,
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 50>,
                 <&macro_tap &kp LS(HOME)>,
@@ -761,6 +765,10 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = 
+                <&macro_tap &kp LG(B)>,
+                <&macro_wait_time 300>,
+                <&macro_tap &kp LC(E)>,
+                <&macro_wait_time 300>,
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 50>,
                 <&macro_tap &kp LS(HOME)>,
@@ -812,6 +820,10 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = 
+                <&macro_tap &kp LG(B)>,
+                <&macro_wait_time 300>,
+                <&macro_tap &kp LC(E)>,
+                <&macro_wait_time 300>,
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 50>,
                 <&macro_tap &kp LS(HOME)>,
@@ -863,6 +875,10 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = 
+                <&macro_tap &kp LG(B)>,
+                <&macro_wait_time 300>,
+                <&macro_tap &kp LC(E)>,
+                <&macro_wait_time 300>,
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 50>,
                 <&macro_tap &kp LS(HOME)>,
@@ -914,6 +930,10 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = 
+                <&macro_tap &kp LG(B)>,
+                <&macro_wait_time 300>,
+                <&macro_tap &kp LC(E)>,
+                <&macro_wait_time 300>,
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 50>,
                 <&macro_tap &kp LS(HOME)>,
@@ -965,6 +985,10 @@
             wait-ms = <50>;
             tap-ms = <50>;
             bindings = 
+                <&macro_tap &kp LG(B)>,
+                <&macro_wait_time 300>,
+                <&macro_tap &kp LC(E)>,
+                <&macro_wait_time 300>,
                 <&macro_tap &kp SPACE>,
                 <&macro_wait_time 50>,
                 <&macro_tap &kp LS(HOME)>,
