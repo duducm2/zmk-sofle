@@ -1,1 +1,0 @@
-{"sessionId":"debug-session","id":"log_pointing_include_error","timestamp":1734432000000,"location":"analyze_pointing_error","message":"pointing.h include file not found","data":{"error":"fatal error: dt-bindings/zmk/pointing.h: No such file or directory","line":11,"file":"eyelash_sofle.keymap","uses_pointing":true},"runId":"pointing-error-analysis","hypothesisId":"A"}

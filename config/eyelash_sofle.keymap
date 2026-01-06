@@ -102,6 +102,7 @@
                 <&macro_wait_time 25>,  // *** 10% HEIGHT header bypass (adjust this value to tune) ***
                 <&macro_release &mmv_no_accel MOVE_DOWN>;
         };
+    };
 
     behaviors {
         // Constant-speed mouse movement for precise macros (no acceleration)
