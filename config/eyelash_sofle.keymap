@@ -1,6 +1,14 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 180   // 85% slower (15% of original 1200)
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
+// Fixed "quick jump" distance (relative mouse pixels per tap).
+// Used when Control is held on the `morph_mmv_*` keys.
+#define ZMK_POINTING_QUICK_JUMP_VAL 1600
+#define QUICK_JUMP_UP    0 -ZMK_POINTING_QUICK_JUMP_VAL
+#define QUICK_JUMP_DOWN  0  ZMK_POINTING_QUICK_JUMP_VAL
+#define QUICK_JUMP_LEFT  -ZMK_POINTING_QUICK_JUMP_VAL 0
+#define QUICK_JUMP_RIGHT  ZMK_POINTING_QUICK_JUMP_VAL 0
+
 // Removed: #include <zmk/input/processors.dtsi> - file not found in this ZMK version
 // Testing if zip_xy_scaler and zip_scroll_scaler are available without the include
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -286,31 +294,93 @@
          * No Shift held  → mouse movement
          * Shift held     → Windows+Alt+Shift+ArrowKey
          */
+
+        /* One-shot mouse "quick jump" macros (used by the Ctrl morph below). */
+        jump_mmv_up: jump_mmv_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv QUICK_JUMP_UP>;
+        };
+
+        jump_mmv_down: jump_mmv_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv QUICK_JUMP_DOWN>;
+        };
+
+        jump_mmv_left: jump_mmv_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv QUICK_JUMP_LEFT>;
+        };
+
+        jump_mmv_right: jump_mmv_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv QUICK_JUMP_RIGHT>;
+        };
+
+        /* Ctrl-aware morph used as the "no-Shift" branch:
+         * - No Ctrl held  → continuous mouse movement
+         * - Ctrl held     → one-shot large pixel jump
+         */
+        morph_mmv_up_ctrl: morph_mmv_up_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_UP>, <&jump_mmv_up>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        morph_mmv_down_ctrl: morph_mmv_down_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_DOWN>, <&jump_mmv_down>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        morph_mmv_left_ctrl: morph_mmv_left_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT>, <&jump_mmv_left>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
+        morph_mmv_right_ctrl: morph_mmv_right_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT>, <&jump_mmv_right>;
+            mods = <(MOD_LCTL | MOD_RCTL)>;
+            keep-mods = <(MOD_LCTL | MOD_RCTL)>;
+        };
+
         morph_mmv_up: morph_mmv_up {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_UP>, <&was_up>;
+            bindings = <&morph_mmv_up_ctrl>, <&was_up>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
         morph_mmv_down: morph_mmv_down {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_DOWN>, <&was_down>;
+            bindings = <&morph_mmv_down_ctrl>, <&was_down>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
         morph_mmv_left: morph_mmv_left {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_LEFT>, <&was_left>;
+            bindings = <&morph_mmv_left_ctrl>, <&was_left>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
         morph_mmv_right: morph_mmv_right {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_RIGHT>, <&was_right>;
+            bindings = <&morph_mmv_right_ctrl>, <&was_right>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
