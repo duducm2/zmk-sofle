@@ -46,20 +46,6 @@
     };
 
     behaviors {
-        /* Dedicated mouse-move behavior for "quick jumps":
-         * - No acceleration (instant full delta)
-         * - Same REL_X/REL_Y codes as standard `mmv`
-         */
-        mmv_jump: mmv_jump {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            x-input-code = <0x00>; /* REL_X */
-            y-input-code = <0x01>; /* REL_Y */
-            time-to-max-speed-ms = <0>;
-            acceleration-exponent = <0>;
-            trigger-period-ms = <16>;
-        };
-
         five_rights: five_rights {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -314,29 +300,29 @@
         jump_mmv_up: jump_mmv_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tap-ms = <25>;
-            bindings = <&mmv_jump QUICK_JUMP_UP>;
+            tap-ms = <40>;
+            bindings = <&mmv QUICK_JUMP_UP>;
         };
 
         jump_mmv_down: jump_mmv_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tap-ms = <25>;
-            bindings = <&mmv_jump QUICK_JUMP_DOWN>;
+            tap-ms = <40>;
+            bindings = <&mmv QUICK_JUMP_DOWN>;
         };
 
         jump_mmv_left: jump_mmv_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tap-ms = <25>;
-            bindings = <&mmv_jump QUICK_JUMP_LEFT>;
+            tap-ms = <40>;
+            bindings = <&mmv QUICK_JUMP_LEFT>;
         };
 
         jump_mmv_right: jump_mmv_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tap-ms = <25>;
-            bindings = <&mmv_jump QUICK_JUMP_RIGHT>;
+            tap-ms = <40>;
+            bindings = <&mmv QUICK_JUMP_RIGHT>;
         };
 
         /* Ctrl-aware morph used as the "no-Shift" branch:
