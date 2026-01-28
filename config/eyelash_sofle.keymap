@@ -4,7 +4,7 @@
 // Fixed "quick jump" distance (relative mouse pixels per tap).
 // Used when Control is held on the `morph_mmv_*` keys.
 // Multiplied ×10 for a much larger jump.
-#define ZMK_POINTING_QUICK_JUMP_VAL 16000
+#define ZMK_POINTING_QUICK_JUMP_VAL 160000
 // NOTE: `&mmv` takes a single packed cell: X in high 16 bits, Y in low 16 bits (signed).
 #define QUICK_JUMP_UP    ((-ZMK_POINTING_QUICK_JUMP_VAL) & 0xFFFF)
 #define QUICK_JUMP_DOWN  (( ZMK_POINTING_QUICK_JUMP_VAL) & 0xFFFF)
