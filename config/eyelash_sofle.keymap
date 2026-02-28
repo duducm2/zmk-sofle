@@ -528,12 +528,12 @@
             bindings = <&caw_press &macro_tap &kp R &caw_release>;
         };
 
-        // Tap-dance for 1 tap = N0, 2 taps = J
+        // Tap-dance: 1 tap = Win+Alt+Shift+N0, 2 taps = Ctrl+Alt+Win+4
         td_n7_l: tap_dance_n7_l {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp LG(LA(LS(N0)))>, <&kp LG(LA(LS(J)))>;
+            bindings = <&kp LG(LA(LS(N0)))>, <&kp LC(LA(LG(N4)))>;
         };
 
         // Hold-tap: hold = N7, tap = tap-dance (1 tap = N0, 2 taps = J)
