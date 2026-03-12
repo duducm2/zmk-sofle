@@ -752,6 +752,23 @@
             bindings = <&mo>, <&td_enter_was_u>;
         };
 
+        // Tap-dance: 1× Ctrl+Alt+Win+0, 2× Ctrl+Alt+Win+1
+        td_mo1_caw_01: tap_dance_mo1_caw_01 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp LC(LA(LG(N0)))>, <&kp LC(LA(LG(N1)))>;
+        };
+
+        // Hold-tap: hold = layer 1, tap = Ctrl+Alt+Win+0/1 tap-dance
+        ht_mo1_caw01_td: hold_tap_mo1_caw01 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&td_mo1_caw_01>;
+        };
+
         // Tap-dance: 1× minimize window, 2× maximize window
         td_maximize_minimize: tap_dance_maximize_minimize {
             compatible = "zmk,behavior-tap-dance";
@@ -1124,7 +1141,7 @@
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &ht_as_w_td LA(LS(S)) 0
 &kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &ht_n0_td LC(LA(LG(L))) 0    &ht_was1_cabv_td LG(LA(LS(N1))) 0
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &ht_close_window_td LA(F4) 0    &kp ENTER
-&kp C_PLAY_PAUSE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE   &mo 1    &trans        &ht_mo2_enter_was_u 2 0  &kp LG( LA( LEFT_SHIFT ) )  &ht_lgshfte_ps_td 0 0      &ht_lghome_ctx_td LG(LS(E)) 0  &kp DELETE
+&kp C_PLAY_PAUSE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE   &ht_mo1_caw01_td 1 0    &trans        &ht_mo2_enter_was_u 2 0  &kp LG( LA( LEFT_SHIFT ) )  &ht_lgshfte_ps_td 0 0      &ht_lghome_ctx_td LG(LS(E)) 0  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
