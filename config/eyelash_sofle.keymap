@@ -639,12 +639,12 @@
             bindings = <&kp>, <&td_ctrl_alt_bv>;   // keycode supplied inline in keymap
         };
 
-        // Tap-dance: 1× context-menu, 2× select-all-cut
+        // Tap-dance: 1× context-menu, 2× Ctrl+Win+Alt+B, 3× Ctrl+Win+Alt+9, 4× select-all-cut
         td_ctx_sa_cut: tap_dance_ctx_sa_cut {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp K_CONTEXT_MENU>, <&select_all_cut>;
+            bindings = <&kp K_CONTEXT_MENU>, <&kp LC(LA(LG(B)))>, <&kp LC(LA(LG(N9)))>, <&select_all_cut>;
         };
 
         // Hold-tap: hold = LG(LS(E)), tap = td_ctx_sa_cut
