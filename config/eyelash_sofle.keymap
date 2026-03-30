@@ -751,12 +751,21 @@
             bindings = <&mo>, <&td_mo1_caw_01>;
         };
 
-        // Tap-dance: 1× minimize, 2× close (Alt+F4), 3× maximize
-        td_min_close_max: tap_dance_min_close_max {
+        // Tap-dance: 1× minimize, 2× close (Alt+F4)
+        td_min_close: tap_dance_min_close {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp LG(LA(LS(N6)))>, <&kp LA(F4)>, <&kp LG(LA(LS(M)))>;
+            bindings = <&kp LG(LA(LS(N6)))>, <&kp LA(F4)>;
+        };
+
+        // Hold-tap: hold = maximize current window (Win+Up), tap = minimize/close tap-dance
+        td_min_close_max: hold_tap_min_close_max {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp LG(UP_ARROW)>, <&td_min_close>;
         };
 
         // Macro: Windows+B, wait 1 second, then Control+E
