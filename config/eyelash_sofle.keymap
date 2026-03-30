@@ -44,8 +44,23 @@
     trigger-period-ms = <16>;
 };
 
+/* Sticky layer: rapid directional (AIB) “modifier” — not Alt/Ctrl/Win; uses layer stack only. */
+&sl {
+    release-after-ms = <2000>;
+};
+
 / {
     macros {
+    };
+
+    /* When layer 2 (nav) and sticky layer 3 (rapid) are both on, layer 4 adds 5× arrows on
+     * layer-2-only arrow positions without breaking base layer (e.g. U at row1 col8). */
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        rapid_nav_l2_l3 {
+            if-layers = <2 3>;
+            then-layer = <4>;
+        };
     };
 
     behaviors {
@@ -1143,7 +1158,7 @@
 
         layer_2 {
             bindings = <
-&kp LC(LA(LG(N2))) &bt BT_SEL 0  &bt BT_SEL 3    &bt BT_SEL 2  &trans  &trans    &morph_up     &mt_cshome LC(LS(HOME)) LS(HOME)  &mt_csend LC(LS(END)) LS(END)  &ht_cshome_del 0 0  &ht_csend_del 0 0     &mt_ctrl LC(HOME) HOME      &mt_ctrl LC(END) END
+&kp LC(LA(LG(N2))) &bt BT_SEL 0  &bt BT_SEL 3    &bt BT_SEL 2  &trans  &sl 3    &morph_up     &mt_cshome LC(LS(HOME)) LS(HOME)  &mt_csend LC(LS(END)) LS(END)  &ht_cshome_del 0 0  &ht_csend_del 0 0     &mt_ctrl LC(HOME) HOME      &mt_ctrl LC(END) END
 &kp LC(LA(LG(N8)))      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LA(PRINTSCREEN)  &kp UP_ARROW  &kp PG_UP      &kp PG_DN      &mt_ctrl LC(LS(PG_UP)) LC(PG_UP)    &mt_ctrl LC(LS(PG_DN)) LC(PG_DN)
 &kp LC(LA(LG(N5)))     &mcmd_01  &mcmd_02    &mcmd_03        &kp LC(LS(V))        &trans          &morph_left   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans     &trans     &trans
 &trans     &mcmd_04    &mcmd_05          &mcmd_06   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &trans  &trans  &trans  &trans  &kp LG(LA(LS(N4)))  &kp LG(LA(LS(N5)))
@@ -1154,11 +1169,25 @@
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
 
+        /* Sticky layer 3: rapid directional (5× HID arrows). Thumb column matches layer 0 arrows. */
         layer_3 {
             bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &five_ups     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &five_downs   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &five_lefts   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &five_rights  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &trans  &trans  &trans
+            >;
+
+            display-name = "RAPID-AIB";
+        };
+
+        /* Auto with layer 2+3: layer-2-only arrow positions → 5× (see conditional_layers). */
+        layer_4 {
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &five_ups  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &five_lefts  &five_downs  &five_rights  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
