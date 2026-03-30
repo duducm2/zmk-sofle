@@ -545,12 +545,12 @@
             bindings = <&kp>, <&td_n7_l>;
         };
 
-        // Tap-dance: 1× Alt+Shift+Q, 2× Alt+Shift+W, 3× Ctrl+Alt+Win+I
+        // Tap-dance: 1× Alt+Shift+Q, 2× Alt+Shift+W, 3× Ctrl+Alt+Win+M
         td_as_qs: tap_dance_as_qs {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp LA(LS(Q))>, <&kp LA(LS(W))>, <&kp LC(LA(LG(I)))>;
+            bindings = <&kp LA(LS(Q))>, <&kp LA(LS(W))>, <&kp LC(LA(LG(M)))>;
         };
 
         // Hold-tap: hold = Alt+Shift+W, tap = tap-dance above
