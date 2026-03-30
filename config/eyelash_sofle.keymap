@@ -717,12 +717,12 @@
             bindings = <&mo>, <&td_win_win_h>;
         };
 
-        // Tap-dance: 1× Windows+Alt+Shift+U, 2× Windows+Alt+Shift+Y
+        // Tap-dance: 1× Windows+Alt+Shift+U, 2× Ctrl+Alt+Win+B, 3× Ctrl+Alt+Win+9
         td_enter_was_u: tap_dance_enter_was_u {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp LG(LA(LS(U)))>, <&kp LG(LA(LS(Y)))>;
+            bindings = <&kp LG(LA(LS(U)))>, <&kp LC(LA(LG(B)))>, <&kp LC(LA(LG(N9)))>;
         };
 
         // Hold-tap: hold = layer 2, tap = Windows+Alt+Shift+U/Y tap-dance
