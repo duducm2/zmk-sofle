@@ -81,32 +81,6 @@
             bindings = <&kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
         };
 
-        // Tap-dance arrows: 1 tap = single key, 2 taps = 5× (uses five_* macros above)
-        td_arrow_up: tap_dance_arrow_up {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&kp UP_ARROW>, <&five_ups>;
-        };
-        td_arrow_down: tap_dance_arrow_down {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&kp DOWN_ARROW>, <&five_downs>;
-        };
-        td_arrow_left: tap_dance_arrow_left {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&kp LEFT_ARROW>, <&five_lefts>;
-        };
-        td_arrow_right: tap_dance_arrow_right {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&kp RIGHT_ARROW>, <&five_rights>;
-        };
-
         ctrl_five_rights: ctrl_five_rights {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -639,12 +613,12 @@
             bindings = <&kp>, <&td_ctrl_alt_bv>;   // keycode supplied inline in keymap
         };
 
-        // Tap-dance: 1× context-menu, 2× Ctrl+Win+Alt+B, 3× Ctrl+Win+Alt+9, 4× select-all-cut
+        // Tap-dance: 1× context-menu, 2× select-all-cut
         td_ctx_sa_cut: tap_dance_ctx_sa_cut {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp K_CONTEXT_MENU>, <&kp LC(LA(LG(B)))>, <&kp LC(LA(LG(N9)))>, <&select_all_cut>;
+            bindings = <&kp K_CONTEXT_MENU>, <&select_all_cut>;
         };
 
         // Hold-tap: hold = LG(LS(E)), tap = td_ctx_sa_cut
@@ -1179,8 +1153,8 @@
         layer_2 {
             bindings = <
 &kp LC(LA(LG(N2))) &bt BT_SEL 0  &bt BT_SEL 3    &bt BT_SEL 2  &trans  &win_b_ctrl_e    &morph_up     &mt_cshome LC(LS(HOME)) LS(HOME)  &mt_csend LC(LS(END)) LS(END)  &ht_cshome_del 0 0  &ht_csend_del 0 0     &mt_ctrl LC(HOME) HOME      &mt_ctrl LC(END) END
-&kp LC(LA(LG(N8)))      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LA(PRINTSCREEN)  &td_arrow_up  &kp PG_UP      &kp PG_DN      &mt_ctrl LC(LS(PG_UP)) LC(PG_UP)    &mt_ctrl LC(LS(PG_DN)) LC(PG_DN)
-&trans     &mcmd_01  &mcmd_02    &mcmd_03        &kp LC(LS(V))        &trans          &morph_left   &td_arrow_left  &td_arrow_down  &td_arrow_right      &trans     &trans     &trans
+&kp LC(LA(LG(N8)))      &trans    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LA(PRINTSCREEN)  &kp UP_ARROW  &kp PG_UP      &kp PG_DN      &mt_ctrl LC(LS(PG_UP)) LC(PG_UP)    &mt_ctrl LC(LS(PG_DN)) LC(PG_DN)
+&trans     &mcmd_01  &mcmd_02    &mcmd_03        &kp LC(LS(V))        &trans          &morph_left   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans     &trans     &trans
 &trans     &mcmd_04    &mcmd_05          &mcmd_06   &kp LC(LA(V))        &kp LC(LA(B))          &morph_right  &trans  &trans  &trans  &trans  &kp LG(LA(LS(N4)))  &kp LG(LA(LS(N5)))
 &bt BT_CLR     &kp LCTRL        &kp LC(LA(LG(N3)))  &kp LC(LA(LG(N5)))  &kp LC(LA(LG(N6)))  &kp LC(LA(LG(N7)))  &trans  &trans  &kp LS(COMMA)  &kp LS(DOT)      &trans     &select_all_del
             >;
