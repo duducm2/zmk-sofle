@@ -765,7 +765,7 @@
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp LG(UP_ARROW)>, <&td_min_close_max>;
+            bindings = <&kp LG(UP_ARROW) &td_min_close_max>;
         };
 
         // Macro: Windows+B, wait 1 second, then Control+E
