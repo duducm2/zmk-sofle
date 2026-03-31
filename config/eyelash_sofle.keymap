@@ -67,40 +67,40 @@
         five_rights: five_rights {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;      // Delay between key presses in ms
-            tap-ms = <30>;       // How long each key is held down in ms
+            wait-ms = <8>;       // Gap between key events (was 30 ms)
+            tap-ms = <8>;        // Key hold per tap
             bindings = <&kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW>;
         };
 
         five_downs: five_downs {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <8>;
+            tap-ms = <8>;
             bindings = <&kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW>;
         };
 
         five_ups: five_ups {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <8>;
+            tap-ms = <8>;
             bindings = <&kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW &kp UP_ARROW>;
         };
 
         five_lefts: five_lefts {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <8>;
+            tap-ms = <8>;
             bindings = <&kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT_ARROW>;
         };
 
         ctrl_five_rights: ctrl_five_rights {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <8>;
+            tap-ms = <8>;
             bindings =
                 <&macro_press &kp LCTRL>,
                 <&macro_tap &kp RIGHT_ARROW>,
@@ -114,8 +114,8 @@
         ctrl_five_lefts: ctrl_five_lefts {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <8>;
+            tap-ms = <8>;
             bindings =
                 <&macro_press &kp LCTRL>,
                 <&macro_tap &kp LEFT_ARROW>,
