@@ -783,7 +783,7 @@
             bindings =
                 <&macro_tap &kp LA(SPACE)>,
                 <&macro_wait_time 150>,
-                <&macro_tap &kp X>; 
+                <&macro_tap &kp X>;
         };
 
         // Hold-tap: hold = maximize (system menu), tap = minimize/close tap-dance
