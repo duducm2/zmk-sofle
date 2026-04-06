@@ -774,14 +774,19 @@
             bindings = <&kp LG(LA(LS(N6)))>, <&kp LA(F4)>;
         };
 
-        // Macro: maximize current window (Win+Up)
+        // Macro: maximize active window via system menu (Alt+Space, X) — reliable full monitor maximize
         win_maximize: win_maximize {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(UP_ARROW)>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_tap &kp LA(SPACE)>,
+                <&macro_wait_time 150>,
+                <&macro_tap &kp X>; 
         };
 
-        // Hold-tap: hold = maximize (Win+Up), tap = minimize/close tap-dance
+        // Hold-tap: hold = maximize (system menu), tap = minimize/close tap-dance
         ht_min_close_max: hold_tap_min_close_max {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
