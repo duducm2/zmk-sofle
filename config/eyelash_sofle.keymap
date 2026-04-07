@@ -774,21 +774,14 @@
             bindings = <&kp LG(LA(LS(N6)))>, <&kp LA(F4)>;
         };
 
-        // Macro: maximize active window with repeated Win+Up (locale-independent, retry for reliability)
+        // Macro: maximize via host — Ctrl+Alt+Win+V (WindowManagement.ahk WM_MaximizeActiveWindow)
         win_maximize: win_maximize {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <25>;
-            tap-ms = <25>;
-            bindings =
-                <&macro_tap &kp LG(UP_ARROW)>,
-                <&macro_wait_time 120>,
-                <&macro_tap &kp LG(UP_ARROW)>,
-                <&macro_wait_time 120>,
-                <&macro_tap &kp LG(UP_ARROW)>;
+            bindings = <&kp LC(LA(LG(V)))>;
         };
 
-        // Hold-tap: hold = maximize (retry Win+Up), tap = minimize/close tap-dance
+        // Hold-tap: hold = maximize (AHK WinMaximize / SC_MAXIMIZE), tap = minimize/close tap-dance
         ht_min_close_max: hold_tap_min_close_max {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
