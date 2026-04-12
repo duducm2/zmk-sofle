@@ -134,6 +134,14 @@
             bindings = <&kp ESC &kp LG(Z) &macro_wait_time 1000 &kp N4 &kp ENTER>;
         };
 
+        win_z_4_seq2: win_z_4_seq2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <500>;
+            tap-ms = <50>;
+            bindings = <&kp LG(Z) &macro_wait_time 100 &kp N4 &macro_wait_time 1000 &kp N2 &kp ESC>;
+        };
+
         win_alt_shift_comma: win_alt_shift_comma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1135,7 +1143,7 @@
 
         layer_2 {
             bindings = <
-&kp LC(LA(LG(N2))) &bt BT_SEL 0  &bt BT_SEL 3    &bt BT_SEL 2  &trans  &win_z_4    &morph_up     &mt_cshome LC(LS(HOME)) LS(HOME)  &mt_csend LC(LS(END)) LS(END)  &ht_cshome_del 0 0  &ht_csend_del 0 0     &mt_ctrl LC(HOME) HOME      &mt_ctrl LC(END) END
+&kp LC(LA(LG(N2))) &bt BT_SEL 0  &bt BT_SEL 3    &bt BT_SEL 2  &win_z_4_seq2  &win_z_4    &morph_up     &mt_cshome LC(LS(HOME)) LS(HOME)  &mt_csend LC(LS(END)) LS(END)  &ht_cshome_del 0 0  &ht_csend_del 0 0     &mt_ctrl LC(HOME) HOME      &mt_ctrl LC(END) END
 &kp LC(LA(LG(N8)))      &sl 3    &trans  &trans        &trans        &kp LG(DOT)          &morph_down   &kp LA(PRINTSCREEN)  &kp UP_ARROW  &kp PG_UP      &kp PG_DN      &mt_ctrl LC(LS(PG_UP)) LC(PG_UP)    &mt_ctrl LC(LS(PG_DN)) LC(PG_DN)
 &kp LC(LA(LG(N5)))     &kp LC(LA(LG(N3)))  &trans    &trans        &kp LC(LS(V))        &trans          &morph_left   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LC(LG(LA(C)))     &trans     &trans
 &kp LSHIFT     &trans  &trans    &trans        &trans        &trans          &morph_right  &trans  &trans  &trans  &trans  &kp LG(LA(LS(N4)))  &kp LG(LA(LS(N5)))
