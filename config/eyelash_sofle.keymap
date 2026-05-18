@@ -131,7 +131,7 @@
             #binding-cells = <0>;
             wait-ms = <500>;
             tap-ms = <50>;
-            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 1000 &kp N4 &kp ENTER>;
+            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 1000 &kp N4 &kp ENTER &macro_wait_time 200 &kp ENTER>;
         };
 
         win_z_4_seq2: win_z_4_seq2 {
