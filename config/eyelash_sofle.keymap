@@ -129,9 +129,9 @@
         win_z_4: win_z_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <500>;
+            wait-ms = <100>;
             tap-ms = <50>;
-            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 1000 &kp N4 &kp ENTER &macro_wait_time 200 &kp ENTER>;
+            bindings = <&kp ESC &kp LG(Z) &macro_wait_time 100 &kp N4 &kp ENTER &macro_wait_time 100 &kp ENTER>;
         };
 
         win_z_4_seq2: win_z_4_seq2 {
