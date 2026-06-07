@@ -627,12 +627,12 @@
             bindings = <&kp>, <&td_ctx_sa_cut>;
         };
 
-        // Tap-dance: 1× Win+Alt+Shift+I, 2× Win+Shift+S (Snipping Tool)
+        // Tap-dance: 1× Win+Alt+Shift+I, 2× Ctrl+Alt+Win+X, 3× Ctrl+Alt+Win+Y
         td_wasi_snip: tap_dance_wasi_snip {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp LG(LA(LS(I)))>, <&kp LG(LS(S))>;
+            bindings = <&kp LG(LA(LS(I)))>, <&kp LC(LA(LG(X)))>, <&kp LC(LA(LG(Y)))>;
         };
 
         // Hold-tap: hold = Win+Alt+Shift+X, tap = td_wasi_snip
