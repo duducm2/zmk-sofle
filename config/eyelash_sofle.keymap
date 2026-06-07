@@ -680,7 +680,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp LG(LA(LS(I)))>, <&kp LC(LA(LG(6)))>, <&kp LC(LA(LG(Y)))>;
+            bindings = <&kp LG(LA(LS(I)))>, <&kp LC(LA(LG(N6)))>, <&kp LC(LA(LG(Y)))>;
         };
 
         // Hold-tap: hold = Win+Alt+Shift+X, tap = td_wasi_snip
