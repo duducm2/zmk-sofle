@@ -142,6 +142,54 @@
             bindings = <&kp LG(LA(LS(N)))>;
         };
 
+        // ht_was1_cabv_td: macro wrappers avoid bare B/V leaking from &kp modifier chords
+        was1_tap: was1_tap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp LG(LA(LS(N1)))>;
+        };
+
+        ctrl_alt_b_tap: ctrl_alt_b_tap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp B>,
+                <&macro_release &kp LALT>,
+                <&macro_release &kp LCTRL>;
+        };
+
+        ctrl_alt_v_tap: ctrl_alt_v_tap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp V>,
+                <&macro_release &kp LALT>,
+                <&macro_release &kp LCTRL>;
+        };
+
+        ctrl_shift_v_hold: ctrl_shift_v_hold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_press &kp LSHIFT>,
+                <&macro_tap &kp V>,
+                <&macro_release &kp LSHIFT>,
+                <&macro_release &kp LCTRL>;
+        };
+
         // Windows+Alt+Shift+Arrow macros for Control-modified mouse movement
         was_up: was_up {
             compatible = "zmk,behavior-macro";
@@ -598,7 +646,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp LG(LA(LS(N1)))>, <&kp LC(LA(B))>, <&kp LC(LA(V))>;
+            bindings = <&was1_tap>, <&ctrl_alt_b_tap>, <&ctrl_alt_v_tap>;
         };
 
         // Hold-tap: hold = Ctrl+Shift+V, tap = tap-dance above
@@ -607,7 +655,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&td_ctrl_alt_bv>;   // keycode supplied inline in keymap
+            bindings = <&ctrl_shift_v_hold>, <&td_ctrl_alt_bv>;
         };
 
         // Tap-dance: 1× context-menu, 2× Ctrl+Alt+Win+B, 3× Ctrl+Alt+Win+9
@@ -1125,7 +1173,7 @@
             bindings = <
 &kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
 &kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &ht_as_w_td LA(LS(S)) 0
-&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &ht_n0_td LC(LA(LG(L))) 0    &ht_was1_cabv_td LC(LS(V)) 0
+&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &ht_n0_td LC(LA(LG(L))) 0    &ht_was1_cabv_td 0 0
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &ht_min_close_max 0 0    &kp ENTER
 &kp C_PLAY_PAUSE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE   &ht_mo1_caw01_td 1 0    &trans        &ht_mo2_enter_was_u 2 0  &kp LG( LA( LEFT_SHIFT ) )  &ht_lgshfte_ps_td LG(LA(LS(X))) 0      &ht_lghome_ctx_td LG(LS(E)) 0  &kp DELETE
             >;
