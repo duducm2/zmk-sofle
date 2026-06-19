@@ -1184,7 +1184,7 @@
 
         layer_1 {
             bindings = <
-&kp F11   &trans           &kp F2          &trans           &trans           &kp F5             &morph_mmv_up     &kp F6           &ctrl_a_then_copy           &kp LC(LA(LG(Z)))      &trans     &kp F10           &kp F12
+&kp F11   &trans           &kp F2          &trans           &trans           &kp F5             &morph_mmv_up     &kp F6           &ctrl_a_then_copy           &kp LC(LA(LG(Z)))      &kp LC(LA(LG(P)))     &kp F10           &kp F12
 &trans      &caw_c        &caw_h          &caw_i           &caw_k           &trans           &morph_mmv_down   &kp RIGHT_BRACKET        &morph_mmv_up          &kp BACKSLASH      &kp FSLH   &kp SEMI         &kp LC(LA(W))
 &trans      &caw_q        &caw_w          &caw_e           &caw_r           &trans           &morph_mmv_left   &morph_mmv_left        &morph_mmv_down         &morph_mmv_right    &kp MINUS  &kp EQUAL  &kp APOS
 &kp LSHFT      &caw_a  &caw_s  &caw_d  &caw_f  &trans    &morph_mmv_right  &kp TILDE  &kp GRAVE  &kp KP_DIVIDE  &kp LS(EQUAL)    &kp LS(MINUS)           &kp LEFT_BRACKET
