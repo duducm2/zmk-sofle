@@ -608,7 +608,7 @@
             bindings = <&kp>, <&td_n7_l>;
         };
 
-        // Tap-dance: 1× Alt+Shift+Q, 2× Ctrl+Alt+Win+Y, 3× Ctrl+Alt+Win+M
+        // Tap-dance: 1× Alt+Shift+Q, 2× Ctrl+Alt+Win+Y (PowerToys bookmarks), 3× Ctrl+Alt+Win+M
         td_as_qs: tap_dance_as_qs {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -675,12 +675,12 @@
             bindings = <&kp>, <&td_ctx_sa_cut>;
         };
 
-        // Tap-dance: 1× Win+Alt+Shift+I, 2× Ctrl+Alt+Win+6, 3× Ctrl+Alt+Win+Y
+        // Tap-dance: 1× Win+Alt+Shift+I, 2× Ctrl+Alt+Win+6, 3× Ctrl+Alt+Win+U
         td_wasi_snip: tap_dance_wasi_snip {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp LG(LA(LS(I)))>, <&kp LC(LA(LG(N6)))>, <&kp LC(LA(LG(Y)))>;
+            bindings = <&kp LG(LA(LS(I)))>, <&kp LC(LA(LG(N6)))>, <&kp LC(LA(LG(U)))>;
         };
 
         // Hold-tap: hold = Win+Alt+Shift+X, tap = td_wasi_snip
